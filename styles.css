@@ -55,11 +55,6 @@ body {
   font-weight: bold;
 }
 
-/* Column container */
-.row {  
-  display: flex;
-  flex-wrap: wrap;
-}
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
@@ -73,7 +68,6 @@ body {
 .main {
   flex: 70%;
   background-color: white;
-  /*padding: 20px;*/
   margin-right: 30%;
 }
 
@@ -114,35 +108,60 @@ body {
 }
 
 .preview_date {
-  font-size: 10px;
+  font-size: .75rem;
   font-weight: bold;
+  padding-bottom: 1rem;
+  color: #999;
+  opacity: .6;
 }
 
 .preview_text {
   font-weight: 900;
-  padding-left: 12rem;
+  padding-left: 1rem;
   font-size: 1.3rem;
 }
 
 .preview_author {
   font-size: .8rem;
   font-weight: 300;
-  padding-top: 5px;
+  padding-top: .75rem;
 }
 
 .preview_tag {
   font-size: .8rem;
-  font-weight: 600;
-  padding-top: 5px;
+  font-weight: 300;
+  padding-top: .5rem;
   color: #999;
+}
+
+.tag {
+  font-weight: 400;
+}
+
+.tag:hover {
+  color: coral;
+  font-weight: bold; 
+  text-decoration: underline;
 }
 
 
 @media (max-width: 700px) {
+
+  .overall {
+    margin-left: 0%;
+    margin-right: 1%;
+    /*margin-top: 3%;*/
+  }
+
+  .main {
+    margin-right: 0%;
+  }
+
+
   .preview_image {
-    max-width: 100px;
+    max-width: 4rem;
     width: 100%;
-    max-height: 200px;
+    max-height: 4rem;
     height: 100%;
   }
 
@@ -152,9 +171,8 @@ body {
   }
 
   .preview_text {
-    font-weight: 100;
-    padding-left: 12rem;
-    font-size: .8rem;
+    padding-left: 2rem;
+    font-size: .75rem;
   }
 
   .preview_author {
@@ -171,7 +189,29 @@ body {
   }
 }
 
+hr {
+  color: #999;
+  opacity: .25;
+}
 
+.author {
+  opacity:.5;
+}
+
+.article-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3em;
+  margin-top: 1em;
+}
+
+.article-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
