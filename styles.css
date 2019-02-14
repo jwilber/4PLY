@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: "Comfortaa";
+  /*font-weight: 100;*/
+}
+
+.overall {
+  margin-left: 12%;
+  margin-right: 12%;
+  /*margin-top: 3%;*/
+}
+
+/* Header/logo Title */
+.header {
+  padding-bottom: 0px;
+  margin-top: 10%;
+  text-align: left;
+  background: white;
+  color: black;
+  font-family: "Playfair Display"
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: white;
+  border-top-color: black;
+  border-top-style: solid;
+  margin-top: 0px;
+  padding-bottom: 1rem;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: black;
+  padding-top: 2px;
+  padding-right: 1rem;
+  /*padding: 4px 20px;*/
+  text-decoration: none;
+  text-align: left;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  /*background-color: #ddd;*/
+  color: black;
+  font-weight: bold;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  /*padding: 20px;*/
+  margin-right: 30%;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+  background-color: #262626;
+  margin-right: 0%;
+  color: grey;
+}
+
+.clearfix {
+  margin-bottom: 3em;
+  margin-top: 1em;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.preview_image {
+  float: left;
+  max-width: 300px;
+  width: 100%;
+  max-height: 400px;
+  height: 100%;
+}
+
+.preview_date {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.preview_text {
+  font-weight: 900;
+  padding-left: 12rem;
+  font-size: 1.3rem;
+}
+
+.preview_author {
+  font-size: .8rem;
+  font-weight: 300;
+  padding-top: 5px;
+}
+
+.preview_tag {
+  font-size: .8rem;
+  font-weight: 600;
+  padding-top: 5px;
+  color: #999;
+}
+
+
+@media (max-width: 700px) {
+  .preview_image {
+    max-width: 100px;
+    width: 100%;
+    max-height: 200px;
+    height: 100%;
+  }
+
+  .preview_date {
+    font-size: .8rem;
+    font-weight: bold;
+  }
+
+  .preview_text {
+    font-weight: 100;
+    padding-left: 12rem;
+    font-size: .8rem;
+  }
+
+  .preview_author {
+    font-size: .8rem;
+    font-weight: 300;
+    padding-top: 5px;
+  }
+
+  .preview_tag {
+    font-size: .8rem;
+    font-weight: 600;
+    padding-top: 5px;
+    color: #999;
+  }
+}
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
