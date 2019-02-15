@@ -6,102 +6,120 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <link rel="stylesheet" type="text/css" href="styles.css">
+ <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
+
+
+
+
+
+
+
+
+
 <body>
-<div class="overall">
+	<div class="overall">
+		<!-- Header -->
+		<div class="header">
+		  <h1>7PLY MAGAZINE</h1>
+		</div>
 
-<!-- Header -->
-<div class="header">
-  <h1>7PLY MAGAZINE</h1>
-</div>
+		<div class="topnav" id="myTopnav">
+		  <a href="#home" class="active">About</a>
+		  <a href="#news">Topics</a>
+		  <a href="#contact">Shop</a>
+		  <a href="#about">Contact</a>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		    <i class="fa fa-bars" style='font-size: 1.1rem;'></i>
+		  </a>
+		</div> 
 
-<!-- <h1>7PLY</h1> -->
-<!-- Navigation Bar -->
-<div class="navbar">
-  <a href="#">About</a>
-  <a href="#">Topics</a>
-<!--   <a href="#">Skate Videos</a>
-  <a href="#">Interviews</a>
- -->  <a class='navbar_end' href="#">Shop</a>
-  <a class='navbar_end' href="#">Contact</a>
+		<!-- The flexible grid (content) -->
+		<div class="row">
 
-</div>
+		  <div class="main">
+		  	<h2 style='font-weight:100;'> Latest article-rows</h2>
+		  	<hr>
 
-<!-- The flexible grid (content) -->
-<div class="row">
+		<div class="article-row">
+		     <img class="preview_image" src="http://www.jwilber.me/images/skate-music_i.jpg"/>
+		    <div class="article-text-container">
+		        <div class='preview_text'>
+			  		  <div class='preview_date'>DEC.&nbsp;&nbsp;&nbsp;20.&nbsp;&nbsp;&nbsp;2018</div>
+				  		QUANTIFIED: Habitat's Mosaic (2004).
+			  	  	<div class='preview_author'>
+			  	  		<span class='author'>By</span> 
+			  	  		<span class='tag'>Jared Wilber</span>
+			  	  	</div>
+				  	<div class='preview_tag'>
+				  		<span class='author'>Tagged As:</span> 
+				  		<span class='tag'>Skate Video Taxonomy</span>
+				  	</div>
+			  	</div>
+		    </div>
+		</div>
+		<hr>
 
-  <div class="main">
-  	<h2 style='font-weight:100;'> Latest article-rows</h2>
-  	<hr>
+		<div class="article-row">
+		     <img class="preview_image" src="https://pudding.cool/common/assets/thumbnails/640/2018_06_skate-music.jpg"/>
+		    <div class="article-text-container">
+		        <div class='preview_text'>
+			  		  <div class='preview_date'>DEC.&nbsp;&nbsp;20.&nbsp;&nbsp;2018</div>
+				  		QUANTIFIED: Habitat's Mosaic (2004).
+			  	  	<div class='preview_author'>
+			  	  		<span class='author'>By</span> 
+			  	  		<span class='tag'>Jared Wilber</span>
+			  	  	</div>
+				  	<div class='preview_tag'>
+				  		<span class='author'>Tagged As:</span> 
+				  		<span class='tag'>Skate Video Taxonomy</span>
+				  	</div>
+			  	</div>
+		    </div>
+		</div>
+		<hr>
 
-<div class="article-row">
-     <img class="preview_image" src="http://www.jwilber.me/images/skate-music_i.jpg"/>
-    <div class="article-text-container">
-        <div class='preview_text'>
-	  		  <div class='preview_date'>DEC.&nbsp;&nbsp;&nbsp;20.&nbsp;&nbsp;&nbsp;2018</div>
-		  		QUANTIFIED: Habitat's Mosaic (2004).
-	  	  	<div class='preview_author'>
-	  	  		<span class='author'>By</span> 
-	  	  		<span class='tag'>Jared Wilber</span>
-	  	  	</div>
-		  	<div class='preview_tag'>
-		  		<span class='author'>Tagged As:</span> 
-		  		<span class='tag'>Skate Video Taxonomy</span>
-		  	</div>
-	  	</div>
-    </div>
-</div>
-<hr>
-
-<div class="article-row">
-     <img class="preview_image" src="https://pudding.cool/common/assets/thumbnails/640/2018_06_skate-music.jpg"/>
-    <div class="article-text-container">
-        <div class='preview_text'>
-	  		  <div class='preview_date'>DEC.&nbsp;&nbsp;20.&nbsp;&nbsp;2018</div>
-		  		QUANTIFIED: Habitat's Mosaic (2004).
-	  	  	<div class='preview_author'>
-	  	  		<span class='author'>By</span> 
-	  	  		<span class='tag'>Jared Wilber</span>
-	  	  	</div>
-		  	<div class='preview_tag'>
-		  		<span class='author'>Tagged As:</span> 
-		  		<span class='tag'>Skate Video Taxonomy</span>
-		  	</div>
-	  	</div>
-    </div>
-</div>
-<hr>
-
-<div class="article-row">
-     <img class="preview_image" src="http://www.jwilber.me/images/skate-music_i.jpg"/>
-    <div class="article-text-container">
-        <div class='preview_text'>
-	  		  <div class='preview_date'>DEC.&nbsp;&nbsp;20.&nbsp;&nbsp;2018</div>
-		  		The Good, the Rad, and the Gnarly.
-	  	  	<div class='preview_author'>
-	  	  		<span class='author'>By</span> 
-	  	  		<span class='tag'>Jared Wilber</span>
-	  	  	</div>
-		  	<div class='preview_tag'>
-		  		<span class='author'>Tagged As:</span> 
-		  		<span class='tag'>Skate Video Taxonomy</span>
-		  	</div>
-	  	</div>
-    </div>
-</div>
-<hr>
-  
+		<div class="article-row">
+		     <img class="preview_image" src="http://www.jwilber.me/images/skate-music_i.jpg"/>
+		    <div class="article-text-container">
+		        <div class='preview_text'>
+			  		  <div class='preview_date'>DEC.&nbsp;&nbsp;20.&nbsp;&nbsp;2018</div>
+				  		The Good, the Rad, and the Gnarly.
+			  	  	<div class='preview_author'>
+			  	  		<span class='author'>By</span> 
+			  	  		<span class='tag'>Jared Wilber</span>
+			  	  	</div>
+				  	<div class='preview_tag'>
+				  		<span class='author'>Tagged As:</span> 
+				  		<span class='tag'>Skate Video Taxonomy</span>
+				  	</div>
+			  	</div>
+		    </div>
+		</div>
+		<hr>
+		  
 
 
 
 
 
-</div>
-</div>
-</div>
-<div class="footer">
-        <p>©&nbsp;2019 7PLY Magazine<br></p>
-</div> <!-- .footer-content -->
-
+		</div>
+		</div>
+		</div>
+		<div class="footer">
+		        <p>©&nbsp;2019 7PLY Magazine<br></p>
+	</div> <!-- .footer-content -->
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+		    x.className += " responsive";
+		  } else {
+		    x.className = "topnav";
+		  }
+		}
+		</script>
 </body>
 </html>
