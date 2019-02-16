@@ -65,21 +65,25 @@ body {
   padding-top: 1rem;
 }
 
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
 
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
   flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
+  margin: auto; 
+  /*text-align: center;*/
 }
 
 /* Main column */
 .main {
   flex: 70%;
   background-color: white;
-  margin-right: 30%;
+  /*margin-right: 30%;*/
   border-right: 1px solid rgba(128, 128, 128, .3);
 }
 
@@ -138,6 +142,30 @@ body {
   text-decoration: underline;
 }
 
+.newsletter {
+  font-size: 1rem;
+  text-align: center;
+  padding-left: 30px;
+}
+
+.social-items {
+  display: block;
+}
+
+ul, li {
+    display:inline;
+    padding-right: 30px;
+}
+
+.fa {
+  opacity: .7;
+  color: black;
+  font-size: 4rem;
+}
+.fa:hover {
+  opacity: 1;
+  font-size: 4.2rem;
+}
 
 @media (max-width: 700px) {
 
@@ -186,6 +214,15 @@ body {
     font-weight: 300;
     padding-top: 1rem;
     color: #999;
+  }
+
+  hr {
+  width: 98%;
+  }
+
+  <!-- remove social media bit -->
+  .side {
+    flex: 0%;
   }
 
 }
