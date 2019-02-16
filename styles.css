@@ -45,11 +45,11 @@ body {
 /* Style the navigation bar links */
 .topnav a {
   color: black;
-  padding-top: 2px;
-  padding-right: 1rem;
-  /*padding: 4px 20px;*/
+  padding-top: .8rem;
+  padding-right: 2.5rem;
   text-decoration: none;
   text-align: left;
+  font-size: .95rem;
 }
 
 /* Change color on hover */
@@ -58,6 +58,13 @@ body {
   color: black;
   font-weight: bold;
 }
+
+.latest {
+  font-family: 'Comfortaa';
+  font-weight: 500;
+  padding-top: 1rem;
+}
+
 
 
 /* Create two unequal columns that sits next to each other */
@@ -73,6 +80,7 @@ body {
   flex: 70%;
   background-color: white;
   margin-right: 30%;
+  border-right: 1px solid rgba(128, 128, 128, .3);
 }
 
 /* Footer */
@@ -145,6 +153,7 @@ body {
 
   .main {
     margin-right: 0%;
+    border-right: 0;
   }
 
 
@@ -184,7 +193,10 @@ body {
 hr {
   color: #999;
   opacity: .25;
+  width: 90%;
+  margin-left: 0;
 }
+
 
 .author {
   opacity: .75;
@@ -237,3 +249,12 @@ hr {
     text-align: left;
   }
 } 
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
