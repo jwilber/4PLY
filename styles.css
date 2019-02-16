@@ -154,7 +154,8 @@ body {
 
 ul, li {
     display:inline;
-    padding-right: 30px;
+    padding-right: .1rem;
+    padding-left: 0;
 }
 
 .fa {
