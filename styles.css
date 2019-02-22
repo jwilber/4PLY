@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 
 * {
@@ -238,7 +239,9 @@ hr {
 
 .author {
   opacity: .75;
-  color: #999;
+  /*color: #999;*/
+  font-family: Roboto;
+  /*text-transform: uppercase;*/
 }
 
 .article-row {
@@ -295,4 +298,11 @@ hr {
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
+}
+
+
+.about {
+  margin-right: 30%;
+  margin-left: 30%;
+  text-align: center;
 }
