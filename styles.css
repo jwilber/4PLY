@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
+@import url('https://fonts.googleapis.com/css?family=Catamaran');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 * {
   box-sizing: border-box;
@@ -9,7 +10,7 @@
 
 /* Style the body */
 body {
-  font-family: "Comfortaa";
+  font-family: "Inconsolata";
   /*font-weight: 100;*/
 }
 
@@ -22,11 +23,13 @@ body {
 /* Header/logo Title */
 .header {
   padding-bottom: 0px;
-  margin-top: 10%;
+  margin-top: 8%;
   text-align: left;
   background: white;
   color: black;
-  font-family: "Playfair Display"
+  font-weight: 300;
+  font-family: "Catamaran";
+  line-height: 0;
 }
 
 /* Style the top navigation bar */
@@ -55,15 +58,17 @@ body {
 
 /* Change color on hover */
 .topnav a:hover {
-  /*background-color: #ddd;*/
-  color: black;
-  font-weight: bold;
+  color: grey;
+  font-weight: 200;
 }
 
 .latest {
-  font-family: 'Comfortaa';
+  font-family: 'Catamaran';
   font-weight: 500;
+  font-size: 2rem;
   padding-top: 1rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .row {  
@@ -107,17 +112,17 @@ body {
 }
 
 .preview_date {
-  font-size: .8rem;
-  font-weight: lighter;
+  font-size: .95rem;
+  font-weight: 100;
   padding-bottom: 1rem;
   color: #999;
   opacity: .8;
 }
 
 .preview_text {
-  font-weight: 900;
-  padding-left: 1rem;
-  font-size: 1.3rem;
+  font-weight: 600;
+  padding-left: .75rem;
+  font-size: 1.25rem;
 }
 
 .preview_author {
@@ -305,4 +310,11 @@ hr {
   margin-right: 30%;
   margin-left: 30%;
   text-align: center;
+}
+
+a.magazines {
+  color: black;
+}
+a.magazines:hover {
+  color: grey;
 }
