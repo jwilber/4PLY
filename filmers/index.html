@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Who The Filmmaker's Film</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel='shortcut icon' type='image/x-icon' href='assets/favicon.ico' />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="src/tooltip.js"></script>
+  <script src="src/network.js"></script>
+  <script src="src/scatter.js"></script>
+</head>
+
+<body>
+  <center>
+    <header>
+      <h1>
+        <a href="http://www.4plymag.com" class="homepage">4PLY MAG</a>
+      </h1>
+      <h4>May 2020</h4>
+      <h1 class="title">Skateboarding Filmmakers And Casts</h1>
+      <h3>Explore each filmer's favorite cast of skaters</h3>
+      <h5 style='color: rgb(158, 158, 158); font-size: 0.7rem'><a href="https://twitter.com/jdwlbr">Jared Wilber</a>
+      </h5>
+      <p class='main-text'>Although they live behind the scenes, filmers play a very important role in skateboarding.
+        By mapping their vision behind the lense into the video before I eyes, they shape their own personal brand, as
+        well as define the aesthetic of the skaters and brands they represent.<br>
+        This article won't go into any big theories about the role of filmmakers in skateboarding (not that size
+        matters!).
+        Instead, it serves as a piece to explore some of the filmers.
+      </p>
+      <p class='main-text'>
+        There is no filmmaking in skateboarding without skateboarders. I guess this is obvious. Probably did not
+        warrant the first sentence of this paragraph. But here we are.
+
+        Moving on: Below we represent each filmmaker as a <a
+          href="https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)">network graph</a>,
+        with each circle(node). The size of the circles are based on how many times they showed up in a video from the
+        corresponding filmmaker. We see two main types of structure below: highly connected graphs (representing
+        filmers that film a large amount of mostly the same skaters), and low-connection graphs with distinct
+        neighborhoods
+        (e.g. Transworld filmers Chris Ray and Jon Holland, who prefer the one-and-done relationship with skaters.)
+        The edges connect skaters that appeared in films together.
+        Hover over each skater to see who they share connections with, and click-and-drag them around for a better view.
+      </p>
+    </header>
+  </center>
+
+
+  <div id="site_selection" class="control" style='margin-left: 20px; font-family: Bungee;'>
+    <h2>Select Filmer</h2>
+    <select id="site_select">
+      <option value="Aaron_Meza.json">Aaron Meza</option>
+      <option value="Beagle.json" selected="selected">Beagle</option>
+      <option value="Bill_Weiss.json">Bill Weiss</option>
+      <option value="Brad_Rosado.json">Brad Rosado</option>
+      <option value="Chris_Mulhern.json">Chris Mulhern</option>
+      <option value="Chris_Ray.json">Chris Ray</option>
+      <option value="Chris_Thiessen.json">Chris Thiessen</option>
+      <option value="Colin_Kennedy.json">Colin Kennedy</option>
+      <option value="Colin_Read.json">Colin Read</option>
+      <option value="Dan_Magee.json">Dan Magee</option>
+      <option value="Dan_Wolfe.json">Dan Wolfe</option>
+      <option value="Dave_Bergthold.json">Dave Bergthold</option>
+      <option value="Don_Luong.json">Don Luong</option>
+      <option value="Ewan_Bowman.json">Ewan Bowman</option>
+      <option value="Federico_Vitetta.json">Federico Vitetta</option>
+      <option value="Fred_Mortagne.json">French Fred (Mortagne)</option>
+      <option value="Grant_Yansura.json">Grant Yansura</option>
+      <option value="Greg_Hunt.json">Greg Hunt</option>
+      <option value="Jackson_Casey.json">Jackson Casey</option>
+      <option value="Jacob_Nunez.json">Jacob Nunez</option>
+      <option value="Jamie_Thomas.json">Jamie Thomas</option>
+      <option value="Jason_Hernandez.json">Jason Hernandez</option>
+      <option value="Jean-Jacques_Briquet.json">Jean-Jacques Briquet</option>
+      <option value="Jeremy_McNamara.json">Jeremy McNamara</option>
+      <option value="Joe_Castrucci.json">Joe Castrucci</option>
+      <option value="Jon_Holland.json">Jon Holland</option>
+      <option value="Josh_Beagle.json">Josh Beagle</option>
+      <option value="Kevin_Barnett.json">Kevin Barnett</option>
+      <option value="Matt_Daughters.json">Matt Daughters</option>
+      <option value="Matt_Solomon.json">Matt Solomon</option>
+      <option value="Mike_Gilbert.json">Mike Gilbert</option>
+      <option value="Mike_Manzoori.json">Mike Manzoori</option>
+      <option value="Nick_vonWerssowetz_.json">Nick von Werssowetz</option>
+      <option value="Patrick_Nagy.json">Patrick Nagy</option>
+      <option value="Peter_Sidlauskas.json">Peter Sidlauskas</option>
+      <option value="Pontus_Alv.json">Pontus Alv</option>
+      <option value="RB_Umali.json">RB Umali</option>
+      <option value="Rich_Adler.json">Rich Adler</option>
+      <option value="Ricki_Bedenbaugh.json">Ricki Bedenbaugh</option>
+      <option value="Roger_Bagley.json">Roger Bagley</option>
+      <option value="Russell_Houghten.json">Russell Houghten</option>
+      <option value="Spike_Jonze.json">Spike Jonze</option>
+      <option value="Ty_Evans.json">Ty Evans</option>
+      <option value="Yoan_Taillandier.json">Yoan Taillandier</option>
+    </select>
+
+  </div>
+  <div id="controls">
+    <div id="main" role="main" style='display: flex;'>
+      <div id="network"></div>
+    </div>
+
+    <center>
+      <h3>Filmer Favorites</h3>
+      <p class='main-text'>
+        From the graphs above, it's clear that many filmermakers have a favorite 'cast' of favorites they film.
+        Sometimes this
+        is a result of the filmers preferring to film their friends. Other times, this is because the filmers are
+        emlpoyed
+        by a company with a fairly standard cast of skaters.
+        <br><br>
+        In any case, I've always wondered, which filmers are the
+        most have the most consistent cast of skaters in their videos?
+
+        To answer the question, below I've ranked the filmers by what I call the <i>uniformity index</i>:
+        calculated by dividing the total number of parts a filmer has filmed by the unique number of skaters they've
+        filmed.
+        A value of one implies that no skaters were filmed more than once, while higher values indicate a consistent
+        cast of
+        skaters filmed across multiple video-parts.
+        a broader range of skaters
+        .</p>
+      <!-- <p class='main-text'>
+        There are many ways to idenfity similar filmers. The style of their filming. The cameras they use.
+        Keeping in line with the theme of this article, we'll investigate similarity as a metric of who the filmmakers
+        include
+        in their videos.
+
+
+        most filmers have a crew they like to film. whether its' necaause they're a group of friends, or because they
+        film on behalf of a company, it's quite common. But who has the most tight-knit crew?
+        From the graphs above, it's clear that many filmers have a favorite 'cast' of favorites they film. But which
+        filmers
+        have the most consistent cast of skaters in their videos?
+
+        To answer the question, below I've ranked the filmers by what I call the 'uniformity index':
+        calculated by
+        dividing the total number of parts a filmer has filmed, divided by the unique number of skaters they've filmed.
+        Higher values of the uniformity index indicate more consistent set of skaters filmed, while those with a lower
+        score film a broader range of skaters.
+        The further above 1, the more loyal. A score of 1 indicates at total unique set of skaters filmed (e.g. only one
+        part
+        filmed per skater).
+        .</p> -->
+      <br><br>
+      <div id="table"></div>
+      <br><br>
+      <p class='main-text'>
+        The confirm our metric makes sense, let's look at both ends of the distribution (you can confirm the results
+        visually as well,
+        by looking at the network graph above). The top 3 filmmakers, Kevin
+        Barnett, Beagle, and Aaron Meza, respectively,
+        head
+        the video content for three of the most familial teams (Toy Machine, Baker, and Girl, respectively). At the
+        bottom
+        end of the distribution, we see filmers for independent skateboard publications (Transworld and Digital):
+        Chris Ray, Bill Weiss, and Jon Holland. As these publications employ a unique cast of skaters in each video,
+        these
+        results are expected.
+        <br><br>
+        To be honest, I'd expect Grant Yansura (WKND) and Yoan Toallandier (Magenta) to be higher up the list. I was
+        also
+        surprised to see Greg Hunt lower than Dan Wolfe, as the latter has filmed a
+
+      </p>
+      <br><br>
+      <h2>Filmer Similarity</h2>
+      <p class='main-text'>
+        There are many ways to idenfity similar filmers. The style of their filming. The cameras they use.
+        Keeping in line with the theme of this article, we'll investigate similarity as a metric of who the filmmakers
+        include
+        in their videos.
+        Which filmers are the most similar, <i>with respect to whom they film?</i> To find out, we'll tweak
+        some common information retreival techniques to our unique use case. In particular, we'll use TF-IDF (or,
+        for our case, SF-IFF: skater-frequency inverse filmer frequency): from the global set of skaters across all
+        videos,
+        we'll represent each filmer as the vector of skaters they film, weighted by the number of times they filmed
+        them, as well
+        as the number of times they were filmed by other filmers. Next, we'll use dimensionality reduction techniques
+        to map this to a two-dimensional space, so that we may more easily visualize the data (e.g. in the scatter
+        plot below). As each filmer is now embedded as a representation of the skaters they film, the distance between
+        the filmers represents a meaningful measure of similarity.
+        And the results make sense:
+        Basically, we'll represent each filmer as the vector of skaters they filmed.
+        .</p>
+      <br><br>
+      <div id="scatter"></div>
+    </center>
+
+
+    <center>
+      <h2>Data & Methodology</h2>
+      <p class='main-text'>The data was collected from (the now basically
+        defunct) skatevideosite.com.
+        The data comprises videos up until July 2019. As the data in skatevideosite.com is
+        user-entered, we can't guarantee total accuracy. For this reason, some of our mapping from filmmakers to skaters
+        may not be perfect (corrections were made where identified). Additionally, not all filmmakers featued in the
+        dataset were included - lesser-known filmers were excluded, as were filmers with less than four unique videos
+        in dataset.
+      </p>
+    </center>
+
+    <footer>
+
+    </footer>
+  </div>
+  <!--! end of #container -->
+  <!-- <script src="src/multipleline.js"></script> -->
+  <script src="src/table.js"></script>
+  <script>
+    // create new network plot
+    const chart3 = new NetworkGraph({
+      element: '#network',
+      data: 'data/Beagle.json'
+    });
+
+    const scatterChart = new Scatter({
+      element: '#scatter',
+      data: 'data/scatter_data.csv'
+    })
+
+    setupMenu = () => {
+      // need to use 'function' bc using 'this'
+      d3.select('#site_select').on('change', function () {
+        let jsonFile = d3.select(this).property('value');
+        let nodeName = jsonFile.split('.').slice(0, -1).join('.');
+        let csvName = `${nodeName}.csv`
+        d3.json('data/' + jsonFile, (json) => {
+          chart3.updateData(json);
+        });
+      });
+    }
+    setupMenu();
+  </script>
+
+</body>
+
+</html>
