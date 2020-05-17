@@ -1,2 +1,2 @@
-# 7PLY
-7PLY Magazine
+# 4PLY
+4PLY Magazine
