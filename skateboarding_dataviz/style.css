@@ -1,0 +1,93 @@
+body, .footer {
+	background-color: rgba(210, 180, 140, .2)
+}
+
+
+.title {
+	font-size: 4rem;
+	margin-bottom: 5px;
+}
+
+.content {
+	max-width: 70%;
+	margin: auto;
+	font-family: Inconsolata;
+	font-size: 1.35rem;
+}
+
+.article-author {
+	margin: auto;
+	opacity: 0.65;
+	font-size: 1rem;
+	margin-top: 0px;
+}
+
+.item {
+	margin-bottom: 10%;
+}
+.item-img {
+	max-width: 100%;
+	border: 5px solid black;
+}
+
+.item-title{
+	margin: auto;
+	font-family: Bungee;
+	font-size: 1.75rem;
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+
+.item p {
+	margin-top: 2rem;
+	font-size: 1.35rem;
+}
+
+hr.between {
+	max-width: 50%;
+	border: 5px solid black;
+	margin: auto;
+	margin-bottom: 10%;
+}
+
+.article-title {
+	color: black;
+}
+
+.article-date {
+	font-size: .9rem;
+}
+
+
+
+@media screen and (max-width: 700px) {
+	.content {
+		max-width: 90%;
+		font-size: 1.1rem;
+	}
+	.title {
+		font-size: 2rem;
+		margin-bottom: 5px;
+		max-width: 90%;
+	}
+	.item {
+		margin: auto;
+		display: block;
+	}
+
+	.item p {
+		font-size: 1.1rem;
+	}
+	.item-img {
+		max-width: 90%;
+		border: 5px solid black;
+		margin: auto;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.item-title{
+		margin: auto;
+		font-family: Bungee;
+		font-size: 1.4rem;
+	}
+}
