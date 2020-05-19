@@ -44,6 +44,13 @@ class NetworkGraph {
         // need to define ticked and ended here
         // because SyntaxError: Fields are currently not supported (Safari, Firefox)
         this.addIterationFuncs()
+        this.drag_handler = d3.drag()
+            .on("drag", function (d) {
+                d3.select(this)
+                    .attr("cx", d.x = d3.event.x)
+                    .attr("cy", d.y = d3.event.y);
+                that.ticked()
+            });
 
         this.addHoverFuncs()
         // set up force stuff
@@ -95,6 +102,8 @@ class NetworkGraph {
         })
 
     }
+
+
 
     activate(group, link) {
         d3.selectAll(`#${group} a`)
@@ -159,6 +168,7 @@ class NetworkGraph {
             // add radius to the node so we can use it later
             n.radius = this.countScale(+n.cnt)
         })
+
 
         this.nodesMap = d3.map(data.nodes, d => d.id)
 
@@ -266,6 +276,9 @@ class NetworkGraph {
             // .style('stroke', function (d) { return strokeFor(d) })
             .style('stroke-width', 2.0)
             .style('opacity', 0.8)
+
+        this.drag_handler(this.nodes)
+
     }
 
 
