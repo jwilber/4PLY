@@ -219,7 +219,7 @@ class NetworkGraph {
         this.simulation.force('charge', d3.forceManyBody().strength(this.charge))
         this.simulation.force('x', d3.forceX(this.width / 2).strength(0.01))
         this.simulation.force('y', d3.forceY(this.height / 2).strength(0.05))
-        this.simulation.force('collision', d3.forceCollide(50))
+        this.simulation.force('collision', d3.forceCollide(45).iterations(16))
 
     }
 
