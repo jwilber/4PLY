@@ -27,7 +27,7 @@ class NetworkGraph {
         this.labels = null
         this.edges = null
         this.width = window.innerWidth / 1.1
-        this.height = window.innerHeight + 100
+        this.height = (window.innerHeight + (window.innerHeight * .1))
         this.tooltip = floatingTooltip('network-tooltip', 50)
         // set up parent element and SVG
         this.svg = d3.select(this.element).append('svg')

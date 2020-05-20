@@ -1,7 +1,7 @@
 makeTable = (data, columns) => {
     let table = d3.select('#table')
         .append('table')
-        .style('width', `${window.innerWidth / 3.6 - 40}px`)
+        .style('width', `${window.innerWidth / 3 - 40}px`)
     let thead = table.append('thead')
     let tbody = table.append('tbody');
 
@@ -40,6 +40,6 @@ makeTable = (data, columns) => {
 
 d3.json('data/loyalty_index.json', data => {
     // render the table(s)
-    makeTable(data, ['filmmaker', 'loyalty_index']); // 2 column table
+    makeTable(data, ['filmmaker', 'consistency-index']); // 2 column table
 
 });

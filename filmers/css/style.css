@@ -151,7 +151,7 @@ td {
 }
 
 .tick {
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 .title {
@@ -162,3 +162,16 @@ td {
   /* color: rgb(223, 103, 123); */
 }
 
+/* Mobile Stuff */
+@media screen and (max-width: 900px) {
+  .main-text {
+    max-width: 98%;
+  }
+
+  .title {
+    font-size: 4rem;
+    max-width: 100%;
+    margin-top: 5%;
+    line-height: 4rem;
+  }
+}

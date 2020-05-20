@@ -25,6 +25,10 @@ class Scatter {
         this.svg.attr('width', this.width + this.margin.left + this.margin.right);
         this.svg.attr('height', this.height + this.margin.top + this.margin.bottom);
         // this.svg.style('background-color', 'pink');
+
+
+
+
         this.plot = this.svg.append('g')
             .attr('transform', `translate(${this.margin.left},${this.margin.top})`);
         // create the other stuff
@@ -177,17 +181,15 @@ class Scatter {
             .attr("x", this.width / 4)
             .attr("y", this.height + this.margin.bottom + this.margin.top / 1.5)
             .style("font-size", "20px")
-            .style("text-decoration", "underline")
             .text('Component 1');
 
         // add y-label
         d3.select(this.element).select('svg').append('text')
-            .attr("x", this.margin.left / 4)
-            .attr("y", (this.height + this.margin.bottom + this.margin.top) / 1.3)
+            .attr("x", -((this.height)))
+            .attr("y", this.margin.left / 2)
             .attr("dy", ".35em")
-            .attr('transform', 'rotate(90)')
+            .attr('transform', 'rotate(-90)')
             .style("font-size", "20px")
-            .style("text-decoration", "underline")
             .text('Component 2');
     }
 
