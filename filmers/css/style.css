@@ -169,6 +169,20 @@ td {
   }
 
   .title {
+    font-size: 6rem;
+    max-width: 100%;
+    margin-top: 5%;
+    line-height: 6rem;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .main-text {
+    max-width: 98%;
+  }
+
+  .title {
     font-size: 4rem;
     max-width: 100%;
     margin-top: 5%;
