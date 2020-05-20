@@ -137,7 +137,7 @@ input, button, select, textarea {
   font-family: Roboto; 
   font-size: 1.3rem;
   line-height: 1.25em;
-  max-width: 50%;
+  max-width: 60%;
 }
 
 th {
@@ -160,6 +160,31 @@ td {
   padding: 2rem;
   /* background-color: rgb(189, 247, 189); */
   /* color: rgb(223, 103, 123); */
+}
+
+.face {
+  /*animation: face-spin infinite 2s linear;*/
+  height: 10rem;
+  /*margin-left: 20px;*/
+  /*margin-bottom: 10px;*/
+  -webkit-animation: face-spin 3.5s infinite linear;
+  -moz-animation: face-spin 3.5s infinite linear;
+  animation: face-spin 3.5s infinite linear;
+  display: block;
+  position: relative;
+  /*top: 7px;                  */
+  /*left: calc(50% + 20px);    */
+}
+
+h6 {
+  font-size: .8rem;
+}
+
+@keyframes face-spin {
+  0%   {
+    transform:rotate(-360deg);
+  }
+
 }
 
 /* Mobile Stuff */
