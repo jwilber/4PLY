@@ -20,7 +20,7 @@ a, a:visited {
   /* width: 940px; */
   max-width: 100%;
   margin: 0;
-  margin-left: 5%;
+  /*margin-left: 5%;*/
 }
 
 #main {
@@ -111,7 +111,7 @@ hr.tooltip-hr {
   margin:3px 0 3px 0;
 }
 header {
-  margin-left: 30px;
+  /*margin-left: 30px;*/
   margin-top: 1px;
   /* max-width: 60%; */
 }
@@ -196,6 +196,7 @@ h6 {
   .title {
     font-size: 6rem;
     max-width: 100%;
+    padding: 0px;
     margin-top: 5%;
     line-height: 6rem;
   }
@@ -211,6 +212,7 @@ h6 {
     font-size: 4rem;
     max-width: 100%;
     margin-top: 5%;
+    padding: 0px;
     line-height: 4rem;
   }
 }
