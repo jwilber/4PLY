@@ -5,6 +5,7 @@
 body {
     font-family: Bungee;
     background-color: honeydew;
+    text-align: center;
 }
 
 a, a:visited {
@@ -57,21 +58,6 @@ a, a:visited {
   background: #555;
 }
 
-p.search_title {
-  display: inline;
-  text-align: left;
-  font-weight: normal;
-  color: #777;
-}
-
-#search_section {
-  padding-top: 23px;
-  padding-left: 20px;
-}
-
-#search_form #search {
-  margin-left: 10px;
-}
 
 footer p {
   text-align: center;
@@ -111,9 +97,9 @@ hr.tooltip-hr {
   margin:3px 0 3px 0;
 }
 header {
-  /*margin-left: 30px;*/
   margin-top: 1px;
-  /* max-width: 60%; */
+  display: inline-block;
+  background-color: honeydew;
 }
 
 #filters a {
@@ -133,21 +119,22 @@ input, button, select, textarea {
   font-family: Bungee;
 }
 
-.main-text {
+p {
   font-family: Roboto; 
   font-size: 1.3rem;
   line-height: 1.25em;
   max-width: 60%;
+  display: inline-block;
 }
 
 th {
-  border-bottom: 5px solid pink;
-  font-size: .85rem;
+  border-bottom: 5px solid #ffa8ba;
+  font-size: .9rem;
 }
 
 td {
-  border-bottom: 1px solid pink;
-  font-size: .7rem;
+  border-bottom: 1px solid #ffa8ba;
+  font-size: .8rem;
 }
 
 .tick {
@@ -170,7 +157,7 @@ td {
   -webkit-animation: face-spin 3.5s infinite linear;
   -moz-animation: face-spin 3.5s infinite linear;
   animation: face-spin 3.5s infinite linear;
-  display: block;
+  display: inline-block;
   position: relative;
   /*top: 7px;                  */
   /*left: calc(50% + 20px);    */
@@ -189,7 +176,7 @@ h6 {
 
 /* Mobile Stuff */
 @media screen and (max-width: 900px) {
-  .main-text {
+  p {
     max-width: 98%;
   }
 
@@ -200,11 +187,21 @@ h6 {
     margin-top: 5%;
     line-height: 6rem;
   }
+
+  th {
+    border-bottom: 5px solid #ffa8ba;
+    font-size: .9rem;
+  }
+
+  td {
+    border-bottom: 1px solid #ffa8ba;
+    font-size: .7rem;
+  }
 }
 
 
 @media screen and (max-width: 600px) {
-  .main-text {
+  p {
     max-width: 98%;
   }
 
@@ -215,4 +212,44 @@ h6 {
     padding: 0px;
     line-height: 4rem;
   }
+}
+
+.section{
+  text-align: center;
+}
+
+#table {
+  display: inline-block;
+}
+
+.methodology {
+  background-color: #f8f5f2;
+  color: #172c66;
+}
+
+.methodology h3 {
+  font-size: 2.6rem;
+}
+
+.section2 {
+  background-color: #00473e;
+  color: #f2f7f5;
+}
+
+.section2 h2 {
+  color: ##fffffe;
+  padding-bottom: 2%;
+}
+
+section {
+  padding-top: 5%;
+}
+
+.section3 {
+  background-color: honeydew;
+  color: #2d334a;
+}
+
+h2 {
+  padding-bottom: 2%;
 }
