@@ -27,7 +27,7 @@ class NetworkGraph {
         this.labels = null
         this.edges = null
         this.width = window.innerWidth / 1.1
-        this.height = (window.innerHeight + (window.innerHeight * .1))
+        this.height = (window.innerHeight + (window.innerHeight * .3))
         this.tooltip = floatingTooltip('network-tooltip', 50)
         // set up parent element and SVG
         this.svg = d3.select(this.element).append('svg')
@@ -72,10 +72,15 @@ class NetworkGraph {
             .exponent(0.5)
             .range([4, 23])
 
+        this.maxRad = this.width < 900 ? 15 : 27;
+        this.maxCollision = this.width < 900 ? 25 : 45;
+
+
         this.countScale = d3.scalePow()
             .domain([1, 10])
             .exponent(0.5)
-            .range([3, 30])
+            .range([3, this.maxRad])
+
 
         this.distanceScale = d3.scaleLinear()
             .range([0, this.height / 1.85])
@@ -229,7 +234,7 @@ class NetworkGraph {
         this.simulation.force('charge', d3.forceManyBody().strength(this.charge))
         this.simulation.force('x', d3.forceX(this.width / 2).strength(0.01))
         this.simulation.force('y', d3.forceY(this.height / 2).strength(0.05))
-        this.simulation.force('collision', d3.forceCollide(45).iterations(16))
+        this.simulation.force('collision', d3.forceCollide(this.maxCollision).iterations(16))
 
     }
 

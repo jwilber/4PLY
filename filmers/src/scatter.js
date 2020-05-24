@@ -17,7 +17,7 @@ class Scatter {
     draw(data) {
         // chart constants
         // define width, height and margin
-        this.margin = { top: 75, right: 100, bottom: 50, left: 40 };
+        this.margin = { top: 75, right: 40, bottom: 50, left: 40 };
         this.width = window.innerWidth / 2 - this.margin.left - this.margin.right,
             this.height = window.innerHeight / 1.25 - this.margin.top - this.margin.bottom;
         // set up parent element and SVG
