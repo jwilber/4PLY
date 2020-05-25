@@ -17,8 +17,11 @@ class Scatter {
     draw(data) {
         // chart constants
         // define width, height and margin
-        this.margin = { top: 75, right: 40, bottom: 50, left: 40 };
-        this.width = window.innerWidth / 2 - this.margin.left - this.margin.right,
+        this.margin = { top: 75, right: 45, bottom: 50, left: 30 };
+        this.widthBase = window.innerWidth >= 900 ?
+            window.innerWidth / 1.9 :
+            window.innerWidth / 1.25;
+        this.width = this.widthBase - this.margin.left - this.margin.right,
             this.height = window.innerHeight / 1.25 - this.margin.top - this.margin.bottom;
         // set up parent element and SVG
         this.svg = d3.select(this.element).append('svg');
@@ -36,17 +39,82 @@ class Scatter {
         this.addAxes(data);
         this.addDots(data);
         this.addChartLabels();
-        // this.addInteractivity()
 
-        this.svg.append("defs").append("marker")
-            .attr("id", "arrowhead")
-            .attr("refX", 100) // x-position
-            .attr("refY", 10) // y-position offset from axis
-            .attr("markerWidth", 13)
-            .attr("markerHeight", 19)
-            .attr("orient", "right")
-            .append("path")
-            .attr("d", "M2,2 L2,13 L8,7 L2, 2");
+        // axis arrows
+        let defs = this.svg.append('defs')
+
+        defs.append('marker')
+            .attr('id', 'arrowhead-right')
+            .attr('refX', 5)
+            .attr('refY', 5)
+            .attr('markerWidth', 16)
+            .attr('markerHeight', 13)
+            .append('path')
+            .attr('d', 'M 0 0 L 5 5 L 0 10')
+            .attr('stroke', 'black')
+            .attr('stroke-width', 1)
+            .attr('fill', 'none')
+
+        defs.append('marker')
+            .attr('id', 'arrowhead-up')
+            .attr('refX', 5)
+            .attr('refY', 5)
+            .attr('markerWidth', 16)
+            .attr('markerHeight', 13)
+            .attr('orient', 270)
+            .append('path')
+            .attr('d', 'M 0 0 L 5 5 L 0 10')
+            .attr('stroke', 'black')
+            .attr('stroke-width', 1)
+            .attr('fill', 'none')
+
+
+        // annotations
+        this.annotations = [
+            {
+                //below in makeAnnotations has type set to d3.annotationLabel
+                //you can add this type value below to override that default
+                type: d3.annotationCalloutCircle,
+                note: {
+                    // label: "Here's the text for 'label'",
+                    title: "Mostly Crailtap",
+                    wrap: 190 // how long label can be
+                },
+                //settings for the subject, in this case the circle radius
+                subject: {
+                    radius: 90
+                },
+                x: (this.width / 1.08), //
+                y: (this.height / 1.1), //
+                dy: -110, // y-pos for text
+                dx: -80 // x-pos for text
+            },
+            {
+                type: d3.annotationCalloutCircle,
+                note: {
+                    // label: "yep, that's smaller circle",
+                    title: "ZERO",
+                    wrap: 90
+                },
+                connector: {
+                },
+                subject: {
+                    radius: 20
+                },
+                x: 40,
+                y: 75,
+                dy: 30,
+                dx: 30
+            }].map(function (d) { d.color = "#695B5B"; return d })
+
+        let makeAnnotations = d3.annotation()
+            .type(d3.annotationLabel)
+            .annotations(this.annotations)
+
+        this.svg.append("g")
+            .attr("class", "annotation-group")
+            .call(makeAnnotations)
+
     }
 
     createScales(data) {
@@ -66,24 +134,28 @@ class Scatter {
         console.log(xMax)
         // console.log(xDomain[0] / 2)
         let xHalf = d3.scaleLinear()
-            .domain([0, d3.max(data, d => +d.comp1) / 2])
-            .range([0, this.width / 1.2]);
+            .domain([0, d3.max(data, d => +d.comp1) / 1])
+            .range([0, this.width / 1]);
 
         this.xAxis = this.plot.append("g")
-            .attr("transform", "translate(0," + this.height + ")")
-            .call(d3.axisBottom(xHalf))
+            .attr('class', 'x-axis')
+            .attr("transform", `translate(-10, ${this.height + 5})`)
+            .call(d3.axisBottom(xHalf).tickSize(0))
 
         // add arrow to x-axis
-        this.xAxis.select("path").attr("marker-end", "url(#arrowhead)");
+        this.xAxis.select("path").attr("marker-end", "url(#arrowhead-right)");
 
         // only add half y-axis
         let yHalf = d3.scaleLinear()
-            .domain([0, d3.max(data, d => +d.comp2) / 2])
-            .range([0, this.height / 1.2]);
+            .domain([0, d3.max(data, d => +d.comp2) / 1])
+            .range([0, this.height / 1.05]);
         this.yAxis = this.plot.append("g")
-            .attr("transform", "translate(0," + (this.height - (this.height / 1.2)) + ")")
-            .call(d3.axisLeft(yHalf))
+            .attr("transform", "translate(-10," + (5 + this.height - (this.height / 1.05)) + ")")
+            .call(d3.axisLeft(yHalf).tickSize(0))
             .style('font-family', 'Bungee');
+
+        // add arrow to y-axis
+        this.yAxis.select("path").attr("marker-start", "url(#arrowhead-up)")
     }
 
     addDots(data) {
@@ -174,23 +246,23 @@ class Scatter {
             .attr("text-anchor", "left")
             .style("font-size", "20px")
             .style("text-decoration", "underline")
-            .text('Similar Filmers');
+        // .text('Similar Filmers');
 
         // add x-label
         d3.select(this.element).select('svg').append('text')
-            .attr("x", this.width / 4)
+            .attr("x", this.width / 2)
             .attr("y", this.height + this.margin.bottom + this.margin.top / 1.5)
-            .style("font-size", "20px")
-            .text('Component 1');
+            .style("font-size", "0.9rem")
+            .text('PC 1');
 
         // add y-label
         d3.select(this.element).select('svg').append('text')
-            .attr("x", -((this.height)))
+            .attr("x", -((this.height / 1.4)))
             .attr("y", this.margin.left / 2)
-            .attr("dy", ".35em")
+            .attr("dy", ".05em")
             .attr('transform', 'rotate(-90)')
-            .style("font-size", "20px")
-            .text('Component 2');
+            .style("font-size", "0.9rem")
+            .text('PC 2');
     }
 
 }
