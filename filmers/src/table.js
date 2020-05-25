@@ -1,7 +1,10 @@
 makeTable = (data, columns) => {
+    let width = window.innerWidth >= 900 ?
+        window.innerWidth / 3 - 40 :
+        window.innerWidth / 2 - 40;
     let table = d3.select('#table')
         .append('table')
-        .style('width', `${window.innerWidth / 2 - 40}px`)
+        .style('width', `${width}px`)
     let thead = table.append('thead')
     let tbody = table.append('tbody');
 
