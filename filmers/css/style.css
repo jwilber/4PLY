@@ -223,7 +223,7 @@ h6 {
 }
 
 .methodology {
-  background-color: #f8f5f2;
+  background-color: rgb(217, 247, 217);
   color: #172c66;
 }
 
@@ -252,4 +252,20 @@ section {
 
 h2 {
   padding-bottom: 2%;
+}
+
+.arrow{
+		stroke-width:15;
+		stroke:#000;
+		/* stroke-dasharray:5, 5; */
+  }
+  
+#arrow{
+		stroke-width:1;
+		stroke-dasharray:0;	
+  }
+  
+g.tick {
+  opacity: 0;
+  visibility: hidden;
 }
