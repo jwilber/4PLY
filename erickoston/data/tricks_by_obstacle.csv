@@ -1,0 +1,33 @@
+obstacle,trick,count
+Rail,bs 5050,4
+Rail,fs 5050,4
+Rail,fs boardslide,4
+Rail,nollie heel noseslide,4
+Rail,nollie fs noseblunt,4
+Rail,switch fs tailslide,4
+Rail,bs boardslide,3
+Rail,bs smith,3
+Ledge,bs 5050,5
+Ledge,switch fs tailslide,5
+Ledge,bs bluntslide,4
+Ledge,bs tailslide,4
+Ledge,bs tailslide to fakie,4
+Ledge,fs 180 nosegrind,4
+Ledge,bs noseslide,3
+Ledge,bs noseslide 270,3
+Stair/Gap,switch bs 180,7
+Stair/Gap,switch bs flip,5
+Stair/Gap,switch heelflip,5
+Stair/Gap,kickflip,4
+Stair/Gap,fakie 360 flip,3
+Stair/Gap,nollie bs heelflip,3
+Stair/Gap,nollie flip,3
+Stair/Gap,switch varial heelflip,3
+Flatground,fs flip,5
+Flatground,nollie bs flip,5
+Flatground,nollie flip,4
+Flatground,switch flip,4
+Flatground,switch fs heelflip,4
+Flatground,bs flip,3
+Flatground,bs shuv-it,3
+Flatground,switch bs flip,3
