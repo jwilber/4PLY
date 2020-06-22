@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
   <script src="src/tooltip.js"></script>
   <script src="src/network.js"></script>
   <script src="src/scatter.js"></script>
@@ -63,7 +64,7 @@
         & Methodolgy</a> section below.
       <br><br>
        By virtue of our data, the basis of comparison among the filmmakers will be by proxy of who they film and include
-       in their videos, not by their direct talents behind the camera. While this isn't a homage article they deserve, it
+       in their videos, not by their direct talents behind the camera. While this isn't the homage article they deserve, it
        does provide a unique avenue of comparison among the filmmakers themselves, and illuminates some of the little communities and neighborhoods within popular skateboading.
     </p>
     <br><br>
@@ -215,12 +216,28 @@
         in dataset. For this reason, some important filmmakers, such as Danny Minnick, Matt Eversole, or Stacey Peralta, were left out (we're bummed, too).
         <br><br>
         To create the embeddings for each filmmaker in the scatter-plot, I used a technique called term-frequency inverse-document frequency (TF-IDF). The technique is usually used to compare documents to each other, by similarity of their diction. Basically, documents that share more words are more similar, and words that appear in fewer documents are weighed more heavily.
-        For our case, SF-IFF: skater-frequency inverse filmer frequency: from the global set of skaters across all
-        videos, we'll represent each filmer as the vector of skaters they film, weighted by the number of times they filmed them, as well
-        as the number of times they were filmed by other filmers. 
+        For our case we extend it to what we'll call SF-IFF: skater-frequency inverse-filmmaker frequency. Instead of representing documents by their words, we represent filmmakers by their skaters.
+        <br><br>
+        We define skater-frequency (SF) as
 
-        The output from our SF-IFF embedding for each skater is a vector that's too high dimensional to view, so I use a common dimensionality reduction technique called PCA to bring it back into two dimensions (<a href="https://en.wikipedia.org/wiki/Principal_component_analysis">read about the method here</a>).
-        to map this to a two-dimensional space, so that we
+        e.g. $$ {sf_{i,f} = \frac{\text{skater}_i \quad \text{frequency with  filmmaker}_j}{\text{total skaters with filmmaker}_j }} $$
+
+        and inverse filmer frequency (IFF) as
+        
+        e.g. $$ {iff_{i} = log(\frac{\text{Total filmmakers}}{\text{filmmakers with skater i}}) } $$
+
+        we create our embeddings for skater i in filmmaker j as:
+        
+        $$ {sf\text{-}iff_{i,f} = sf_{i, j} \times iff_i } $$
+
+
+        So now, we have a numerical way to represent each filmmaker, representing the skaters that they film.
+        Skaters who film
+        the same skater will be more similar to each other ("skater-frequency"). Skaters that appear in films from a large number of filmmakers (such as Andrew Reynolds) will have less weight than rare skaters (such as Jaewoo Bae) when calculating similarity ("inverse-filmmaker frequency").
+        <br><br>
+        The output from our SF-IFF embedding for each skater is a vector that's too high dimensional to view, so I use a common dimensionality reduction technique called PCA to bring it back into two dimensions (<a href="https://en.wikipedia.org/wiki/Principal_component_analysis">read about the method here</a>). Doing so provides us with a way to represent our filmmakers in only two-dimensions, e.g.
+        $$ {filmmaker_{f} = [x_1, x_2]} $$
+        Each dimension is a principal component with interpretations we don't need to worry about - what's important is that the filmmakers are now embedded in a space where distance is meaningful, and in one we can visualize easily (in a two-dimensional scatterplot).
       </p>
       <br>
       <br>
