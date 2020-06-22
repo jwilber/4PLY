@@ -11,7 +11,7 @@
     gtag('config', 'UA-84472984-4');
   </script>
   <meta charset="utf-8">
-  <title>Who The Filmmaker's Film</title>
+  <title>The Networks of Skateboarding Filmmakers</title>
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel='shortcut icon' type='image/x-icon' href='assets/favicon.ico' />
@@ -30,13 +30,15 @@
       <a href="http://www.4plymag.com" class="homepage">4PLY MAG</a>
     </h1>
     <h4>May 2020</h4>
-    <h1 class="title">Filmers And Skaters</h1>
+    <h1 class="title">The Networks of Skateboarding Filmmakers</h1>
     <h3>Explore each filmer's favorite cast of skaters</h3>
     <br><br>
     <img src="assets/vx.png" class="face" /><br><br>
-    <h6 style='font-family: Arial;'>By <a href="https://twitter.com/spaghettybaby"> Katherine Chen</a>
-    </h6>
-    <h6 style='font-family: Arial;'>Charts & Design:<a href="https://twitter.com/jdwlbr"> Jared Wilber</a>
+    <p></p>
+    <br><br>
+    <!-- <h6 style='font-family: Arial;'>By <a href="https://twitter.com/spaghettybaby"> Katherine Chen</a> -->
+    <!-- </h6> -->
+    <h6 style='font-family: Arial;'>By:<a href="https://twitter.com/jdwlbr"> Jared Wilber</a>
     </h6>
     <br><br>
     <br><br>
@@ -48,37 +50,27 @@
 
   <section class='section1'>
     <p>
-      Ahh, the filmers of skateboarding. To live behind the scenes, creating the brand & image of your company while
-      getting <a href="http://www.jenkemmag.com/home/2019/07/01/meet-anthony-claravall-nomad-skate-filmer/">little
+      We owe a lot to the filmmakers of skateboarding. Those whom live behind the scenes, creating the brand & image of their employer while getting <a href="http://www.jenkemmag.com/home/2019/07/01/meet-anthony-claravall-nomad-skate-filmer/">little
         recognition</a>, <a href="http://www.jenkemmag.com/home/2018/09/24/make-money-filming-skateboarding/">low
         pay</a>, and <a href="https://www.youtube.com/watch?v=plISz9gvRS0">poor treatment</a>. If only there was a way
       to pay these vanguards the respect they deserve. Something like an article in a niche, low-viewed online
-      magazine to formally recognizing their talent and sacrifice...
+      magazine to formally recognize their unsung talents, thankless hours, unending sacrifice...
       <br><br>
-      Well fret no more, valued filmers. We're here to deliver the prize. Kind of. (Not really). Instead, we'll once
-      again judge the filmers only by proxy of who they film, instead of their direct talents behind the camera.
-      (Can't win 'em all guys - sorry!). Not by their artistic talents, but by who they film. Sorry!
-
-      Although they live behind the scenes, filmers play a very important role in skateboarding.
-      By mapping their vision behind the lense into the video before I eyes, they shape their own personal brand, as
-      well as define the aesthetic of the skaters and brands they represent.<br>
-      But hey, that's alright, because this article won't go into any big theories about the role of filmmakers in
-      skateboarding (not that size matters!).
-      Instead, it serves as a piece to explore some of the filmers themselves, providing one avenue of comparison into
-      the beloved filmers, and shining some light into the little neighborhoods of skateboarding.
+      Fret no more! We're here to deliver exactly that. Well, kind of. Using a dataset I scraped from
+      skatevideosite.com, I've ammassed a <a
+        href="https://github.com/jwilber/4ply_data/blob/master/skatevideosite/skaters_and_videos.csv">collection</a> of
+      skateboarding filmmakers, alongside the skaters they've included in their video. To be clear, I am defining 'filmmaker' as the show runner of the project: the chief creative force who is often the editor (and sometimes the actual camera operator), but not always. Additionally, skatevideosite data is user-curated, so it isn't always perfect or consistent. Read more about data quality in the <a href="#data-and-methodology">Data
+        & Methodolgy</a> section below.
+      <br><br>
+       By virtue of our data, the basis of comparison among the filmmakers will be by proxy of who they film and include
+       in their videos, not by their direct talents behind the camera. While this isn't a homage article they deserve, it
+       does provide a unique avenue of comparison among the filmmakers themselves, and illuminates some of the little communities and neighborhoods within popular skateboading.
     </p>
+    <br><br>
     <p>
-      There is no filmmaking in skateboarding without skateboarders. I guess this is obvious. Probably did not
-      warrant the first sentence of this paragraph. But here we are.
-
-      So let's see who these bad boys film.
-      Moving on: Below we represent each filmmaker as a <a
-        href="https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)">network graph</a>,
-      with each circle(node). The size of the circles are based on how many times they showed up in a video from the
-      corresponding filmmaker. We see two main types of structure below: highly connected graphs (representing
-      filmers that typically film the same group of skaters), and low-connection graphs with separate
-      neighborhoods
-      (e.g. Transworld filmers Chris Ray and Jon Holland, who have the one-and-done relationship with skaters.)
+      Below each filmmaker is represented as a <a
+        href="https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)">network graph</a>. Each node (circle)
+      represents a skater, sized by how many videos they were featured in by the corresponding filmmaker.
       The edges connect skaters that appeared in films together.
       Hover over each skater to see who they share connections with, and click-and-drag them around for a better view.
     </p>
@@ -141,86 +133,94 @@
     <section class='section2'>
       <h2>Filmer Favorites</h2>
       <p class='main-text'>
-        From the graphs above, it's clear that many filmermakers have a favorite 'cast' of favorites they film.
-        Sometimes this
-        is a result of the filmers preferring to film their friends. Other times, this is because the filmers are
-        emlpoyed
-        by a company with a fairly standard cast of skaters.
+        From the graphs above, it's clear that many filmmakers have a group of skaters that they often work with.
+        Sometimes this is a result of the filmers preferring to film their own crew of friends. Other times,
+        it's because the filmmakers work on behalf of a company, so they often film the same people.
+        In any case, I've always wondered which of skateboarding's filmmakers feature the most consistent cast of
+        skaters in their videos?
         <br><br>
-        In any case, I've always wondered, which filmers are the
-        most have the most consistent cast of skaters in their videos?
-
-        To answer the question, below I've ranked the filmers by what I call the <i>uniformity index</i>:
-        calculated by dividing the total number of parts a filmer has filmed by the unique number of skaters they've
-        filmed.
-        A value of one implies that no skaters were filmed more than once, while higher values indicate a consistent
-        cast of
-        skaters filmed across multiple video-parts.
-        a broader range of skaters
-        .</p>
+        To answer the question, below I've ranked the filmers by a straightforward metric of consistency,
+        calculated by dividing the total number of parts a filmmaker has filmed by the unique number of skaters
+        they've filmed. (You can think of it as the average number of parts a filmmaker films for the skaters they film). A value of 1 for the metric, the lowest value it can take on, indicates that no skaters
+        had more than one part with the filmmaker. Higher values indicate that the filmer tends to film each skater
+        multiple times:
+        that they prefer to film the same group of skaters.
+        <br><br>
+        The results are shown in the table below:</p>
       <br><br>
       <div id="table"></div>
       <br><br>
       <p class='main-text'>
-        The confirm our metric makes sense, let's look at both ends of the distribution (you can confirm the results
-        visually as well,
-        by looking at the network graph above). The top 3 filmmakers, Kevin
-        Barnett, Beagle, and Aaron Meza, respectively,
-        head
-        the video content for three of the most familial teams (Toy Machine, Baker, and Girl, respectively). At the
-        bottom
-        end of the distribution, we see filmers for independent skateboard publications (Transworld and Digital):
-        Chris Ray, Bill Weiss, and Jon Holland. As these publications employ a unique cast of skaters in each video,
-        these
-        results are expected.
         <br><br>
-        To be honest, I'd expect Grant Yansura (WKND) and Yoan Toallandier (Magenta) to be higher up the list. I was
-        also
-        surprised to see Greg Hunt lower than Dan Wolfe, as the latter has filmed a
+        With a max value of 3.27, no filmmaker has an overwhelming preference of skaters they desire to film.
+        The top 3 filmmakers, Kevin Barnett, Beagle, and Aaron Meza, head the video content for three of the most
+        familial teams in skateboarding (Toy Machine, Baker, and Girl, respectively). Jackson Casey, with his usual
+        crew from Arizona and the Midwest, barely edges French Fred out for a place in the top four. All the way at the
+        bottom of our table, we see Chris Ray, Bill Weiss, and Jon Holland, filmmakers for skateboarding media companies Transworld and Digital. As these companies employ a unique cast of skaters in each video, their values of 1 are expected.
+        <br><br>
+        Values in the middle of the table are more interesting. Dan Wolfe, who sits roughly in the middle of the table, 
+        was the staff filmer for both Element and Real, although he filmed a number of influential independent films as well. Given the massive number of skaters he's filmed, it's somewhat surprisng seeing him sit higher in the rankings than people like Greg Hunt of Pontus Alv, people I'd just expect to be more consistent, I suppose.
       </p>
       <br><br>
     </section>
     <section class='section3'>
       <h2>Filmer Similarity</h2>
       <p class='main-text'>
-        There are many ways to idenfity similar filmers. The style of their filming. The cameras they use.
-        Keeping in line with the theme of this article, we'll investigate similarity as a metric of who the filmmakers
-        include
-        in their videos.
-        Which filmers are the most similar, <i>with respect to whom they film?</i> To find out, we'll tweak
-        some common information retreival techniques to our unique use case. In particular, we'll use TF-IDF (or,
-        for our case, SF-IFF: skater-frequency inverse filmer frequency): from the global set of skaters across all
-        videos,
-        we'll represent each filmer as the vector of skaters they film, weighted by the number of times they filmed
-        them, as well
-        as the number of times they were filmed by other filmers. Next, we'll use dimensionality reduction techniques
-        to map this to a two-dimensional space, so that we may more easily visualize the data (e.g. in the scatter
-        plot below). As each filmer is now embedded as a representation of the skaters they film, the distance between
-        the filmers represents a meaningful measure of similarity.
-        And the results make sense:
-        Basically, we'll represent each filmer as the vector of skaters they filmed.
-        .</p>
+        Which filmers are the most similar, <i>with respect to whom they film?</i>
+        This is obviously not the first thing we think of when comparing filmers - we'd normally look at things like
+        the style of their filming, the cameras they use, the intricacies of their edits, etc.
+        However, it's an application of the data we have on hand, and provides an additional means of comparison
+        among filmmakers.
+         <br><br>
+  
+
+        To answer our question, we'll borrow some embedding and dimensionality-reduction techniques from the field of information
+        retrieval, and apply them in a unique way to our use case (learn more about what I did in the <a href="#data-and-methodology">data & methodoly section</a>). The results are below.
+        <br>
+        <br>
+        Basically, each filmmaker is represented as a single dot in the scatter plot below. 
+        The distance between each filmmaker is meaningful: 
+        the closer two dots (filmmakers) are to each other, the more similar are the skaters that they've filmed. 
+        Filmmakers that are further away from each other include more different sets of skaters in their videos.
+        Whereas our first chart gave us a view into the skater communities within each filmmaker, this chart provides us with a view into the neighborhoods amongst our filmmakers themselves.
+        This structure of data allows us to view clusters of similar filmmakers.
+        </p>
       <br><br>
       <div id="scatter"></div>
       <br>
       <p class='main-text'>
-        Towards the bottom right, we see a cluster of filmers that tend to 111
-
-        - bottom right: CrailTap filmers.
-        - Top Left: BlackBox filmers.
-        - mike manzoori and beagle have a large overlap (bake)
+        The most obvious cluster is all of the Crailtap dudes in the bottom right corner. It's not surprising to see
+        these guys grouped amongst each other: Crailtap skaters tend to act as a pretty tight crew, and their teams don't really change much over time. Their grouped distance from other videographers also suggests that the skaters are fairly insular and keep to themselves, preferring not to 'cross-pollinate' and appear in videos without each other too often.
+        <br><br>
+        About as far away as you can get from this group, nested at the very upper-left corner of the plot,  Blackbox affiliates Jamie Thomas and Mike Gilbert are grouped very close together. Theres is another group of fairly insular skaters.
+        <br><br>
+        Towards the bottom-left of the chart, we see filmmakers with quite a bit of overlap in whom they choose to film.
+        If you're bored, go through the filmmakers and view their network graphs above, finding the source of intersections for yourself. 
+        <br><br>
+        While this article isn't the homage that skateboarding filmmakers deserve, I hope it's an interesting piece that shines more light into the important work they do and some of the legacy they've left on skateboarding.
       </p>
     </section>
+    <center>
+      <img class="gif" src="assets/film.gif">
+    </center>
 
     <section class='methodology'>
-      <h2>Data & Methodology</h2>
+      <h2 id="data-and-methodology">Data & Methodology</h2>
       <p class='main-text'>The data was collected from (the now basically
         defunct) skatevideosite.com.
         The data comprises videos up until July 2019. As the data in skatevideosite.com is
-        user-entered, we can't guarantee total accuracy. For this reason, some of our mapping from filmmakers to skaters
+        user-entered, If can't guarantee total accuracy. For this reason, some of our mapping from filmmakers to skaters
         may not be perfect (corrections were made where identified). Additionally, not all filmmakers featued in the
         dataset were included - lesser-known filmers were excluded, as were filmers with less than four unique videos
-        in dataset.
+        in dataset. For this reason, some important filmmakers, such as Danny Minnick, Matt Eversole, or Stacey Peralta, were left out (we're bummed, too).
+        <br><br>
+        To create the embeddings for each filmmaker in the scatter-plot, I used a technique called term-frequency inverse-document frequency (TF-IDF). The technique is usually used to compare documents to each other, by similarity of their diction. Basically, documents that share more words are more similar, and words that appear in fewer documents are weighed more heavily.
+        For our case, SF-IFF: skater-frequency inverse filmer frequency: from the global set of skaters across all
+        videos, we'll represent each filmer as the vector of skaters they film, weighted by the number of times they filmed them, as well
+        as the number of times they were filmed by other filmers. 
+
+        The output from our SF-IFF embedding for each skater is a vector that's too high dimensional to view, so I use a common dimensionality reduction technique called PCA to bring it back into two dimensions (<a href="https://en.wikipedia.org/wiki/Principal_component_analysis">read about the method here</a>).
+        to map this to a two-dimensional space, so that we
       </p>
       <br>
       <br>
@@ -233,7 +233,6 @@
     </footer>
   </div>
   <!--! end of #container -->
-  <!-- <script src="src/multipleline.js"></script> -->
   <script src="src/table.js"></script>
   <script>
     // create new network plot

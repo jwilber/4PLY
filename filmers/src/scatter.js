@@ -77,7 +77,7 @@ class Scatter {
                 type: d3.annotationCalloutCircle,
                 note: {
                     // label: "Here's the text for 'label'",
-                    title: "Mostly Crailtap",
+                    title: "Heavy Crailtap Influence",
                     wrap: 190 // how long label can be
                 },
                 //settings for the subject, in this case the circle radius
@@ -105,7 +105,7 @@ class Scatter {
                 y: 75,
                 dy: 30,
                 dx: 30
-            }].map(function (d) { d.color = "#695B5B"; return d })
+            }].map(function (d) { d.color = "black"; return d })
 
         let makeAnnotations = d3.annotation()
             .type(d3.annotationLabel)
