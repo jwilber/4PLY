@@ -111,9 +111,11 @@ class Scatter {
             .type(d3.annotationLabel)
             .annotations(this.annotations)
 
-        this.svg.append("g")
+        if (window.innerWidth >= 900) {
+            this.svg.append("g")
             .attr("class", "annotation-group")
             .call(makeAnnotations)
+        }
 
     }
 
