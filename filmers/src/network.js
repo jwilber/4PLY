@@ -192,7 +192,7 @@ class NetworkGraph {
         this.highlightNode = (d) => {
             let content = `<p>Skater: ${d.name}</p>`
             content += `<p>Count: ${d.cnt}</p>`
-            this.tooltip.showTooltip(content, d3.event)
+            // this.tooltip.showTooltip(content, d3.event)
             if (this.showEdges) {
                 this.edges
                     .style('stroke', l => (l.source.id === d.id || l.target.id === d.id) ? '#555' : '#ddd')
