@@ -1,2 +1,2 @@
 # 4PLY
-4PLY Magazine
+www.4PLYMAG.com
