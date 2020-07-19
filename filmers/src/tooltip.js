@@ -20,7 +20,7 @@ const floatingTooltip = (tooltipId, width) => {
   function showTooltip(content, event) {
     tt.style('opacity', 1.0)
       .html(content)
-      .style('font-size', '10rem')
+      .style('font-size', '1rem')
 
     updatePosition(event);
   }

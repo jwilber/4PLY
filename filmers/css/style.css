@@ -86,7 +86,7 @@ footer p {
 }
 
 .tooltip p.main {
-  font-size: 3rem;
+  font-size: .5rem;
   text-align: center;
   padding:0;
   margin:0;
@@ -95,6 +95,7 @@ footer p {
 hr.tooltip-hr {
   padding:3px 0 0 0;
   margin:3px 0 3px 0;
+  font-size: .5rem;
 }
 header {
   margin-top: 1px;
@@ -143,8 +144,8 @@ td {
 }
 
 .title {
-  font-size: 8rem;
-  line-height: 8rem;
+  font-size: 6rem;
+  line-height: 6rem;
   padding: 2rem;
   /* background-color: rgb(189, 247, 189); */
   /* color: rgb(223, 103, 123); */
@@ -178,15 +179,15 @@ h6 {
 /* Mobile Stuff */
 @media screen and (max-width: 900px) {
   p {
-    max-width: 98%;
+    max-width: 85%;
   }
 
   .title {
-    font-size: 6rem;
-    max-width: 100%;
+    font-size: 2rem;
+    max-width: 90%;
     padding: 0px;
     margin-top: 5%;
-    line-height: 6rem;
+    line-height: 2rem;
   }
 
   th {
@@ -207,11 +208,11 @@ h6 {
   }
 
   .title {
-    font-size: 4rem;
-    max-width: 100%;
-    margin-top: 5%;
+    font-size: 2rem;
+    max-width: 85%;
     padding: 0px;
-    line-height: 4rem;
+    margin-top: 5%;
+    line-height: 2rem;
   }
 }
 
@@ -275,4 +276,8 @@ g.tick {
   width: 25%;
   height: 25%;
   margin: 25px;
+}
+
+#network-tooltip {
+  font-size: .5rem;
 }
