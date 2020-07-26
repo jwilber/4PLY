@@ -119,3 +119,8 @@ section {
 h2 {
     margin: 0px;
 }
+
+#main-wrapper {
+  max-width: 100%;
+  margin: 20px auto;
+}

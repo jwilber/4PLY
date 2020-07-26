@@ -1,23 +1,24 @@
 // set the dimensions and margins of the graph
-const barMargin = {top: 20, right: 10, bottom: 50, left: 220},
+const barMargin = {top: 20, right: 10, bottom: 50, left: 230},
     barWidth = 800 - barMargin.left - barMargin.right,
-    barHeight = 500 - barMargin.top - barMargin.bottom;
+    barHeight = 800 - barMargin.top - barMargin.bottom;
 
 // append the svg object to the body of the page
 let svg = d3.select("#my_dataviz")
   .append("svg")
-    // .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", `0 0 1500 1500`)
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", `0 0 ${(barWidth + barMargin.left + barMargin.right)}
+    ${(barHeight + barMargin.top + barMargin.bottom)}`)
   .append("g")
     .attr("transform",
           "translate(" + barMargin.left + "," + barMargin.top + ")");
 
 // Parse the Data
-d3.csv("data/top_tricks.csv", function(data) {
-
+d3.csv("data/toptricks.csv", function(data) {
+  console.log(data)
   // Add X axis
   let x = d3.scaleLinear()
-    .domain([0, 10])
+    .domain([0, d3.max(data, d => +d.count)])
     .range([ 0, barWidth]);
 
   let xAxis = d3.axisBottom(x).tickSize(0);
@@ -46,7 +47,7 @@ d3.csv("data/top_tricks.csv", function(data) {
     .attr("y", function(d) { return y(d.trick); })
     .attr("width", function(d) { return x(d.count); })
     .attr("height", y.bandwidth() )
-    .attr('fill', "teal")
+    .attr('fill', "coral")
     .style('stroke', 'teal')
     .style('stroke-width', 7)
 
@@ -57,7 +58,7 @@ d3.select('svg')
   .append('text')
   .attr('x', (barWidth + barMargin.right) / 2)
   .attr('y', barMargin.top / 1.1)
-  .html("Koston Has No 'Standout' Trick")
+  .html(`“Dude, no way would I do a pressure flip.”`)
   .style('font-family', "Bungee")
   .style('font-size', '1.2rem')
 
