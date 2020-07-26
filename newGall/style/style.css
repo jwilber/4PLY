@@ -348,17 +348,12 @@ p, ul, li {
 }
 
 .face {
-  /*animation: face-spin infinite 2s linear;*/
-  height: 10rem;
-  /*margin-left: 20px;*/
-  /*margin-bottom: 10px;*/
+  height: 15rem;
   -webkit-animation: face-spin 3.5s infinite linear;
 	-moz-animation: face-spin 3.5s infinite linear;
 	animation: face-spin 3.5s infinite linear;
 	display: block;
 	position: relative;
-	/*top: 7px;                  */
-	/*left: calc(50% + 20px);    */
 }
 
 @keyframes face-spin {
