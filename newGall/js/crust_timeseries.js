@@ -48,7 +48,7 @@ d3.select('#lineSvg')
 
 
 //Read the data
-d3.csv("../data2/crust_df.csv", function (data) {
+d3.csv("../data2/crust_df.csv", data => {
 
   // group the data: I want to draw one line per group
   const sumstat = d3.nest() // nest function allows to group the calculation per level of a factor
@@ -66,10 +66,16 @@ d3.csv("../data2/crust_df.csv", function (data) {
   // Add Y axis
   const y = d3.scaleLinear()
     // .domain([0, d3.max(data, d => +d.count)])
-    .domain([-0.1, 65])
+    .domain([-0.1, d3.max(data, d => +d.count) + 5])
     .range([chartHeight, 0]);
-  obstaclesChart.append("g")
-    .call(d3.axisLeft(y));
+  // obstaclesChart.append("g")
+  //   .attr('class', 'yaxis')
+  //   .attr('transform', `translate(${chartWidth + 10}, 0)`)
+  //   .call(d3.axisRight(y));
+
+    obstaclesChart.append("g")
+    .attr('class', 'yaxis')
+    .call(d3.axisRight(y).tickSize(chartWidth + 10));
 
   const keys = sumstat.map(d => d.key[0].toUpperCase() + d.key.slice(1))
 
@@ -77,6 +83,18 @@ d3.csv("../data2/crust_df.csv", function (data) {
   const color = d3.scaleOrdinal()
     .domain(keys)
     .range(['#e9778b', 'orange', 'teal'])
+
+  console.log(sumstat);
+  	// Add circles
+    obstaclesChart.selectAll('circle.counts')
+      .data(data)
+      .enter()
+      .append('circle')
+      .attr('class', 'counts')
+      .attr('r', 8)
+      .attr('cx', d => x(d.year))
+      .attr('cy', d => y(+d.count))
+      .style('fill', 'tan');
 
 
   // Draw the line
@@ -86,9 +104,10 @@ d3.csv("../data2/crust_df.csv", function (data) {
     .append("path")
     .attr('class', 'ts')
     .attr("fill", "none")
-    .attr("stroke", d => color(d.key))
+    .attr("stroke", 'tan')
+    .attr('stroke-linejoin', 'round')
     .attr('active', true)
-    .attr("stroke-width", d => 4)
+    .attr("stroke-width", d => 8)
     .style('opacity', .85)
     // .attr("stroke-chartWidth", 1.5)
     .attr("id", d => d.key)
@@ -96,7 +115,8 @@ d3.csv("../data2/crust_df.csv", function (data) {
       return d3.line()
         .x(d => x(d.year))
         .y(d => y(+d.count))
-        .curve(d3.curveCardinal.tension(1.5))
+        // .curve(d3.curveCatmullRom)
+        .curve(d3.curveStepBefore)
         (d.values)
     })
 

@@ -21,17 +21,16 @@ d3.csv("data/toptricks.csv", function(data) {
     .domain([0, d3.max(data, d => +d.count)])
     .range([ 0, barWidth]);
 
-  let xAxis = d3.axisBottom(x).tickSize(0);
+  let xAxis = d3.axisBottom(x).tickSize(barHeight);
   svg.append("g")
     .attr('class', 'x-axis')
-    .attr("transform", "translate(0," + barHeight + ")")
     .call(xAxis);
 
   // Y axis
   let y = d3.scaleBand()
     .range([ 0, barHeight])
-    .domain(data.map(function(d) { return d.trick; }))
-    .padding(.4);
+    .domain(data.map(d => d.trick))
+    .padding(.14);
 
   svg.append("g")
     .attr('class', 'y-axis')
@@ -44,11 +43,13 @@ d3.csv("data/toptricks.csv", function(data) {
     .enter()
     .append("rect")
     .attr("x", x(0) )
-    .attr("y", function(d) { return y(d.trick); })
-    .attr("width", function(d) { return x(d.count); })
-    .attr("height", y.bandwidth() )
-    .attr('fill', "coral")
-    .style('stroke', 'teal')
+    .attr("y", d => y(d.trick))
+    .attr("width", d => x(d.count))
+    .attr("height", y.bandwidth())
+    .attr('rx', 6)
+    .attr('ry', 6)
+    .attr('fill', "tan")
+    .style('stroke', 'darkbrown')
     .style('stroke-width', 7)
 
 })
