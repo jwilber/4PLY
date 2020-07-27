@@ -1,32 +1,30 @@
-let USER_VIDEO = "Inhabitants";
+var USER_VIDEO = "101_Falling_Down";
 
 
 function getValKey() {
     return "grp" + USER_VIDEO;
 }
 
-let VAL_KEY = getValKey();
-let grp_vals = {};
+var VAL_KEY = getValKey();
+var grp_vals = {};
 
-let delay_per_unit = 30;
-let bg_color = "antiquewhite";
-let cell_color = 'tan';
+var delay_per_unit = 30,
+    bg_color = "#f7f6f1";
 
 // Dimensions of single chart.
-let margin = { top: 0, right: 0, bottom: 0, left: 6 };
-let width = 134 - margin.left - margin.right;
-let height = 134 - margin.top - margin.bottom; 
+var margin = { top: 0, right: 0, bottom: 0, left: 6 },
+    width = 134 - margin.left - margin.right,
+    height = 134 - margin.top - margin.bottom; 
     
 
 
 
-d3.csv("data2/GALL_percentages.csv", function(error, data) {
+d3.csv("data/square_pie.csv", type, function(error, data) {
     if (error) throw error;
-    console.log(data)
+
     
 
-    let valfields = d3.keys(field_details);
-    console.log('valfields', valfields)
+    var valfields = d3.keys(field_details);
     
     // Make data accessible by grp key
     data.forEach(function(o) {
@@ -37,9 +35,9 @@ d3.csv("data2/GALL_percentages.csv", function(error, data) {
     //
     // Setup grid.
     //
-    let cells = [];
+    var cells = [];
     d3.select("#grid").text().split("\n").forEach(function(line, i) {
-      let re = /\w+/g, m;
+      var re = /\w+/g, m;
       while (m = re.exec(line)) cells.push({
         name: m[0],
         selected: 1,
@@ -53,17 +51,17 @@ d3.csv("data2/GALL_percentages.csv", function(error, data) {
     // Make a square pie for each field.
     //
     valfields.forEach(function(v,i) {
-        let grid_width = d3.max(cells, d => d.x) + 2;
-        let grid_height = d3.max(cells, d => d.y) + 2;
-        let cell_size = width / grid_width;
-        let holder_width = width + margin.left + margin.right;
+        var grid_width = d3.max(cells, function(d) { return d.x; }) + 2,
+            grid_height = d3.max(cells, function(d) { return d.y; }) + 2,
+            cell_size = width / grid_width,
+            holder_width = width + margin.left + margin.right;
 
             
         let chart_perc = grp_vals[VAL_KEY][v];
 
 
         // create chartholder
-        let div = d3.select("#charts").append("div")
+        var div = d3.select("#charts").append("div")
             .attr("id", "holder"+v)
             .attr("class", "chartholder")
             .style("width", holder_width+"px");
@@ -75,32 +73,65 @@ d3.csv("data2/GALL_percentages.csv", function(error, data) {
             .text(`${field_details[v].desc}: ${chart_perc}%`);
     
         // add svg
-        let svg = div.append("svg")
+        var svg = div.append("svg")
             .attr("class", "squarepie")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
           .append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-        let cell = svg.append("g")
+        var cell = svg.append("g")
             .attr("id", "vf"+v)
             .attr("transform", "translate(" + width/2 + "," + height/2 + ")")
           .selectAll(".cell")
             .data(cells)
           .enter().append("g")
             .attr("class", "cell")
-            .attr("transform", d => "translate(" + (d.x-grid_width/2) * cell_size + "," + (d.y-grid_height/2) * cell_size + ")");
+            .attr("transform", function(d) { 
+                return "translate(" + (d.x-grid_width/2) * cell_size + "," + (d.y-grid_height/2) * cell_size + ")"; 
+            });
+
+
+        // cell.append("circle")
+        //     .attr("x", -cell_size / 2)
+        //     .attr("y", -cell_size / 2)
+        //     .attr('r', cell_size * 0.5)
+        //     .attr('stroke', 'grey')
+        //     .attr('stroke-width', 0.5)
+        //     .style("fill", function(d,i) {
+        //         if (i < (100-grp_vals[VAL_KEY][v])) {
+        //             return bg_color;
+        //         } else {
+        //             return field_details[v].color;
+        //         }
+        //     });
 
         cell.append("rect")
             .attr("x", -cell_size / 2)
             .attr("y", -cell_size / 2)
-            .attr('width', cell_size+2)
-            .attr('height', cell_size+2)
-            .attr('rx', 3)
+            .attr('width', cell_size)
+            .attr('height', cell_size)
             .attr('stroke', 'grey')
-            .attr('stroke-width', .5)
-            .attr("fill", (d, i) => (i < (100-grp_vals[VAL_KEY][v])) ? bg_color : cell_color)
+            .attr('stroke-width', 0.5)
+            .style("fill", function(d,i) {
+                if (i < (100-grp_vals[VAL_KEY][v])) {
+                    return bg_color;
+                } else {
+                    return field_details[v].color;
+                }
+            });
 
+
+        // d3.select(`#holder${v}`)
+        //     .append('g')
+        //     .attr('transform', 'translate(1000, 100')
+        //     .append("p")
+        //     .attr('class', 'squareText')
+        //     .attr("id", "myNewParagrap")
+        //     .append("text")
+        //     .text(`${chart_perc}%`)
+        //     .style('padding-top', 0)
+        //     .style('margin-top', 0)
     
     }); // @end forEach()
     
@@ -125,14 +156,14 @@ d3.csv("data2/GALL_percentages.csv", function(error, data) {
     //
     function update() {
     
-        let prev_val_key = VAL_KEY;
+        var prev_val_key = VAL_KEY;
         VAL_KEY = getValKey();
                 
         // Update charts.
         valfields.forEach(function(v,k) {
             
-            let start_i = 100 - grp_vals[prev_val_key][v];
-            let end_i = 100 - grp_vals[VAL_KEY][v];
+            var start_i = 100 - grp_vals[prev_val_key][v];
+            var end_i = 100 - grp_vals[VAL_KEY][v];
             let new_perc = grp_vals[VAL_KEY][v];
 
             // update title
@@ -140,7 +171,17 @@ d3.csv("data2/GALL_percentages.csv", function(error, data) {
                 .select("h3")
                 .transition()
                 // .delay(800)
-            .text(`${field_details[v].desc}: ${new_perc}%`);          
+            .text(`${field_details[v].desc}: ${new_perc}%`);
+
+            // d3.select(`#holder${v}`)
+            //     .select("#myNewParagrap")
+            //     .transition()
+            //     .delay(900)
+            // .text(`${new_perc}%`)
+            // .style('padding-top', 0)
+            // .style('margin-top', 0)
+            // // .style('font-size', '1.2rem')
+                
             
             d3.select("#vf"+v).selectAll(".cell rect")
                 .transition()
@@ -149,14 +190,14 @@ d3.csv("data2/GALL_percentages.csv", function(error, data) {
                     
                     // Decreasing
                     if (start_i < end_i) {
-                        let curr_delay = (i - start_i) * delay_per_unit;
+                        var curr_delay = (i - start_i) * delay_per_unit;
                         curr_delay = Math.max(curr_delay, 0);
                         return curr_delay;
                     } 
             
                     // Increasing
                     else if (start_i > end_i) {
-                        let curr_delay = (start_i - i) * delay_per_unit;
+                        var curr_delay = (start_i - i) * delay_per_unit;
                         curr_delay = Math.max(curr_delay, 0);
                         return curr_delay;
                     }
@@ -166,8 +207,13 @@ d3.csv("data2/GALL_percentages.csv", function(error, data) {
                         return 0;
                     }
                 })
-                .attr("fill", (d, i) => (i < (100-grp_vals[VAL_KEY][v])) ? bg_color : cell_color)
-           
+                .style("fill", function(d,i) {
+                    if (i < (100-grp_vals[VAL_KEY][v])) {
+                        return bg_color;
+                    } else {
+                        return field_details[v].color;
+                    }
+                })
 
         }); // @end forEach()
         
@@ -177,3 +223,15 @@ d3.csv("data2/GALL_percentages.csv", function(error, data) {
     
     
 }); // @end d3.tsv()
+
+
+
+function type(d) {
+    d3.keys(d).map(function(key) {
+        if (key !== "video") {
+            d[key] = +d[key];
+        }
+    });
+    
+    return d;
+}
