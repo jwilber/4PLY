@@ -16,36 +16,15 @@ const obstaclesChart = d3.select("#crusttime")
   .attr("transform",
     "translate(" + lineMargin.left + "," + lineMargin.top + ")");
 
-// d3.select('#lineSvg')
-//   .append('text')
-//   .attr('x', (chartWidth + lineMargin.right) / 2.5)
-//   .attr('y', lineMargin.top *2)
-//   .html("TIMELINE: CRUST OVER TIME")
-//   .style('font-family', "Bungee Inline")
-//   .style('font-size', '1rem')
-
 // add x-axis
 d3.select('#lineSvg')
-  .append("text")    
-  .attr('x', (chartWidth + lineMargin.right + lineMargin.left) / 2)  
-  .attr('y', chartHeight + lineMargin.top + 50)       
+  .append("text")
+  .attr('x', (chartWidth + lineMargin.right + lineMargin.left) / 2)
+  .attr('y', chartHeight + lineMargin.top + 50)
   .style("text-anchor", "left")
   .style('font-family', "Bungee")
   .style('font-size', '.02rem')
   .text("Year");
-
-// text label for the y axis
-  // d3.select('#lineSvg')
-  //   .append("text")
-  //   .attr("transform", "rotate(-90)")
-  //   .attr("y", lineMargin.left / 2)
-  //   .attr("x",0 - (chartHeight / 2))
-  //   .attr("dy", "1em")
-  //   .style("text-anchor", "middle")
-  //   .style('font-family', "LeagueGothicRegular")
-  //   .style('font-size', '1.4rem')
-  //   .text("Count"); 
-
 
 //Read the data
 d3.csv("../data2/crust_df.csv", data => {
@@ -73,7 +52,7 @@ d3.csv("../data2/crust_df.csv", data => {
   //   .attr('transform', `translate(${chartWidth + 10}, 0)`)
   //   .call(d3.axisRight(y));
 
-    obstaclesChart.append("g")
+  obstaclesChart.append("g")
     .attr('class', 'yaxis')
     .call(d3.axisRight(y).tickSize(chartWidth + 10));
 
@@ -85,16 +64,16 @@ d3.csv("../data2/crust_df.csv", data => {
     .range(['#e9778b', 'orange', 'teal'])
 
   console.log(sumstat);
-  	// Add circles
-    obstaclesChart.selectAll('circle.counts')
-      .data(data)
-      .enter()
-      .append('circle')
-      .attr('class', 'counts')
-      .attr('r', 8)
-      .attr('cx', d => x(d.year))
-      .attr('cy', d => y(+d.count))
-      .style('fill', 'tan');
+  // Add circles
+  obstaclesChart.selectAll('circle.counts')
+    .data(data)
+    .enter()
+    .append('circle')
+    .attr('class', 'counts')
+    .attr('r', 8)
+    .attr('cx', d => x(d.year))
+    .attr('cy', d => y(+d.count))
+    .style('fill', 'tan');
 
 
   // Draw the line

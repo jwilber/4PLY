@@ -257,20 +257,20 @@ hr {
 		border-spacing: 0;
 		width: 100%;
 		margin: auto;
-		font-size: .7rem;
+		font-size: .9rem;
 	}
 		th {
 			padding: 4px;
-			border-bottom: 5px solid #d0d0d0;
+			border-bottom: 5px solid antiquewhite;
 			text-align: right;
 			font-family: Bungee;
-			font-size: .8rem;
+			font-size: .9rem;
 		}
 		td {
 			padding: 4px;
-			border-bottom: 1px solid #d0d0d0;
+			border-bottom: 1px solid antiquewhite;
 			text-align: right;
-			font-size: .7rem;
+			font-size: .8rem;
 		}
 
 .left {
@@ -278,7 +278,7 @@ hr {
 }
 
 .x-axis {
-	font-size: .5rem;
+	font-size: .75rem;
 }
 
 /*bar chart multiples*/
@@ -419,7 +419,8 @@ header a {
 
 .section2 {
     padding-top: 5%;
-    background-color: #abd1c6;
+	/* background-color: #abd1c6; */
+	background-color: antiquewhite;
     color: #001e1d;
 }
 
@@ -432,6 +433,20 @@ header a {
 }
 
 section {
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 10%;
 }
+
+.section-header {
+	padding-bottom: 30px;
+}
+
+#table {
+	padding: 5%;
+}
+
+.tooltip{
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  }
