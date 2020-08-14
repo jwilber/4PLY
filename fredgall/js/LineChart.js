@@ -45,7 +45,7 @@ class LineChart {
 			.style("pointer-events", "none")
 			.style('font-size', '1rem')
 			.style('text-align', 'left')
-			.style('font-weight', 'bold')
+			.style('font-weight', 'bold');
 
 		d3.csv('data2/obs_by_time.csv', data => {
 			this.data = data;
@@ -89,6 +89,11 @@ class LineChart {
 				d3.max(currData, d => +d.cnt) + 3])
 			.range([this.HEIGHT, 0]);
 
+		this.lineActual = d3.line()
+			.x(function (d) { return x(d.year) })
+			.y(function (d) { return y(+d.cnt) })
+			.curve(d3.curveStepBefore)
+
 		const xAxisCall = d3.axisBottom(x).ticks(11).tickFormat(d3.format("d"));
 		this.xAxisGroup.transition().duration(500).call(xAxisCall)
 
@@ -116,7 +121,7 @@ class LineChart {
 		circles = circles.merge(circlesEnter);
 
 		circles.transition()
-			.duration(1000)
+			.duration(800)
 			.attr('cx', d => x(d.year))
 			.attr('cy', d => y(+d.cnt))
 			.attr('r', 12)
@@ -158,11 +163,11 @@ class LineChart {
 
 		line.transition()
 			.duration(1000)
-			.attr("d", d3.line()
-				.x(function (d) { return x(d.year) })
-				.y(function (d) { return y(+d.cnt) })
-				.curve(d3.curveStepBefore)
-			)
+			.attrTween('d', function (d) {
+				var previous = d3.select(this).attr('d');
+				var current = that.lineActual(d);
+				return d3.interpolatePath(previous, current);
+			})
 			.style('stroke', 'tan')
 			.style("stroke-width", 7)
 			.style("fill", "none")
@@ -170,6 +175,7 @@ class LineChart {
 			.attr('stroke-linejoin', 'round')
 			.attr('active', true)
 			.style('opacity', .85)
+
 
 	}
 

@@ -15,21 +15,26 @@
   <title>All The Gall</title>
   <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
   <script src="js/d3.v4.min.js"></script>
+  <script src="https://unpkg.com/d3-interpolate-path/build/d3-interpolate-path.min.js"></script>
+
 </head>
 <header>
 
-  <center>
-    <h1>
-      <a href="http://www.4plymag.com" class="homepage">4PLY MAG</a>
-    </h1>
-    <br>
-    <h4>August 2020</h4>
-    <h1 class='main-title'>Living Legend: Fred Gall</h1>
+  <section class='section-intro'>
+    <center>
+      <h1>
+        <a href="http://www.4plymag.com" class="homepage">4PLY MAG</a>
+      </h1>
+      <br>
+      <h4>August 2020</h4>
+      <h1 class='main-title'>Living Legend: Fred Gall</h1>
 
-    <img src="assets/laptopFred.png" class="face" /><br>
-    <h4>By <a href="https://warmupzone.wordpress.com/">Peter Glover</a></h4>
-    <h4>Charts & Code: <a href="https://www.twitter.com/jdwlbr">Jared Wilber</a></h4>
-  </center>
+      <img src="assets/laptopFred.png" class="face" /><br>
+      <h4>By <a href="https://warmupzone.wordpress.com/">Peter Glover</a></h4>
+      <h4>Charts & Code: <a href="https://www.twitter.com/jdwlbr">Jared Wilber</a></h4>
+      <br><br><br><br>
+    </center>
+  </section>
 
   <div id="main-wrapper">
 
@@ -62,7 +67,7 @@
     Freddy featuring dozens of accompanying photos. [Links]
   </p>
 
-  <h2>[Gif of Fred’s 360flip in the middle of a fight]</h2>
+
   <br><br>
   <br><br>
   <div id="my_dataviz"></div>
@@ -73,7 +78,7 @@
     sort of embankment. As we scroll down the list, we see all the familiar Freddy moves one would expect: Backside
     wallrides, treflips, frontside 50s, switch frontside 180s, and backside 360s.
     <br><br>
-    [gif of Freddy ollieing into that NYC spot with cornrows]
+    <img src="images/gall_ny.gif" class='center'>
     <br><br>
     When we group similar tricks together, it is interesting to see some maneuvers rise in the rankings. When all
     wallride variations are combined (and there were 22 unique variations of wallrides) it tops the list at 52
@@ -81,16 +86,23 @@
     5-0 grinds; but when we total up all variations that include a frontside 5-0 component (such as the popular switch
     frontside 180 to frontside 5-0), it is one of his more signature tricks.
     <br><br>
+  </p>
+  <h1 class='section-header'>Fred's Least Favorites</h1>
+  <p class="story">
     What you aren’t seeing in the chart above are the tricks that Freddy just didn’t do that often, or ever. And some of
     those might surprise you.
     <br><br>
     We chatted with Freddy and mentioned some of these missing tricks.
     <li>
-      <ul><b>Smith Grinds</b> - nearly 700 tricks and the only thing even resembling a smith grind is a single smith
+      <ul><b class='uline'>Smith Grinds</b> - nearly 700 tricks and the only thing even resembling a smith grind is a
+        single smith
         stall in a pool. Says Fred: “I had one smith grind ever in my entire life. It was a back smith down the Phoenix
-        Hubba and it was in a Habitat tour section of a video or something.” We’ve searched and still haven’t found it.
+        Hubba and it was in a Habitat tour section of a video or something.”
+        <span class='strike'>We've searched and still haven't found it.</span> We found it:
+        <br>
+        <img src="gall_smith.gif" class='center'>
       </ul>
-      <ul><b>Hardflips</b> - Unless we’re talking nollie, there aren’t any to be found.
+      <ul><b class='uline'>Hardflips</b> - Unless we’re talking nollie, there aren’t any to be found.
       </ul>
       <ul><b>FS Crooked Grinds</b> - Not once. Ever. Says Fred: “I can’t do those to save my life.”
       </ul>
@@ -100,7 +112,7 @@
       [fakie kickflip GIF]
       <ul><b>
           Switch 50-50s</b> - Freddy’s switch 50-50 on a handrail at Philadelphia’s City Hall is somewhat legendary, but
-        we couldn’t find a photo or clip of it anywhere. Says Fred: “Its in Thrasher: On The Road. You will find that
+        we couldn’t find a photo or clip of it anywhere. Says Fred: “It's in Thrasher: On The Road. You will find that
         there. I have kinda a little part in there.” Since that video isn’t part of our dataset, there are zero switch
         50-50 grinds anywhere. None. Says Fred: “I really didn’t switch 50 unless it’s a rail.”
       </ul>
@@ -112,10 +124,10 @@
 </section>
 <section class='section2'>
   <h1>
-    insert TIMELINE: OBSTACLES OVER TIME (Transition, Ledges, Stairs?, Handrails?)
+    OBSTACLES OVER TIME
   </h1>
+  <select id="metric-select" style='margin-left: 30%;'></select>
   <center>
-    <select id="metric-select"></select>
     <div id="linechart" div></div>
   </center>
   <p>
@@ -138,7 +150,7 @@
 </section>
 <section class='section1'>
   <h1 class='section-header'>TIMELINE: CRUST OVER TIME</h1>
-  <!-- <div id="crusttime"></div> -->
+  <img src="images/crust.gif" class='center'>
   <p>
     <b>A Note on Crust</b>:
     We thought it relevant to record if the trick is at a spot or obstacle that should be defined as “crust”.
@@ -152,7 +164,6 @@
     <div id="crusttime"></div>
   </center>
   <p>
-    [gif of Fred skating some crusty spot]
     <br><br>
     <b>The Rise of Crust</b>: Nowadays, Freddy’s skating is synonymous with rugged, dilapidated, shit obstacles. But it
     wasn’t always so. When all the Gall is taken into account, we are only looking at crust about 25% of the time. If
@@ -165,8 +176,7 @@
   </p>
 </section>
 <section class='section2'>
-  <h1>TABLE - ALL VIDEOS (video/year, length, # of tricks, # of lines, # of switch/nollie, # of wallrides, # of flip
-    tricks, # of cinched pants)
+  <h1>Some Video Numbers
   </h1>
   <div id='table'></div>
 
@@ -180,14 +190,12 @@
     including impossibles and shove-its) have remained surprisingly present even as his taste for transition has grown
     over the years.
     <br><br>
-    [wallride nollie big spin GIF]
+    <img src="images/wallride_nollie.gif" class='center'>
+
   </p>
 </section>
 <section class='section1'>
-  <h1>WAFFLE - TRICK PERCENTAGES BY VIDEO</h1>
-  <h1 class="centered goth">Video Breakdown</h1>
-
-
+  <h1>Video Breakdown</h1>
   <!-- <p class="desc centered">Select video part.</p> -->
   <div id="update">
 
@@ -245,24 +253,28 @@
     data:
   </p>
   <br><br>
-  <li>
-    <ul><b>No SlowMo</b>: For whatever reason Freddy’s skating is rarely presented in slow motion. In fact there are
+  <ul>
+    <li style='display: list-item;'><b>No SlowMo</b>: For whatever reason Freddy’s skating is rarely presented in slow
+      motion. In fact there are
       just 12 slow-mo tricks in his entire catalog. If you take Eastern Exposure 3 out of the mix, you’re watching
       Freddy at regular speed nearly 99% of the time. For comparison, 17% of Jim Greco’s career tricks have been in slow
-      motion [link to Jenkem article]. </ul>
+      motion [link to Jenkem article]. </li>
 
-    <ul><b>All Sides</b>: When it comes to lips, ledges, or spinning rotation, Fred shows no favorites and only does
-      things frontside 7.9% more often than backside. {If I am interpreting the fs and bs perc correctly}</ul>
-    <ul><b>Manny-Busters</b>: Fred Gall keeps all four wheels on the ground (or wall). There were only 3 wheelies total…
+    <li style='display: list-item;'><b>All Sides</b>: When it comes to lips, ledges, or spinning rotation, Fred shows no
+      favorites and only does
+      things frontside 7.9% more often than backside. {If I am interpreting the fs and bs perc correctly}</li>
+    <li style='display: list-item;'><b>Manny-Busters</b>: Fred Gall keeps all four wheels on the ground (or wall). There
+      were only 3 wheelies total…
       all of nose variety.
-      Something about foot down correlating to transition and ditch skating here, maybe.</ul>
-    <ul><b>Switching It Up</b>: Overall, Freddy attacked switch (or nollie) about 27% of the time. But this is heavily
+      Something about foot down correlating to transition and ditch skating here, maybe.</li>
+    <li style='display: list-item;'><b>Switching It Up</b>: Overall, Freddy attacked switch (or nollie) about 27% of the
+      time. But this is heavily
       skewed towards the earlier part of his career. From Eastern Exposure 2 (1994) through Photosynthesis (2000), 47.5%
       of his tricks were started switch or nollie. This fell off a good deal for the latter portion of his career as
       post-Photosynthesis Habitat Freddy averages a 15.4% switch/nollie rate. (Note: this doesn’t include tricks that
       start in normal stance but are executed mostly switch (such as this fabulous backside 180 to switch backside 5-0
-      in SF [photo]).</ul>
-  </li>
+      in SF [photo]).</li>
+  </ul>
   <p>
     Click around and see what other of Freddy’s secrets can be revealed with the power of data visualization.
   </p>
@@ -276,52 +288,80 @@
   </p>
 </section>
 <section class='section2'>
-  <h1>ICON LIST - MISCELLANEOUS FACTS
-  </h1>
-  <li>
-    <ul>694 - tricks logged for this article</ul>
-    <ul>185 - tricks done on a ledge of some sort - that’s 26.7%</ul>
-    <ul>123 - unique ledge tricks</ul>
-    <ul>82 - total number of lines</ul>
-    <ul>76 - tricks where Fred landed into some kind of embankment</ul>
-    <ul>68 - sum of all blunts (slides, stalls, ledges, transition, nose, switch, and otherwise)</ul>
-    <ul>52 - combined tricks on banked ledges and bank to ledges</ul>
-    <ul>35 - unique variations of 5-0 grinds</ul>
-    <ul>30 - number of tricks filmed at Love Park in the 1990s</ul>
-    <ul>0 - number of tricks filmed at Love Park after the year 2000</ul>
-    <ul>26 - slams (not including when Fred intentionally lands in water) [slam Gif]</ul>
-    <ul>19 - 360flips, not including fakie, nollie, or switch</ul>
-    <ul>16 - 360flips as part of a line. Says Fred: “Yeah. The go-to trick.”</ul>
-    <ul>1 - nollie 360flips</ul>
-    <ul>16 - total tricks done on hubbas</ul>
-    <ul>12 - unique tricks done on hubbas</ul>
-    <ul>3 - tricks done on Hubba Hideout</ul>
-    <ul>15 - tricks done with one or both pant legs cinched up</ul>
-    <ul>15 - clips of Freddy breaking stuff (Includes blowing things up with explosives)</ul>
-    <ul>11 - tricks filmed with that long, luxurious hair flowing. Says Fred: “I just did it randomly and then the
+  <h1>Quick Facts</h1>
+  <ul class='facts'>
+    <li class='fact'><b class='uline'>694</b> - Tricks logged for this article
+    </li>
+    <li class='fact'><b class='uline'>185</b> - Tricks done on a ledge of some sort - that’s 26.7%</li>
+    <li class='fact'><b class='uline'>123</b> - Unique ledge tricks</li>
+    <li class='fact'><b class='uline'>82</b> - Total number of lines</li>
+    <li class='fact'><b class='uline'>76</b> - Tricks where Fred landed into some kind of embankment</li>
+    <li class='fact'><b class='uline'>68</b> - Sum of all blunts (slides, stalls, ledges, transition, nose, switch, and
+      otherwise)
+    </li>
+    <li class='fact'><b class='uline'>52</b> - Combined tricks on banked ledges and bank to ledges</li>
+    <li class='fact'><b class='uline'>35</b> - Unique variations of 5-0 grinds</li>
+    <li class='fact'><b class='uline'>30</b> - Number of tricks filmed at Love Park in the 1990s</li>
+    <li class='fact'><b class='uline'>26</b> - Slams (not including when Fred intentionally lands in water)
+      <img src="images/fall.gif" class='center'>
+    </li>
+    <li class='fact'><b class='uline'>19</b> - 360flips, not including fakie, nollie, or switch</li>
+    <li class='fact'><b class='uline'>16</b> - 360flips as part of a line. Says Fred: “Yeah. The go-to trick.”</li>
+    <li class='fact'><b class='uline'>16</b> - Total tricks done on hubbas</li>
+    <li class='fact'><b class='uline'>15</b> - Tricks done with one or both pant legs cinched up</li>
+    <li class='fact'><b class='uline'>15</b> - Clips of Freddy breaking stuff (Includes blowing things up with
+      explosives)</li>
+    <li class='fact'><b class='uline'>12</b> - Unique tricks done on hubbas</li>
+    <li class='fact'><b class='uline'>11</b> - Tricks filmed with that long, luxurious hair flowing. Says Fred: “I just
+      did it
+      randomly and then
+      the
       filmers would be like ‘Yo. Do this one with your hair down. It’ll just look cool.’ So that’s how that works.”
-      [leather vest photo]</ul>
-    <ul>8 (or something like that) - number of beers drank before Wawa hoagies </ul>
-    <ul>5 - switch kickflips (including this legendary one into a switch bs tailslide) [GIF]</ul>
-    <ul>4 - nosebluntslides total - and only 1 was on transition</ul>
-    <ul>3 - number of Black Sabbath songs. Says Fred: “I’m fully into that shit.”</ul>
-    <ul>2 - times Fred is nearly hit by a car on camera</ul>
-    <ul>1 - tricks at Burnside</ul>
-    <ul>0 - total fucks given</ul>
+      [leather vest photo]</li>
+    <li class='fact'><b class='uline'>8</b> (Or something like that) - number of beers drank before Wawa hoagies </li>
+    <li class='fact'><b class='uline'>5</b> - Switch kickflips (including this legendary one into a switch bs tailslide)
+      [GIF]</li>
+    <li class='fact'><b class='uline'>4</b> - Nosebluntslides total - and only 1 was on transition</li>
+    <li class='fact'><b class='uline'>3</b> - Number of Black Sabbath songs. Says Fred: “I’m fully into that shit.”</li>
+    <li class='fact'><b class='uline'>3</b> - Tricks done on Hubba Hideout</li>
+    <li class='fact'><b class='uline'>2</b> - Times Fred is nearly hit by a car on camera</li>
+    <li class='fact'><b class='uline'>1</b> - Tricks at Burnside</li>
+    <li class='fact'><b class='uline'>1</b> - Nollie 360flips</li>
+    <li class='fact'><b class='uline'>0</b> - Number of tricks filmed at Love Park after the year 2000</li>
 
-    <ul>Hidden Gem : Pasado, Presente, Futuro - a 2009 video by frontside skateshop in Medellin, Colombia that features
-      a full TIME Freddy part. LINK to WUZ article.</ul>
-    <ul>Couldn’t find it on the internet: the footage of Fred attempting wallrides on a moving bus in Thailand [photo]
-    </ul>
-    <ul>Not part of this dataset but still pretty cool: Freddy bombs Bam’s driveway early in the morning [IG link]</ul>
-    <ul>Don’t call it a comeback: Freddy is currently working hard on a new part (or two) that should be out later this
-      year.</ul>
-    <ul>Our favorite Freddy trick: This street spine blunt to bs 180 transfer to accidental grind. Says Fred: “That
+
+    <li class='fact'><b class='uline'>Hidden Gem</b>: Pasado, Presente, Futuro - a 2009 video by frontside skateshop in
+      Medellin,
+      Colombia that
+      features
+      a full TIME Freddy part. LINK to WUZ article.</li>
+    <li class='fact'><b class='uline'>Couldn’t find it on the internet</b>: the footage of Fred attempting wallrides on
+      a moving bus
+      in Thailand
+      [photo]
+    </li>
+    <li class='fact'><b class='uline'>Not part of this dataset but still pretty cool</b>: Freddy bombs Bam’s driveway
+      early in the
+      morning [IG
+      link]</li>
+    <li class='fact'><b class='uline'>Don’t call it a comeback</b>: Freddy is currently working hard on a new part (or
+      two) that
+      should be out
+      later
+      this
+      year.</li>
+    <li class='fact'><b class='uline'>Our favorite Freddy trick</b>: This street spine blunt to bs 180 transfer to
+      accidental grind.
+      Says Fred:
+      “That
       grind was a full accident. But I landed it and was like ‘yo, I just grinded’. Fuck it, we’ll use it anyway.” [gif]
-    </ul>
-    <ul>Freddy's favorite Freddy trick: “The tricks I did on the Hubba Hideout were really important. So I guess maybe
-      the switch crook was my favorite.” [photo]</ul>
-  </li>
+    </li>
+    <li class='fact'><b class='uline'>Freddy's favorite Freddy trick</b>: “The tricks I did on the Hubba Hideout were
+      really
+      important. So I guess
+      maybe
+      the switch crook was my favorite.” [photo]</li>
+  </ul>
   <p>
     Thanks to Fred for the input. If you can point us to that bus-wallride or backside smith tour footage, we would
     appreciate it. Let us know what skater you would like to see analyzed next.
