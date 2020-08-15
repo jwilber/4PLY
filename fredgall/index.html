@@ -172,7 +172,8 @@
     <br><br>
   </p>
   <center>
-    <div id="crusttime"></div>
+    <!-- <div id="crusttime"></div> -->
+    <div id="crust-timeseries"></div>
   </center>
   <p>
     <br><br>
@@ -459,13 +460,31 @@
 <script type="text/javascript" src="js/Waffle.js"></script>
 <script type="text/javascript" src="js/Table.js"></script>
 <script type="text/javascript" src="js/LineChart.js"></script>
-<script type="text/javascript" src="js/crust_timeseries.js"></script>
 <script>
   const line = new LineChart({
     data: "data/obstacle_timeseries.csv",
     element: "#linechart",
-    metric: "ledge"
+    metric: "Bank",
+    dropdown: '#scatter-tooltip',
+    xValue: 'year',
+    yValue: 'cnt'
   });
+
+  const line2 = new LineChart({
+    data: "data/crust_timeseries.csv",
+    element: "#crust-timeseries",
+    metric: "crust",
+    dropdown: '#scatter-tooltip',
+    xValue: 'year',
+    yValue: 'count',
+    title: 'Crust Over Time'
+  });
+
+  // const line2 = new LineChart({
+  //   data: "data/obstacle_timeseries.csv",
+  //   element: "#crust-chart",
+  //   metric: "ledge"
+  // });
 
   d3.select('#metric-select').on('change', function (d) {
     let metric = d3.select('#metric-select').property('value');

@@ -3,10 +3,14 @@ class LineChart {
 		this.data = opts.data;
 		this.element = opts.element;
 		this.metric = opts.metric;
+		this.dropdown = opts.dropdown;
+		this.xValue = opts.xValue;
+		this.yValue = opts.yValue;
+		this.title = opts.title;
 
 		const that = this;
 
-		this.MARGIN = { TOP: 10, BOTTOM: 70, LEFT: 100, RIGHT: 30 };
+		this.MARGIN = { TOP: 10, BOTTOM: 70, LEFT: 80, RIGHT: 30 };
 		this.WIDTH = 800 - this.MARGIN.RIGHT - this.MARGIN.LEFT;
 		this.HEIGHT = 500 - this.MARGIN.TOP - this.MARGIN.BOTTOM;
 
@@ -24,19 +28,24 @@ class LineChart {
 			.attr('text-anchor', 'middle')
 			.text("Year")
 
-		this.title = this.svg.append('text')
-			.attr('x', this.WIDTH / 2)
-			.attr('y', this.MARGIN.TOP)
-			.attr('text-anchor', 'middle')
-			.style('text-decoration', 'underline')
+
+		if (this.title) {
+			console.log(this.title)
+			this.svg.append('text')
+				.attr('x', this.WIDTH / 2)
+				.attr('y', this.MARGIN.TOP - 2)
+				.attr('text-anchor', 'middle')
+				.style('text-decoration', 'underline')
+				.text(this.title);
+		}
 
 
 		this.svg.append('text')
-			.attr('x', - this.WIDTH / 2)
-			.attr('y', -50)
+			.attr('x', - this.HEIGHT / 2)
+			.attr('y', -30)
 			.attr('text-anchor', 'middle')
 			.text('Count')
-			.attr('transform', 'rotate(-90)')
+			.attr('transform', 'rotate(-90)');
 
 		// preset axes
 		this.xAxisGroup = this.svg.append('g')
@@ -46,7 +55,7 @@ class LineChart {
 
 		this.tooltip = d3.select(this.element)
 			.append('div')
-			.attr('id', 'scatter-tooltip')
+			.attr('id', this.dropdown)
 			.attr('class', 'tooltip')
 			.style("opacity", 0)
 			.style("pointer-events", "none")
@@ -56,17 +65,19 @@ class LineChart {
 
 		d3.csv(this.data, data => {
 			this.data = data;
-			let metrics = [...new Set(data.map(d => d.obstacle))];
-			// dropdown to select metric
-			let currMetric = metrics[0];
-			d3.select('#metric-select')
-				.selectAll('options')
-				.data(metrics)
-				.enter()
-				.append('option')
-				.html(d => d);
+			if (this.dropdown) {
+				this.metrics = [...new Set(data.map(d => d.obstacle))];
+				// dropdown to select metric
+				d3.select('#metric-select')
+					.selectAll('options')
+					.data(this.metrics)
+					.enter()
+					.append('option')
+					.html(d => d);
+			}
 
-			this.draw(currMetric);
+
+			this.draw(this.metric);
 		})
 
 
@@ -74,23 +85,23 @@ class LineChart {
 
 	draw(currMetric) {
 		const that = this;
-		this.title.text(`${currMetric} Counts`)
+		// this.title.text(`${currMetric} Counts`)
 		// set current data
 		let currData = this.data.filter(d => d.obstacle == currMetric);
 
 		const x = d3.scaleLinear()
-			.domain([d3.min(currData, d => d.year) - 1,
-			d3.max(currData, d => d.year)])
+			.domain([d3.min(currData, d => d[this.xValue]) - 1,
+			d3.max(currData, d => d[this.xValue])])
 			.range([0, this.WIDTH]);
 
 		const y = d3.scaleLinear()
 			.domain([0,
-				d3.max(currData, d => +d.cnt) + 3])
+				d3.max(currData, d => +d[this.yValue]) + 3])
 			.range([this.HEIGHT, 0]);
 
 		this.lineActual = d3.line()
-			.x(function (d) { return x(d.year) })
-			.y(function (d) { return y(+d.cnt) })
+			.x(function (d) { return x(d[that.xValue]) })
+			.y(function (d) { return y(+d[that.yValue]) })
 			.curve(d3.curveStepBefore)
 
 		const xAxisCall = d3.axisBottom(x).ticks(11).tickFormat(d3.format("d"));
@@ -102,8 +113,8 @@ class LineChart {
 
 		// handle circles
 		// update circles
-		let circles = this.svg.selectAll('circle.cnt')
-			.data(currData, d => d.year);
+		let circles = this.svg.selectAll(`circle.${this.yValue}`)
+			.data(currData, d => d[this.xValue]);
 
 		circles.exit().remove();
 
@@ -113,23 +124,23 @@ class LineChart {
 			.attr('class', 'cnt')
 			.attr('fill', 'tan')
 			.attr('r', 1)
-			.attr('cx', d => x(d.year))
-			.attr('cy', d => y(+d.cnt))
+			.attr('cx', d => x(d[that.xValue]))
+			.attr('cy', d => y(+d[that.yValue]))
 
 
 		circles = circles.merge(circlesEnter);
 
 		circles.transition()
 			.duration(800)
-			.attr('cx', d => x(d.year))
-			.attr('cy', d => y(+d.cnt))
-			.attr('r', 12)
+			.attr('cx', d => x(d[that.xValue]))
+			.attr('cy', d => y(+d[that.yValue]))
+			.attr('r', 10)
 			.attr('stroke', 'tan')
 
 		circles
 			.on("mouseover", function (d) { // show it and update html
 				let pointData = d;
-				d3.selectAll('circle.cnt')
+				d3.selectAll(`circle.${this.yValue}`)
 					.style('opacity', .2)
 				d3.selectAll('path.met')
 					.style('opacity', .2)
@@ -138,12 +149,12 @@ class LineChart {
 				that.tooltip
 					.transition()
 					.style("opacity", .9);
-				that.tooltip.html(function (d) { return pointData.cnt })
+				that.tooltip.html(function (d) { return pointData[that.yValue] })
 					.style("left", (d3.event.pageX) + "px")
 					.style("top", (d3.event.pageY - 28) + "px");
 			})
 			.on("mouseout", function (d) {
-				d3.selectAll('circle.cnt')
+				d3.selectAll(`circle.${this.yValue}`)
 					.style('opacity', 1)
 				d3.selectAll('path.met')
 					.style('opacity', 1)

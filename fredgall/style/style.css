@@ -340,7 +340,7 @@ hr {
 	font-size: 8.8rem;
 	margin-top: 2rem;
 	height:100%;
-	-webkit-text-stroke: 10px saddlebrown;
+	-webkit-text-stroke: 8px saddlebrown;
 }
 
 #four {
@@ -378,6 +378,34 @@ a.homepage {
 	margin-bottom: 12px;
 }
 
+@media screen and (max-width: 1400px) {
+	.main-title {
+		font-size: 4rem;
+		margin-top: 7%;
+	}
+	.face {
+		height: 6rem;
+	}
+	.table {
+		max-width: 85%;
+	}
+	p, li, ul {
+		font-size: 17px;
+		max-width: 85%;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	.main-title {
+	font-size: 8.8rem;
+	margin-top: 2rem;
+	height:100%;
+	-webkit-text-stroke: 3px saddlebrown;
+}
+}
+
 
 @media screen and (max-width: 900px) {
 	.main-title {
@@ -390,19 +418,22 @@ a.homepage {
 	.table {
 		max-width: 85%;
 	}
-	p {
+	p, li, ul {
 		font-size: 17px;
 		max-width: 85%;
 	}
 
-	ul {
-		font-size: 17px;
-		max-width: 85%;
-	}
 
 	h1 {
 		font-size: 3rem;
 	}
+
+	.main-title {
+	font-size: 8.8rem;
+	margin-top: 2rem;
+	height:100%;
+	-webkit-text-stroke: 3px saddlebrown;
+}
 }
 
 b{font-weight:bold;}
