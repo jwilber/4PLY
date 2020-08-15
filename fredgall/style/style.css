@@ -378,64 +378,6 @@ a.homepage {
 	margin-bottom: 12px;
 }
 
-@media screen and (max-width: 1400px) {
-	.main-title {
-		font-size: 4rem;
-		margin-top: 7%;
-	}
-	.face {
-		height: 6rem;
-	}
-	.table {
-		max-width: 85%;
-	}
-	p, li, ul {
-		font-size: 17px;
-		max-width: 85%;
-	}
-
-	h1 {
-		font-size: 3rem;
-	}
-
-	.main-title {
-	font-size: 8.8rem;
-	margin-top: 2rem;
-	height:100%;
-	-webkit-text-stroke: 3px saddlebrown;
-}
-}
-
-
-@media screen and (max-width: 900px) {
-	.main-title {
-		font-size: 4rem;
-		margin-top: 7%;
-	}
-	.face {
-		height: 6rem;
-	}
-	.table {
-		max-width: 85%;
-	}
-	p, li, ul {
-		font-size: 17px;
-		max-width: 85%;
-	}
-
-
-	h1 {
-		font-size: 3rem;
-	}
-
-	.main-title {
-	font-size: 8.8rem;
-	margin-top: 2rem;
-	height:100%;
-	-webkit-text-stroke: 3px saddlebrown;
-}
-}
-
 b{font-weight:bold;}
 
 g.tick line {
@@ -530,4 +472,120 @@ li.fact {
 .fact .uline {
 	font-family: Bungee;
 	font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1400px) {
+	.main-title {
+		font-size: 4rem;
+		margin-top: 7%;
+	}
+	.face {
+		height: 6rem;
+	}
+	.table {
+		max-width: 85%;
+	}
+
+	.table th, td {
+		font-size: .5rem;
+	}
+	p {
+		font-size: 17px;
+		max-width: 85%;
+	}
+
+	li, ul {
+		font-size: 17px;
+		max-width: 95%;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	img {
+		max-width: 80%;
+	}
+
+	.center {
+		margin-right: auto;
+		max-width: 80%;
+		width: 85%;	
+		border: 3px solid tan;
+		max-height: 300px;
+	}
+
+	.fact .uline {
+		font-size: 1rem;
+	}
+
+	ul.facts {
+		padding-left: 10%;
+		max-width: 100%;
+	}
+
+	.main-title {
+	font-size: 8.8rem;
+	margin-top: 2rem;
+	height:100%;
+	-webkit-text-stroke: 3px saddlebrown;
+}
+}
+
+
+@media screen and (max-width: 900px) {
+
+	.face {
+		height: 6rem;
+	}
+	.table {
+		max-width: 85%;
+	}
+
+	.table th, td {
+		font-size: .5rem;
+	}
+	p {
+		font-size: 17px;
+		max-width: 85%;
+	}
+
+	li, ul {
+		font-size: 17px;
+		max-width: 95%;
+	}
+
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	img {
+		max-width: 80%;
+	}
+
+	.center {
+		margin-right: auto;
+		max-width: 80%;
+		width: 85%;	
+		border: 3px solid tan;
+		max-height: 300px;
+	}
+
+	.fact .uline {
+		font-size: 1rem;
+	}
+
+	ul.facts {
+		padding-left: 10%;
+		max-width: 100%;
+	}
+
+	.main-title {
+		font-size: 4.8rem;
+		max-width: 90%;
+		margin-top: 2rem;
+		height:100%;
+		-webkit-text-stroke: 3px saddlebrown;
+	}
 }
