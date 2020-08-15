@@ -25,7 +25,7 @@ class LineChart {
 			.text("Year")
 
 		this.svg.append('text')
-			.attr('x', - this.HEIGHT / 2)
+			.attr('x', - this.WIDTH / 2)
 			.attr('y', -50)
 			.attr('text-anchor', 'middle')
 			.text('Count')

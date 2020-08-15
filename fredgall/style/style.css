@@ -48,6 +48,7 @@ body {
 	font-size: 1.5rem;
 	color: #262520;
 	/*background-color: rgb(255,192,203, .7);*/
+	background-color: antiquewhite;
 }
 
 .goth {
@@ -62,8 +63,10 @@ a {
 #main-wrapper {
 	max-width: 100%;
 	margin: 20px auto;
-	background-color: tan;
-	color: black;
+	background-color: antiquewhite;
+	background-color: saddlebrown;
+	color: antiquewhite;
+	color: rgb(249, 188, 96);
 	margin-bottom: 0px;
 }
 
@@ -94,6 +97,7 @@ h1 {
 	text-align: center;
 	max-width: 80%;
 	margin: auto;
+	padding-top: 20px;
 }
 h4 {
 	font-size: .8rem;
@@ -133,7 +137,7 @@ p, li {
 }
 
 hr {
-	max-width: 20%;
+	max-width: 5%;
 }
 
 .desc {
@@ -335,7 +339,7 @@ hr {
 	font-size: 8.8rem;
 	margin-top: 2rem;
 	height:100%;
-	-webkit-text-stroke: 3px brown;
+	-webkit-text-stroke: 10px saddlebrown;
 }
 
 #four {
@@ -411,7 +415,9 @@ path.domain {
 }	
 
 header {
-    background-color: rgb(0, 70, 67);
+	/* background-color: rgb(0, 70, 67); */
+	/* background-color: antiquewhite; */
+	background-color: saddlebrown;
     color: rgb(249, 188, 96);
     /* padding-bottom: 10%;
     padding-top: 5%; */
@@ -486,5 +492,10 @@ li.fact {
 .section-intro {
 	padding-bottom: 0px;
 	background: url(../images/fight.gif);
-	background-repeat: 2, 2;
+	/* background-repeat: repeat-y; */
+}
+
+.fact .uline {
+	font-family: Bungee;
+	font-size: 1.2rem;
 }
