@@ -105,7 +105,7 @@
         Hubba and it was in a Habitat tour section of a video or something.”
         <span class='strike'>We've searched and still haven't found it.</span> We found it:
         <br>
-        <img src="gall_smith.gif" class='center'>
+        <img src="images/gall_smith.gif" class='center'>
       </ul>
       <ul><b class='uline'>Hardflips</b> - Unless we’re talking nollie, there aren’t any to be found.
       </ul>
@@ -455,15 +455,14 @@
 </script>
 
 
-<script type="text/javascript" src="js/barplot.js"></script>
-<script type="text/javascript" src="js/multiBars.js"></script>
-<script type="text/javascript" src="js/squarepie.js"></script>
+<script type="text/javascript" src="js/Barplot.js"></script>
+<script type="text/javascript" src="js/Waffle.js"></script>
 <script type="text/javascript" src="js/Table.js"></script>
 <script type="text/javascript" src="js/LineChart.js"></script>
 <script type="text/javascript" src="js/crust_timeseries.js"></script>
 <script>
   const line = new LineChart({
-    data: "data2/obs_by_time.csv",
+    data: "data/obstacle_timeseries.csv",
     element: "#linechart",
     metric: "ledge"
   });
@@ -475,7 +474,7 @@
   })
 
   const table = new Table({
-    data: 'data2/table.csv',
+    data: 'data/table.csv',
     element: '#table',
     columns: ['Video', 'Year', 'Duration', 'Tricks', 'Lines',
       'Switch or Nollie', 'wWllrides', 'Flip Tricks', 'Cinched Pants']

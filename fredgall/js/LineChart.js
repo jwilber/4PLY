@@ -24,6 +24,13 @@ class LineChart {
 			.attr('text-anchor', 'middle')
 			.text("Year")
 
+		this.title = this.svg.append('text')
+			.attr('x', this.WIDTH / 2)
+			.attr('y', this.MARGIN.TOP)
+			.attr('text-anchor', 'middle')
+			.style('text-decoration', 'underline')
+
+
 		this.svg.append('text')
 			.attr('x', - this.WIDTH / 2)
 			.attr('y', -50)
@@ -47,18 +54,9 @@ class LineChart {
 			.style('text-align', 'left')
 			.style('font-weight', 'bold');
 
-		d3.csv('data2/obs_by_time.csv', data => {
+		d3.csv(this.data, data => {
 			this.data = data;
-			let metrics = [
-				'bank',
-				'flat',
-				'gap',
-				'ledge',
-				'rail',
-				'stairs',
-				'transition',
-				'wall'
-			];
+			let metrics = [...new Set(data.map(d => d.obstacle))];
 			// dropdown to select metric
 			let currMetric = metrics[0];
 			d3.select('#metric-select')
@@ -76,6 +74,7 @@ class LineChart {
 
 	draw(currMetric) {
 		const that = this;
+		this.title.text(`${currMetric} Counts`)
 		// set current data
 		let currData = this.data.filter(d => d.obstacle == currMetric);
 

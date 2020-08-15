@@ -20,7 +20,7 @@ let height = 134 - margin.top - margin.bottom;
 
 
 
-d3.csv("data2/GALL_percentages.csv", function (error, data) {
+d3.csv("data/square_pie.csv", function (error, data) {
     if (error) throw error;
     let valfields = d3.keys(field_details);
     // Make data accessible by grp key
