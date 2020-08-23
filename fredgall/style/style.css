@@ -254,7 +254,7 @@ hr {
 .table {
 	max-width: 70%;
 	margin: auto;
-	overflow-x:auto;
+	overflow-x:scroll;
 	padding-top: 1rem;
 	padding-bottom: 3rem;
 	font-family: Bungee;

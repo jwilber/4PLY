@@ -16,8 +16,10 @@ class LineChart {
 
 		this.svg = d3.select(this.element)
 			.append('svg')
+			.attr("preserveAspectRatio", "xMinYMin meet")
 			.attr('width', this.WIDTH + this.MARGIN.LEFT + this.MARGIN.RIGHT)
 			.attr('height', this.HEIGHT + this.MARGIN.TOP + this.MARGIN.BOTTOM)
+			.attr("viewBox", `0 0 ${this.WIDTH + this.MARGIN.LEFT + this.MARGIN.RIGHT} ${this.HEIGHT + this.MARGIN.TOP + this.MARGIN.BOTTOM}`)
 			.append('g')
 			.attr('transform', `translate(${this.MARGIN.LEFT}, ${this.MARGIN.TOP})`);
 
