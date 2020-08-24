@@ -11,7 +11,8 @@ class LineChart {
 		const that = this;
 
 		this.MARGIN = { TOP: 10, BOTTOM: 70, LEFT: 80, RIGHT: 30 };
-		this.WIDTH = (window.innerWidth / 1.3) - this.MARGIN.RIGHT - this.MARGIN.LEFT;
+		const width = window.innerWidth < 1000 ? (window.innerWidth / 1.05) : (window.innerWidth / 1.3)
+		this.WIDTH = width - this.MARGIN.RIGHT - this.MARGIN.LEFT;
 		this.HEIGHT = (window.innerHeight / 2) - this.MARGIN.TOP - this.MARGIN.BOTTOM;
 
 		this.svg = d3.select(this.element)
@@ -32,7 +33,6 @@ class LineChart {
 
 
 		if (this.title) {
-			console.log(this.title)
 			this.svg.append('text')
 				.attr('x', this.WIDTH / 2)
 				.attr('y', this.MARGIN.TOP - 2)
@@ -77,7 +77,6 @@ class LineChart {
 					.append('option')
 					.html(d => d);
 			}
-
 
 			this.draw(this.metric);
 		})
@@ -136,7 +135,7 @@ class LineChart {
 			.duration(800)
 			.attr('cx', d => x(d[that.xValue]))
 			.attr('cy', d => y(+d[that.yValue]))
-			.attr('r', 10)
+			.attr('r', window.innerWidth < 1000 ? 5 : 10)
 			.attr('stroke', 'tan')
 
 		circles
@@ -181,7 +180,7 @@ class LineChart {
 				return d3.interpolatePath(previous, current);
 			})
 			.style('stroke', 'tan')
-			.style("stroke-width", 7)
+			.style("stroke-width", window.innerWidth < 1000 ? 4 : 7)
 			.style("fill", "none")
 			.style('pointer-events', 'none')
 			.attr('stroke-linejoin', 'round')

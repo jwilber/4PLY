@@ -534,6 +534,10 @@ li.fact {
 
 
 @media screen and (max-width: 900px) {
+	.tick {
+		font-family: Bungee;
+		font-size: 0.8em;
+	}
 
 	.face {
 		height: 6rem;
