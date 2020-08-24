@@ -30,6 +30,7 @@ class LineChart {
 			.attr('y', this.HEIGHT + 50)
 			.attr('text-anchor', 'middle')
 			.text("Year")
+			.style('font-size', '1rem')
 
 
 		if (this.title) {
@@ -47,7 +48,9 @@ class LineChart {
 			.attr('y', -30)
 			.attr('text-anchor', 'middle')
 			.text('Count')
-			.attr('transform', 'rotate(-90)');
+			.attr('transform', 'rotate(-90)')
+			.style('font-size', '1rem');
+
 
 		// preset axes
 		this.xAxisGroup = this.svg.append('g')
