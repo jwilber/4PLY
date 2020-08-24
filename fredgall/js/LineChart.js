@@ -39,7 +39,8 @@ class LineChart {
 				.attr('y', this.MARGIN.TOP - 2)
 				.attr('text-anchor', 'middle')
 				.style('text-decoration', 'underline')
-				.text(this.title);
+				.text(this.title)
+				.style('font-size', '1rem');
 		}
 
 
