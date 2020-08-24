@@ -454,6 +454,12 @@ li.fact {
 	text-decoration: line-through;
 }
 
+.tab {
+	padding-left: 5%;
+	list-style-type: circle;
+	list-style-position: inside;
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -536,7 +542,7 @@ li.fact {
 @media screen and (max-width: 900px) {
 	.tick {
 		font-family: Bungee;
-		font-size: 0.8em;
+		font-size: 0.7em;
 	}
 
 	.face {
