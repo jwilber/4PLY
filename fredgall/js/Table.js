@@ -54,36 +54,4 @@ class Table {
 
 
     }
-
-    // update(businessLine) {
-    //     const that = this;
-    //     let newData = this.data.filter(d => d.business_line == businessLine);
-
-    //     //JOIN
-    //     const rows = this.tbody.selectAll('tr')
-    //         .data(newData);
-
-    //     // EXIT
-    //     rows.exit().remove()
-
-    //     // UPDATE
-    //     let rowsEnter = rows.enter()
-    //         .append('tr')
-    //         .attr('class', 'table-row')
-
-    //     let cells = rowsEnter.selectAll('td')
-    //         .data(row => {
-    //             return this.columns.map(column => {
-    //                 return { column: column, value: row[column] };
-    //             });
-    //         });
-
-    //     cells.exit().remove();
-
-    //     cells.enter()
-    //         .append('td')
-    //         .text(function (d) {
-    //             return d.value;
-    //         })
-    // }
 }
