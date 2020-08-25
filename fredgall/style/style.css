@@ -7,16 +7,6 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-@font-face {
-	font-family: LeagueGothicRegular;
-	src: url("../assets/leaguegothic-regular.otf") format("opentype");
-}
-
-@font-face {
-	font-family: LeagueGothicRegular;
-	font-weight: bold;
-	src: url("../assets/leaguegothic-regular.otf") format("opentype");
-}
 
 
 /* #Reset & Basics (Inspired by E. Meyers)
@@ -49,10 +39,6 @@ body {
 	color: #262520;
 	/*background-color: rgb(255,192,203, .7);*/
 	background-color: antiquewhite;
-}
-
-.goth {
-font-family: Bungee;
 }
 
 a {
