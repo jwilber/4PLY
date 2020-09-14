@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84472984-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-84472984-4');
+    </script>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Andrew Allen</title>
+    <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
+    <script src="assets/d3.v4.min.js"></script>
+    <script src="assets/d3-interpolate-path.min.js"></script>
+    <script src="assets/textures.js"></script>
+
+</head>
+<header>
+
+    <section class='section-intro'>
+        <center>
+            <h1>
+                <a href="http://www.4plymag.com" class="homepage">4PLY MAG</a>
+            </h1>
+            <br>
+            <h4>September 2020</h4>
+            <!-- <h1 class='main-title'>Living Legend: Fred Gall</h1> -->
+            <h1 class='main-title'>Andrew<br>Allen</h1>
+
+            <!-- <img src="images/laptopFred.png" class="face" /><br> -->
+            <h4>By <a href="">Harrison Lisewski</a></h4>
+            <h4>Charts & Code: <a href="https://www.twitter.com/jdwlbr">Jared Wilber</a></h4>
+            <br><br><br><br>
+        </center>
+    </section>
+
+    <!-- <div id="main-wrapper"> -->
+
+    <br>
+    <p>
+        <br>
+
+        When weathered skaters tell tales of Uncle Freddy, we often speak of his appetite for excess,
+        his unexpected longevity, and his undeniable likability. Skate folklore yarns are spun of daring
+        rescues from burning buildings and <a
+            href="https://www.youtube.com/watch?v=Raqkh43Jh2s&feature=emb_logo">wallride
+            attempts on moving vehicles</a>. He is part
+        action hero, part comic relief, and <a href="https://warmupzone.wordpress.com/tag/fred-gall/">all
+            skateboarding
+            legend</a>.
+        <br><br>
+        It is near impossible to quantify the impact he has had on skateboarding lo these many years.
+        But once we look past the hedonism and the heroism, what we can quantify are the skate clips
+        themselves. What emerges from the data is a portrait of a cradle-to-grave skater who advanced
+        switch tech-gnar progre ssion on two coasts before becoming the archetype of an entire genre of
+        skating loosely defined as “crust”. So set down your bondo and crack a cold one if that’s your
+        thing… it’s time to crunch the numbers on Fred Fuckin’ Gall.
+    </p>
+    <br><br>
+    <hr>
+    <br><br>
+</header>
+<section class='section1'>
+    <h1 class='section-header'>Andrew Allen</h1>
+
+
+
+    <br><br>
+    <br><br>
+    <div id="my_dataviz"></div>
+    <p>
+        Looking at the chart of Freddy’s top tricks over the entirety of his career, we aren’t confronted with many
+        surprises. Ollies top
+        the list, be they over obstacle, on flat, or off some sort of launch, with over 50% of those being landed into
+        some
+        sort of embankment. As we scroll down the list, we see all the familiar Freddy moves one would expect: Backside
+        wallrides, treflips, frontside 50s, switch frontside 180s, and backside 360s.
+        <br><br>
+        <!-- <img src="images/gall_ny.gif" class='center'> -->
+        <br><br>
+        <!-- If we were to group similar tricks together, it is interesting that some maneuvers rise in the rankings. When
+        all
+        wallride variations are combined (and there were 22 unique variations of wallrides) it’s tops at 52 instances, a
+        hefty
+        7% of his entire trick output. Also of note is that Fred only recorded 5 straight up frontside 5-0 grinds
+        (switch
+        and normal combined); but when
+        we
+        total up all variations that include a frontside 5-0 component (such as the popular switch frontside 180 to
+        frontside
+        5-0), it is one of his more signature tricks with 24 occurrences. -->
+        <br><br>
+    </p>
+    <hr>
+    <h1 class='section-header'>Fred's Least Favorites</h1>
+    <p class="story">
+        What you aren’t seeing in the chart above are the tricks that Freddy just didn’t do that often, or ever. And
+        some of
+        those might surprise you.
+        <br><br>
+        We chatted with Freddy and mentioned some of these missing tricks.
+        <li>
+            <ul><b class='uline'>Smith Grinds</b> - nearly 700 tricks and the only thing even resembling a smith grind
+                is a
+                single smith
+                stall in a pool. Says Fred: “I had one smith grind ever in my entire life. It was a back smith down the
+                Phoenix
+                Hubba and it was in a Habitat tour section of a video or something.”
+                <br>
+                <!-- <img src="images/gall_smith.gif" class='center'> -->
+            </ul>
+            <ul><b class='uline'>Hardflips</b> - Unless we’re talking nollie, there aren’t any to be found.And the
+                nollie ones
+                dried up significantly after Photosynthesis.
+            </ul>
+            <ul><b class='uline'>FS Crooked Grinds</b> - Not once. Ever. Says Fred: “I can’t do those to save my life.”
+            </ul>
+            <ul><b class='uline'>Fakie flip tricks</b> - when it comes to fakie flip tricks, Freddy just dabbled here
+                and
+                there. Fakie
+                kickflips, fakie heelflips, and fakie 360flips only happened once each.
+            </ul>
+            <!-- <img src="images/fakieflip.gif" class='center'> -->
+            <ul><b class='uline'>
+                    Switch 50-50s</b> - Freddy’s switch 50-50 on a handrail at Philadelphia’s City Hall is somewhat
+                legendary, but
+                we couldn’t find a photo or clip of it anywhere. Says Fred: “It's in Thrasher: On The Road. You will
+                find that
+                there. I have kinda a little part in there.” Since that video isn’t part of our dataset, there are zero
+                switch
+                50-50 grinds anywhere. None. Says Fred: “I really didn’t switch 50 unless it’s a rail.”
+            </ul>
+            <ul><b class='uline'>Nollie kickflips</b> - "Nope."</ul>
+            <ul><b class='uline'>Pressure flips</b> - Make no mistake; Those are inward heelflips. Says Fred: “Dude, no
+                way
+                would I do a
+                pressure flip.”</ul>
+        </li>
+    </p>
+</section>
+<hr>
+<section class='section2'>
+    <h1>
+        OBSTACLES OVER TIME
+    </h1>
+    <select id="metric-select" style='margin-left: 30%;'></select>
+    <center>
+        <div id="linechart" div></div>
+    </center>
+    <p>
+        <b class='uline'>A Tale of Two Freddys</b>: When we line everything up chronologically a
+        picture quickly emerges of two distinct phases of
+        the career of Fred Gall with the birth of Habitat serving as a delineator between epochs. On one side we have
+        young
+        <b>Alien Fred</b>: Featuring tricks in 14 videos through the first decade of his career, this starts with the
+        Tracker
+        Brotherhood video from 1991 and continues through Photosynthesis in 2000 (and I’m including the 4 tricks in
+        Danny
+        Minnick’s 2001 Collage video in there too). On latter side we have old dirty <b>Habitat Freddy</b> skating in 17
+        videos from
+        Habitat’s Mosaic in 2003 through an online OJ Wheels part in 2015. The distinct features of the transformation
+        between
+        eras would be the Transition to Transition and the Rise of Crust.
+        <br><br><br>
+        <!-- <img src="images/transition.gif" class='center'> -->
+
+        <br><br>
+        <b class='uline'>The Transition to Transition</b>: It should come as no shock that as Fred Gall aged, a fetish
+        for
+        the transitions developed. In fact, if one disregards
+        the tricks on the miniramp in Granny’s driveway and Brick Town Park during the Tracker years (plus <a
+            href="https://warmupzone.files.wordpress.com/2020/06/fredserge.png">Philadelphia’s Afro
+            Banks</a>), Alien Fred almost exclusively skates surfaces
+        with hard angles. But from Mosaic onward, over 27% of Freddy’s tricks are done on some type of transition.
+        Fred’s
+        most
+        recent part from 2015 featured 56% transition tricks.
+    </p>
+</section>
+
+<section class='section2'>
+    <hr>
+    <h1>Some Video Numbers
+    </h1>
+    <div id='table'></div>
+
+    <!-- <p>
+        The table above includes all the videos logged for this analysis along with a small sampling of the many, many
+        trends
+        that can be tracked from the data. Some correlations remained consistent, such as the length of the video and
+        the
+        number
+        of lines included; Other observations, such as the strange spike in clips featuring one of both pant legs
+        cinched
+        up,
+        are just baffling on a bunch of levels. While the wallride trend, which Freddy launched with a monster kickflip
+        to
+        backside variation that landed him on the <a
+            href="https://warmupzone.files.wordpress.com/2020/07/kalgallcoverchrome.jpg">cover of Transworld</a>, took
+        prominence in the middle portion of his
+        career, flip tricks (in which we include all variations including impossibles and shove-its) have remained
+        surprisingly
+        present even as his taste for transition has grown over the years.
+        <br><br>
+        <!-- <img src="images/wallride_nollie.gif" class='center'> -->
+
+    </p> -->
+</section>
+<section class='section1'>
+    <hr>
+    <h1>Video Breakdown</h1>
+    <!-- <p class="desc centered">Select video part.</p> -->
+    <div id="update">
+
+        <div id="percentages" class="centered buttonsBox">
+            <!-- <h3 style="text-align: left;">Select video part</h3> -->
+
+            <div class="button" data-val="Authentic_Hi">Authentic_Hi</div>
+            <div class="button" data-val="DOUBLE_A">DOUBLE_A</div>
+            <div class="button" data-val="Boys_of_Summer_Leftovers">Boys_of_Summer_Leftovers</div>
+            <div class="button" data-val="Hockey_III">Hockey_III</div>
+            <div class="button" data-val="522_on_411">522_on_411</div>
+            <div class="button current" data-val="Boys_of_Summer">Boys_of_Summer</div>
+            <div class="button" data-val="Welcome_to_Anti_Hero">Welcome_to_Anti_Hero</div>
+            <div class="button" data-val="Hockey_II">Hockey_II</div>
+            <div class="button" data-val="Propeller">Propeller</div>
+            <div class="button" data-val="Prevent_This_Tragedy">Prevent_This_Tragedy</div>
+            <div class="button" data-val="Propeller_Raw_Files">Propeller_Raw_Files</div>
+            <!-- this is just here to line up the bottom row of buttons: -->
+            <div id="spaceFiller"></div>
+            <!-- <div class="clr"></div> -->
+        </div>
+    </div><!-- @end #update -->
+
+    <div class="clr"></div>
+
+    <div class="genericholder">
+        <hr>
+        <h2>Percentage of ...</h2>
+        <div id="charts"></div>
+    </div>
+
+    <p>
+        Another way to compare how Freddy’s output differs with each part is to compare the distribution of various
+        metrics
+        across them. Each block in the chart below is made up of one-hundred squares, each representing one percent.
+        Click
+        on the videos below to see the percentage of each metric in the selected video. Some observations we saw in this
+        data:
+    </p>
+    <br><br>
+    <ul>
+        <li style='display: list-item;'><b class='uline'>No SlowMo</b>: For whatever reason Freddy’s skating is rarely
+            presented in slow
+            motion. In fact there are
+            just 12 slow-mo tricks in his entire catalog. If you take Eastern Exposure 3 out of the mix, you’re watching
+            Freddy at regular speed nearly 99% of the time. For comparison, <a
+                href="http://www.jenkemmag.com/home/2019/07/31/statistical-analysis-every-jim-greco-clip/]. ">17% of Jim
+                Greco’s
+                career tricks have been in slow
+                motion</a>. </li>
+
+        <li style='display: list-item;'><b class='uline'>All Sides</b>: When it comes to lips, ledges, or spinning
+            rotation,
+            Fred shows no
+            favorites and only does
+            things frontside 7.9% more often than backside.</li>
+        <li style='display: list-item;'><b class='uline'>Manny-Busters</b>: Fred Gall keeps all four wheels on the
+            ground
+            (or wall). There
+            were only 3 wheelies total…
+            all of nose variety.</li>
+        <li style='display: list-item;'><b class='uline'>Switching It Up</b>: Overall, Freddy attacked switch (or
+            nollie)
+            about 27% of the time. But this is heavily skewed towards the earlier part
+            of his career. From Eastern Exposure 2 (1994) through Photosynthesis (2000), 47.5% of his tricks were
+            started
+            switch or
+            nollie. This fell off a good deal for the latter portion of his career as post-Photosynthesis Habitat Freddy
+            averages a
+            15.4% switch/nollie rate. (Note: this doesn’t include tricks that start in normal stance but are executed
+            mostly
+            switch
+            (such as this fabulous backside 180 to switch backside 5-0 in SF).</li>
+        <!-- <img src="images/GALL_SF.gif" class='center'> -->
+    </ul>
+    <p>
+        Click around and see what other of Freddy’s secrets can be revealed.
+    </p>
+
+</section>
+<hr>
+<section class='section2'>
+    <h1>Quick Facts</h1>
+    <!-- <ul class='facts'>
+        <li class='fact'><b class='uline'>694</b> - Tricks logged for this article
+        </li>
+        <li class='fact'><b class='uline'>185</b> - Tricks done on a ledge of some sort - that’s 26.7%</li>
+        <li class='fact'><b class='uline'>123</b> - Unique ledge tricks</li>
+        <li class='fact'><b class='uline'>82</b> - Total number of lines</li>
+        <li class='fact'><b class='uline'>76</b> - Tricks where Fred landed into some kind of embankment</li>
+        <li class='fact'><b class='uline'>68</b> - Sum of all blunts (slides, stalls, ledges, transition, nose, switch,
+            and
+            otherwise)
+        </li>
+        <li class='fact'><b class='uline'>52</b> - Combined tricks on banked ledges and bank to ledges</li>
+        <li class='fact'><b class='uline'>35</b> - Unique variations of 5-0 grinds</li>
+        <li class='fact'><b class='uline'>30</b> - Number of tricks filmed at Love Park in the 1990s</li>
+        <li class='fact tab'><b class='uline'>0</b> - Number of tricks filmed at Love Park after the year 2000</li>
+
+        <li class='fact'><b class='uline'>26</b> - Slams (not including when Fred intentionally lands in water)
+            <!-- <img src="images/fall.gif" class='center'> -->
+    </li>
+    <li class='fact'><b class='uline'>19</b> - 360flips, not including fakie, nollie, or switch</li>
+    <li class='fact'><b class='uline'>16</b> - 360flips as part of a line. Says Fred: “Yeah. The go-to trick.”</li>
+    <li class='fact tab'><b class='uline'>1</b> - Nollie 360flips</li>
+
+    <li class='fact'><b class='uline'>16</b> - Total tricks done on hubbas</li>
+    <li class='fact tab'><b class='uline'>12</b> - Unique tricks done on hubbas</li>
+    <li class='fact tab'><b class='uline'>3</b> - Tricks done on Hubba Hideout</li>
+
+
+    <li class='fact'><b class='uline'>15</b> - Tricks done with one or both pant legs cinched up</li>
+    <li class='fact'><b class='uline'>15</b> - Clips of Freddy breaking stuff (Includes blowing things up with
+        explosives)</li>
+    <li class='fact'><b class='uline'>11</b> - Tricks filmed with that long, luxurious hair flowing. Says Fred: “I
+        just
+        did it
+        randomly and then
+        the
+        filmers would be like ‘Yo. Do this one with your hair down. It’ll just look cool.’ So that’s how that
+        works.”<br>
+        <!-- <center><img src="images/leather.png" width="200px"></center> -->
+    </li>
+
+    <li class='fact'><b class='uline'>8</b> (Or something like that) - number of beers drank before Wawa hoagies
+    </li>
+    <li class='fact'><b class='uline'>5</b> - Switch kickflips</li>
+    <li class='fact'><b class='uline'>4</b> - Nosebluntslides total - and only 1 was on transition</li>
+    <li class='fact'><b class='uline'>3</b> - Number of Black Sabbath songs. Says Fred: “I’m fully into that shit.”
+    </li>
+    <li class='fact'><b class='uline'>2</b> - Times Fred is nearly hit by a car on camera</li>
+    <li class='fact'><b class='uline'>1</b> - Tricks at Burnside</li>
+    <li class='fact'><b class='uline'>0</b> - Total fucks given</li>
+    </ul> -->
+
+</section>
+<section class='section1'>
+    <center>
+        <div class="minfoDiv" name="guac recipe" style="width: 300px; height: 111px;">Rate the article</div>
+    </center>
+    <hr>
+    <h2>Data & Methodology</h2>
+    <p>
+        <br>
+        <br><br>
+        Thanks to Fred for the insights. Thanks to all the filmers from which we giffed footage. Remember to check the
+        Warm
+        Up
+        Zone for more All the Gall. Follow and interact: <a href="https://www.instagram.com/4plymag/">@4plymag</a> <a
+            href="https://www.instagram.com/warmupzone/">@warmupzone</a> <a
+            href="https://www.instagram.com/freddygall/">@freddygall</a> <a
+            href="https://twitter.com/jdwlbr">@jdwilbr</a>.
+        <br><br>
+        Data and code available <a href="https://github.com/jwilber/4PLY/blob/master/fredgall">here</a>.
+
+
+
+    </p>
+</section>
+</div><!-- @end #main-wrapper -->
+
+<script id="grid" type="text/plain">
+01 02 03 04 05 06 07 08 09 10
+11 12 13 14 15 16 17 18 19 20
+21 22 23 24 25 26 27 28 29 30
+31 32 33 34 35 36 37 38 39 40
+41 42 43 44 45 46 47 48 49 50
+51 52 53 54 55 56 57 58 59 60
+61 62 63 64 65 66 67 68 69 70
+71 72 73 74 75 76 77 78 79 80
+81 82 83 84 85 86 87 88 89 90
+91 92 93 94 95 96 97 98 99 100
+</script>
+
+<script id="field_details">
+    var field_details = {
+        "perc_switch": { desc: "Switch Tricks" },
+        "perc_slowmo": { desc: "Slowmo Tricks" },
+        "perc_fs": { desc: "FS Tricks" },
+        "perc_bs": { desc: "BS Tricks" },
+        "perc_ledge": { desc: "Ledge Tricks" },
+        "perc_stair": { desc: "Stair/Gap Tricks" },
+        "perc_transition": { desc: "Transition Tricks" },
+        "perc_flat": { desc: "Flatground Tricks" },
+        "perc_handrail": { desc: "Handrail Tricks" },
+        "perc_flannel": { desc: "Flannels Worn" },
+        "perc_shorts": { desc: "Shorts w High Socks" },
+    };
+
+</script>
+
+
+<script type="text/javascript" src="js/Barplot.js"></script>
+<script type="text/javascript" src="js/Waffle.js"></script>
+<!-- <script type="text/javascript" src="js/Table.js"></script> -->
+<!-- <script type="text/javascript" src="js/LineChart.js"></script> -->
+<!-- <script src="https://minfo.s3-us-west-2.amazonaws.com/script.js"></script> -->
+
+<script>
+    // const line = new LineChart({
+    //     data: "data/obstacle_timeseries.csv",
+    //     element: "#linechart",
+    //     metric: "Bank",
+    //     dropdown: '#scatter-tooltip',
+    //     xValue: 'year',
+    //     yValue: 'cnt'
+    // });
+
+    // const line2 = new LineChart({
+    //     data: "data/crust_timeseries.csv",
+    //     element: "#crust-timeseries",
+    //     metric: "crust",
+    //     xValue: 'year',
+    //     yValue: 'count',
+    //     title: 'Crust Over Time'
+    // });
+
+    // d3.select('#metric-select').on('change', function (d) {
+    //     let metric = d3.select('#metric-select').property('value');
+    //     console.log('new metric', metric)
+    //     line.draw(metric);
+    // })
+
+    // const table = new Table({
+    //     data: 'data/table.csv',
+    //     element: '#table',
+    //     columns: ['Video', 'Year', 'Duration', 'Tricks', 'Lines',
+    //         'Switch or Nollie', 'Wallrides', 'Flip Tricks', 'Cinched Pants']
+    // });
+</script>
