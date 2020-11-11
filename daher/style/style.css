@@ -74,6 +74,8 @@ sup {
 	font-size: smaller;
 }
 
+
+
 /* Text
 ============================ */
 
@@ -387,6 +389,13 @@ header a {
 	color: white;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
+
 .section2 {
 	/* background-color: #abd1c6; */
 	background-color: antiquewhite;
@@ -396,6 +405,7 @@ header a {
 .section2 p {
     color: #001e1d;
 }
+
 
 .section3 {
 	/* background-color: #abd1c6; */
@@ -410,7 +420,6 @@ header a {
 .section1 {
     background-color: #f67e06;
     color: #f67e06;
-    max-width: 95%;
 }
 
 .section1 p {
@@ -467,7 +476,6 @@ li.fact {
   margin-left: auto;
   margin-right: auto;
   max-width: 90%;
-  border: 5px solid tan;
 }
 
 .section-intro {
@@ -519,7 +527,6 @@ li.fact {
 		margin-right: auto;
 		max-width: 90%;
 		width: 50%;	
-		border: 3px solid tan;
 		max-height: 300px;
 	}
 
@@ -580,7 +587,6 @@ li.fact {
 		margin-right: auto;
 		max-width: 80%;
 		width: 85%;	
-		border: 3px solid tan;
 		max-height: 300px;
 	}
 
