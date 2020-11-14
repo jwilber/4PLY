@@ -5,41 +5,10 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Outline');
 @import url('https://fonts.googleapis.com/css?family=Bungee+Hairline');
 @import url('https://fonts.googleapis.com/css?family=Bungee');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400, 700');
+@import url('https://fonts.googleapis.com/css?family=Goldman:400,700');
 
-@font-face {
-	font-family: LeagueGothicRegular;
-	src: url("../assets/leaguegothic-regular.otf") format("opentype");
-}
-
-@font-face {
-	font-family: LeagueGothicRegular;
-	font-weight: bold;
-	src: url("../assets/leaguegothic-regular.otf") format("opentype");
-}
-
-
-/* #Reset & Basics (Inspired by E. Meyers)
-================================================== */
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-		margin: 0;
-		padding: 0;
-		border: 0;
-		vertical-align: baseline; }
-	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-		display: block; }
-	body {
-		line-height: 1; }
-	blockquote, q {
-		quotes: none; }
-	blockquote:before, blockquote:after,
-	q:before, q:after {
-		content: '';
-		content: none; }
-	table {
-		border-collapse: collapse;
-		border-spacing: 0; }
 
 #whiteflannelbg {
   background-color: white;
@@ -50,10 +19,14 @@
   opacity: 100%;
 }
 
+{-webkit-font-smoothing: antialiased;}
+
 .qna {
   text-align: left;
   margin-left: 7%;
-  margin-right: 7%;
+  margin-right: 5%;
+  display: block;
+  line-height: 500pt;
 }
 
 .whiteflannelbg {
@@ -64,7 +37,6 @@
 
 body {
 	font-family: Roboto;
-	font-size: 1.5rem;
 	color: #262520;
 	background-image: url("pointbreak.jpg");
   	background-repeat: repeat;
@@ -102,6 +74,11 @@ sup {
 
 /* Text
 ============================ */
+b {
+
+	font-style: bold;
+}
+
 
 h1 {
 	font-size: 2.2rem;
@@ -145,11 +122,10 @@ h5 {
 }
 h6 {
 	font-size: 1rem;
-	font-family: Inconsolata;
 	padding-top:10px;
 	text-align: center;
-	max-width: 65%;
 	margin-bottom: .5rem;
+	font-weight: bold;
 }
 h3 {
 	font-size: 1.1em;
@@ -165,10 +141,14 @@ p, li {
 	max-width: 75%;
 	display: block;
 	margin: auto;
-	font-size:1.6rem;
-	line-height: 1.2em;
-	font:Inconsolata;
+	line-height: 1.4em;
 }
+
+br {
+        line-height: 150%;
+        padding: 50%;
+     }
+
 
 hr {
 	max-width: 20%;
@@ -343,9 +323,9 @@ hr {
   flex-basis: 100%;
   flex: 1;
 }
-.bold {
-	font-family: Inconsolata;
-	font-weight: 900;
+b {
+	font-family: Roboto;
+	font-weight: bold !important ;
 }
 
 .italic {
@@ -361,9 +341,6 @@ ul.a {
 	padding-bottom: 10px;
 }
 
-p.bold {
-  font-weight: 900;
-}
 
 .title_dek {
 	min-height: 100%;
@@ -386,9 +363,12 @@ p.bold {
 }
 
 p, ul, li {
-	font-family: Inconsolata;
-	font-size: 1.1rem;
+	font-family: Roboto;
 	padding-top: 0.5rem;
+}
+
+img{
+	max-width:90%;
 }
 
 .face {
@@ -443,12 +423,11 @@ p, ul, li {
 		max-width: 85%;
 	}
 	p {
-		font-size: 14px;
+		font-size: 0.8rem;
 		max-width: 95%;
 	}
 
 	ul {
-		font-size: 17px;
 
 	}
 
