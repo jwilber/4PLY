@@ -167,6 +167,8 @@ hr {
 #obstacles, #my_dataviz, #grid-container {
 	max-width: 800px;
 	margin: auto;
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
 #update {
