@@ -1,4 +1,4 @@
-let USER_VIDEO = "Inhabitants";
+let USER_VIDEO = "Propeller";
 
 
 function getValKey() {
@@ -9,8 +9,8 @@ let VAL_KEY = getValKey();
 let grp_vals = {};
 
 let delay_per_unit = 30;
-let bg_color = "antiquewhite";
-let cell_color = 'tan';
+let bg_color = "lightgrey";
+let cell_color = 'grey';
 
 // Dimensions of single chart.
 let margin = { top: 0, right: 0, bottom: 0, left: 6 };
@@ -22,6 +22,7 @@ let height = 134 - margin.top - margin.bottom;
 
 d3.csv("data/square_pie.csv", function (error, data) {
     if (error) throw error;
+    console.log(data)
     let valfields = d3.keys(field_details);
     // Make data accessible by grp key
     data.forEach(function (o) {
@@ -88,10 +89,10 @@ d3.csv("data/square_pie.csv", function (error, data) {
         cell.append("rect")
             .attr("x", -cell_size / 2)
             .attr("y", -cell_size / 2)
-            .attr('width', cell_size + 2)
-            .attr('height', cell_size + 2)
+            .attr('width', cell_size)
+            .attr('height', cell_size)
             .attr('rx', 3)
-            .attr('stroke', 'grey')
+            .attr('stroke', 'black')
             .attr('stroke-width', .5)
             .attr("fill", (d, i) => (i < (100 - grp_vals[VAL_KEY][v])) ? bg_color : cell_color)
 
