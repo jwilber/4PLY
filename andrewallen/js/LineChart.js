@@ -10,7 +10,7 @@ class LineChart {
 
 		const that = this;
 
-		this.MARGIN = { TOP: 10, BOTTOM: 70, LEFT: 80, RIGHT: 30 };
+		this.MARGIN = { TOP: 10, BOTTOM: 70, LEFT: 170, RIGHT: 200 };
 		const width = window.innerWidth < 1000 ? (window.innerWidth / 1.05) : (window.innerWidth / 1.3)
 		this.WIDTH = width - this.MARGIN.RIGHT - this.MARGIN.LEFT;
 		this.HEIGHT = (window.innerHeight / 1.6) - this.MARGIN.TOP - this.MARGIN.BOTTOM;
@@ -48,7 +48,7 @@ class LineChart {
 			.attr('x', - this.HEIGHT / 2)
 			.attr('y', -30)
 			.attr('text-anchor', 'middle')
-			.text('Count')
+			.text('%/100')
 			.attr('transform', 'rotate(-90)')
 			.style('font-size', '1rem');
 
@@ -89,6 +89,7 @@ class LineChart {
 	}
 
 	draw(currMetric) {
+		const t = d3.transition().duration(1100).ease(d3.easeBack);
 		const that = this;
 		// this.title.text(`${currMetric} Counts`)
 		// set current data
@@ -107,13 +108,38 @@ class LineChart {
 		this.lineActual = d3.line()
 			.x(function (d) { return x(d[that.xValue]) })
 			.y(function (d) { return y(+d[that.yValue]) })
-			.curve(d3.curveStepBefore)
+			.curve(d3.curveCatmullRom.alpha(.5))
 
 		const xAxisCall = d3.axisBottom(x).ticks(11).tickFormat(d3.format("d"));
 		this.xAxisGroup.transition().duration(500).call(xAxisCall)
 
-		const yAxisCall = d3.axisRight(y).tickSize(this.WIDTH + 10);
+		const yAxisCall = d3.axisLeft(y);
 		this.yAxisGroup.transition().duration(500).call(yAxisCall)
+
+
+
+		// add line chart
+		let line = this.svg.selectAll('path.met')
+			.data([currData]);
+
+		let lineEnter = line.enter().append('path')
+			.attr('class', 'met');
+
+		line = line.merge(lineEnter);
+
+		line.transition(t)
+			.attrTween('d', function (d) {
+				var previous = d3.select(this).attr('d');
+				var current = that.lineActual(d);
+				return d3.interpolatePath(previous, current);
+			})
+			.style('stroke', 'black')
+			.style("stroke-width", window.innerWidth < 1000 ? 4 : 7)
+			.style("fill", "none")
+			.style('pointer-events', 'none')
+			.attr('stroke-linejoin', 'round')
+			.attr('active', true)
+			.style('opacity', .85)
 
 
 		// handle circles
@@ -127,20 +153,23 @@ class LineChart {
 			.enter()
 			.append('circle')
 			.attr('class', 'cnt')
-			.attr('fill', 'tan')
+			.attr('fill', 'black')
+			.style('stroke', 'white')
+
 			.attr('r', 1)
 			.attr('cx', d => x(d[that.xValue]))
 			.attr('cy', d => y(+d[that.yValue]))
 
 
+
 		circles = circles.merge(circlesEnter);
 
-		circles.transition()
-			.duration(800)
+		circles.transition(t)
 			.attr('cx', d => x(d[that.xValue]))
 			.attr('cy', d => y(+d[that.yValue]))
 			.attr('r', window.innerWidth < 1000 ? 5 : 10)
-			.attr('stroke', 'tan')
+			.attr('stroke-width', 3)
+			.attr('stroke', 'white')
 
 		circles
 			.on("mouseover", function (d) { // show it and update html
@@ -167,29 +196,7 @@ class LineChart {
 					.style("opacity", 0);
 			})
 
-		// add line chart
-		let line = this.svg.selectAll('path.met')
-			.data([currData]);
-
-		let lineEnter = line.enter().append('path')
-			.attr('class', 'met');
-
-		line = line.merge(lineEnter);
-
-		line.transition()
-			.duration(1000)
-			.attrTween('d', function (d) {
-				var previous = d3.select(this).attr('d');
-				var current = that.lineActual(d);
-				return d3.interpolatePath(previous, current);
-			})
-			.style('stroke', 'tan')
-			.style("stroke-width", window.innerWidth < 1000 ? 4 : 7)
-			.style("fill", "none")
-			.style('pointer-events', 'none')
-			.attr('stroke-linejoin', 'round')
-			.attr('active', true)
-			.style('opacity', .85)
+		
 
 
 	}

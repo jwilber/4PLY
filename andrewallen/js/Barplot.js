@@ -1,15 +1,17 @@
 // set the dimensions and margins of the graph
-const barMargin = { top: 10, right: 50, bottom: 50, left: 250 },
-  barWidth = 800 - barMargin.left - barMargin.right,
-  barHeight = 850 - barMargin.top - barMargin.bottom;
+const barMargin = { top: 10, right: window.innerWidth/10, bottom: 50, left: window.innerWidth/3.5 }
+const barWidth = window.innerWidth/1.3 - barMargin.left - barMargin.right
+const barHeight = window.innerHeight/0.9 - barMargin.top - barMargin.bottom;
 console.log('we in')
 
 // append the svg object to the body of the page
 let svg = d3.select("#my_datavis")
   .append("svg")
-  .attr("preserveAspectRatio", "xMinYMin meet")
-  .attr("viewBox", `0 0 ${(barWidth + barMargin.left + barMargin.right)}
-    ${(barHeight + barMargin.top + barMargin.bottom)}`)
+  .attr("width", barWidth + barMargin.left + barMargin.right)
+  .attr("height", barHeight + barMargin.top + barMargin.bottom)
+  // .attr("preserveAspectRatio", "xMinYMin meet")
+  // .attr("viewBox", `0 0 ${(barWidth + barMargin.left + barMargin.right)}
+    // ${(barHeight + barMargin.top + barMargin.bottom)}`)
   .append("g")
   .attr("transform",
     "translate(" + barMargin.left + "," + barMargin.top + ")");
@@ -31,12 +33,12 @@ d3.csv("data/toptricks.csv", function (data) {
   let y = d3.scaleBand()
     .range([0, barHeight])
     .domain(data.map(d => d.trick))
-    .padding(.46);
+    .padding(.7);
 
   svg.append("g")
     .attr('class', 'y-axis')
     .call(d3.axisLeft(y))
-    .style('font-size', '.82rem')
+    .style('font-size', '.8rem')
 
   //Bars
   svg.selectAll("myRect")
@@ -56,7 +58,7 @@ d3.csv("data/toptricks.csv", function (data) {
 // add title
 d3.select('svg')
   .append('text')
-  .attr('x', (barWidth + barMargin.right) / 2)
+  .attr('x', (barWidth) / 2)
   .attr('y', barMargin.top / 1.1)
   .style('font-family', "Bungee")
   .style('font-size', '1.2rem')

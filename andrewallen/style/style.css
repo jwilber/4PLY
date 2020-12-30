@@ -29,6 +29,14 @@
   line-height: 500pt;
 }
 
+.videonumbers {
+  text-align: left;
+  margin-left: 7%;
+  margin-right: 5%;
+  display: block;
+  line-height: 500pt;
+}
+
 .whiteflannelbg {
   position: relative;
   text-align: center;
@@ -60,6 +68,13 @@ a {
 	margin-bottom: 10px;
 }
 
+/*.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+**/
 
 /* .clr { clear: both; } */
 .centered { text-align: center; }
@@ -166,7 +181,7 @@ hr {
 
 #obstacles, #my_dataviz, #grid-container {
 	max-width: 50%;
-	margin-left: 2000px;
+	margin-left: 10px;
 	padding-bottom: 0;
 	margin-bottom: 0;
 }
