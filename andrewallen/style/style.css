@@ -29,6 +29,15 @@
   line-height: 500pt;
 }
 
+p.quote {
+  font-size: 0.3em;
+  margin-left: 7%;
+  margin-right: 5%;
+  display: block;
+  line-height: 500pt;
+  
+}
+
 .videonumbers {
   text-align: left;
   margin-left: 7%;
@@ -59,6 +68,8 @@ a {
 	text-decoration: underline;
 	color: #000;
 }
+
+
 #main-wrapper {
 	max-width: 100%;
 	margin: 20px auto;
@@ -116,13 +127,14 @@ h4 {
 	/*color: grey;*/
 }
 h2 {
-	font-size: 1.8rem;
-	font-style: uppercase;
-	font-family: Bungee;
-	padding-top:10px;
-	font-size: 1.4rem;
-	text-align: center;
-	margin-bottom: .5rem;
+	font-size: 0.9rem;
+
+	margin-left:15%;
+	margin-right:22%;
+
+	text-align: left;
+	font-weight: normal;
+	
 }
 h5 {
 	font-size: 14px;
