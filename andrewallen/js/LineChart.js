@@ -48,7 +48,7 @@ class LineChart {
 			.attr('x', - this.HEIGHT / 2)
 			.attr('y', -30)
 			.attr('text-anchor', 'middle')
-			.text('%/100')
+			.text('Percentage')
 			.attr('transform', 'rotate(-90)')
 			.style('font-size', '1rem');
 
@@ -67,7 +67,9 @@ class LineChart {
 			.style("pointer-events", "none")
 			.style('font-size', '1rem')
 			.style('text-align', 'left')
-			.style('font-weight', 'bold');
+			.style('font-weight', 'bold')
+			;
+
 
 		d3.csv(this.data, data => {
 			this.data = data;
@@ -110,7 +112,7 @@ class LineChart {
 			.y(function (d) { return y(+d[that.yValue]) })
 			.curve(d3.curveCatmullRom.alpha(.5))
 
-		const xAxisCall = d3.axisBottom(x).ticks(11).tickFormat(d3.format("d"));
+		const xAxisCall = d3.axisBottom(x).ticks(4).tickFormat(d3.format("d"));
 		this.xAxisGroup.transition().duration(500).call(xAxisCall)
 
 		const yAxisCall = d3.axisLeft(y);
@@ -175,25 +177,32 @@ class LineChart {
 			.on("mouseover", function (d) { // show it and update html
 				let pointData = d;
 				d3.selectAll(`circle.${this.yValue}`)
+					.style('opacity', 0)
+				d3.selectAll(`circle.cnt`)
 					.style('opacity', .2)
 				d3.selectAll('path.met')
 					.style('opacity', .2)
 				d3.select(this)
-					.style('opacity', 1)
+					.style('opacity', .7)
 				that.tooltip
 					.transition()
 					.style("opacity", .9);
-				that.tooltip.html(function (d) { return pointData[that.yValue] })
-					.style("left", (d3.event.pageX) + "px")
-					.style("top", (d3.event.pageY - 28) + "px");
+				that.tooltip.html(function (d) { 
+					let value = Math.round(pointData[that.yValue]) 
+					return `${value}%`
+				})
+					 .style("left", (d3.event.pageX + 10) + "px")
+					 .style("top", (d3.event.pageY - 10) + "px")
+					;
 			})
 			.on("mouseout", function (d) {
-				d3.selectAll(`circle.${this.yValue}`)
+				d3.selectAll(`circle.cnt`)
 					.style('opacity', 1)
 				d3.selectAll('path.met')
 					.style('opacity', 1)
 				that.tooltip.transition()
-					.style("opacity", 0);
+					.style("opacity", 0)
+				;
 			})
 
 		

@@ -1,5 +1,5 @@
 // set the dimensions and margins of the graph
-const barMargin = { top: 10, right: window.innerWidth/10, bottom: 50, left: window.innerWidth/3.5 }
+const barMargin = { top: 10, right: window.innerWidth/5, bottom: 50, left: window.innerWidth/3.5 }
 const barWidth = window.innerWidth/1.3 - barMargin.left - barMargin.right
 const barHeight = window.innerHeight/0.9 - barMargin.top - barMargin.bottom;
 console.log('we in')
