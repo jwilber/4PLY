@@ -136,6 +136,9 @@ h2 {
 	font-weight: normal;
 	
 }
+
+
+
 h5 {
 	font-size: 14px;
 	max-width: 85%
@@ -283,8 +286,18 @@ hr {
 
 .tick {
 	font-family: Bungee;
-	font-size: 1.2em;
+	font-size: .9rem;
+
 }
+
+
+
+
+.tooltip{
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  }
 
 .y-axis path.domain {
 	opacity: 0;
@@ -439,6 +452,10 @@ img{
 	color: black;
 }
 
+g.tick text
+	{
+	font-size: .7rem;
+	}
 
 @media screen and (max-width: 900px) {
 	.main-title {
@@ -463,4 +480,11 @@ img{
 	h1 {
 		font-size: 3rem;
 	}
+	g.tick text
+	{
+	font-size: .4rem;
+	}
 }
+
+
+
