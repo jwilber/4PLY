@@ -10,7 +10,7 @@ class LineChart {
 
 		const that = this;
 
-		this.MARGIN = { TOP: 10, BOTTOM: 70, LEFT: 170, RIGHT: 200 };
+		this.MARGIN = { TOP: 10, BOTTOM: 70, LEFT: window.innerWidth / 9.5 + 5, RIGHT: window.innerWidth / 9 };
 		const width = window.innerWidth < 1000 ? (window.innerWidth / 1.05) : (window.innerWidth / 1.3)
 		this.WIDTH = width - this.MARGIN.RIGHT - this.MARGIN.LEFT;
 		this.HEIGHT = (window.innerHeight / 1.6) - this.MARGIN.TOP - this.MARGIN.BOTTOM;

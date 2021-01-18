@@ -1,5 +1,5 @@
 // set the dimensions and margins of the graph
-const barMargin = { top: 10, right: window.innerWidth/5, bottom: 50, left: window.innerWidth/3.5 }
+const barMargin = { top: 10, right: window.innerWidth/7, bottom: 50, left: window.innerWidth/3.5 }
 const barWidth = window.innerWidth/1.3 - barMargin.left - barMargin.right
 const barHeight = window.innerHeight/0.9 - barMargin.top - barMargin.bottom;
 console.log('we in')
@@ -66,9 +66,9 @@ d3.select('svg')
 // add x-axis
 d3.select('svg')
   .append("text")
-  .attr('x', (barWidth + barMargin.right + barMargin.left) / 2)
+  .attr('x', (barWidth + barMargin.left) / 2)
   .attr('y', barHeight + barMargin.top + 40)
   // .style("text-anchor", "left")
   .style('font-family', "Bungee")
   .style('font-size', '1rem')
-  .text("Count Across All Video Parts");
+  .text("");

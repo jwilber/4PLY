@@ -380,7 +380,8 @@ ul.a {
 .h3title {
 	font-size: 0.8rem;
 	font-family: Bungee;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
+
 }
 
 
@@ -413,14 +414,18 @@ img{
 	max-width:90%;
 }
 
+select{
+font-size: 1rem;
+}
+
 .face {
   /*animation: face-spin infinite 2s linear;*/
   height: 10rem;
   /*margin-left: 20px;*/
   /*margin-bottom: 10px;*/
-  -webkit-animation: face-spin 3.5s infinite linear;
-	-moz-animation: face-spin 3.5s infinite linear;
-	animation: face-spin 3.5s infinite linear;
+  -webkit-animation: face-spin 4s infinite linear;
+	-moz-animation: face-spin 4s infinite linear;
+	animation: face-spin 4s infinite linear;
 	display: block;
 	position: relative;
 	/*top: 7px;                  */
@@ -458,6 +463,15 @@ g.tick text
 	}
 
 @media screen and (max-width: 900px) {
+	#whiteflannelbg {
+  background-color: white;
+  margin-top:4%;
+  margin-left: 3%;
+  margin-right:3%;
+ 
+  opacity: 100%;
+}
+
 	.main-title {
 		font-size: 3rem;
 		margin-top: 7%;
@@ -478,7 +492,8 @@ g.tick text
 	}
 
 	h1 {
-		font-size: 3rem;
+		font-size: 2.6rem;
+
 	}
 	g.tick text
 	{
