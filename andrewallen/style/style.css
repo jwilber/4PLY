@@ -414,9 +414,9 @@ img{
 	max-width:90%;
 }
 
-select{
-font-size: 1rem;
-}
+/*select{*/
+/*font-size: 1rem;*/
+/*}*/
 
 .face {
   /*animation: face-spin infinite 2s linear;*/
