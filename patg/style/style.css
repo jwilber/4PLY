@@ -8,6 +8,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:400, 700');
 @import url('https://fonts.googleapis.com/css?family=Goldman:400,700');
+@import url('https://fonts.googleapis.com/css?family=Changa:400,700');
 
 
 #whiteflannelbg {
@@ -53,7 +54,7 @@ p.quote {
 }
 
 body {
-	font-family: Roboto;
+	font-family: Changa;
 	color: #262520;
 	background-image: url("pgbg.gif");
   	background-repeat: repeat;
@@ -366,7 +367,7 @@ hr {
   flex: 1;
 }
 b {
-	font-family: Roboto;
+	font-family: Changa;
 	font-weight: bold !important ;
 }
 
@@ -406,7 +407,7 @@ ul.a {
 }
 
 p, ul, li {
-	font-family: Roboto;
+	font-family: Changa;
 	padding-top: 0.5rem;
 }
 
