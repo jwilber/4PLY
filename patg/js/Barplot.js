@@ -7,6 +7,7 @@ console.log('we in')
 // append the svg object to the body of the page
 let svg = d3.select("#my_datavis")
   .append("svg")
+
   .attr("width", barWidth + barMargin.left + barMargin.right)
   .attr("height", barHeight + barMargin.top + barMargin.bottom)
   // .attr("preserveAspectRatio", "xMinYMin meet")
@@ -15,7 +16,31 @@ let svg = d3.select("#my_datavis")
   .append("g")
   .attr("transform",
     "translate(" + barMargin.left + "," + barMargin.top + ")");
+svg.append("filter")
+    .attr("id", "frog")
+    .attr("filterUnits", "userSpaceOnUse")
+    .attr("x", -5)
+    .attr("y", -5)
+    .attr("width", "100%")
+    .attr("height", "100%")
+    .call((f) =>
+      f
+        .append("feTurbulence")
+        .attr("type", "fractalNoise")
+        .attr("baseFrequency", "0.4")
+        .attr("result", "noise")
+    )
+    .call((f) =>
+      f
+        .append("feDisplacementMap")
+        .attr("scale", "4")
+        .attr("xChannelSelector", "R")
+        .attr("yChannelSelector", "G")
+        .attr("in", "SourceGraphic")
+        .attr("in2", "noise")
+    );
 
+const filter = "url(#frog)";
 // Parse the Data
 d3.csv("data/toptricks.csv", function (data) {
   // Add X axis
@@ -33,7 +58,7 @@ d3.csv("data/toptricks.csv", function (data) {
   let y = d3.scaleBand()
     .range([0, barHeight])
     .domain(data.map(d => d.trick))
-    .padding(.7);
+    .padding(.25);
 
   svg.append("g")
     .attr('class', 'y-axis')
@@ -49,9 +74,10 @@ d3.csv("data/toptricks.csv", function (data) {
     .attr("y", d => y(d.trick))
     .attr("width", d => x(d.count))
     .attr("height", y.bandwidth())
-    .attr('fill', "black")
+    .attr('fill', "pink")
     .style('stroke', 'black')
-    .style('stroke-width', 7)
+    .style('stroke-width', 1.5)
+    .attr("filter", filter)
 
 })
 

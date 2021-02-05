@@ -23,9 +23,17 @@ d3.csv("data/toptricks.csv", function (data) {
     .domain([0, d3.max(data, d => +d.count)])
     .range([0, barWidth]);
 
-  let xAxis = d3.axisBottom(x).tickSize(0);
+  let xAxis = d3.axisBottom(x).tickSize(0).tickFormat(function(e){
+        if(Math.floor(e) != e)
+        {
+            return;
+        }
+
+        return e;
+    });
   svg.append("g")
     .attr('class', 'x-axis')
+
     .attr('transform', `translate(0, ${barHeight})`)
     .call(xAxis)
 
@@ -33,7 +41,7 @@ d3.csv("data/toptricks.csv", function (data) {
   let y = d3.scaleBand()
     .range([0, barHeight])
     .domain(data.map(d => d.trick))
-    .padding(.6);
+    .padding(.3);
 
   svg.append("g")
     .attr('class', 'y-axis')
@@ -49,9 +57,9 @@ d3.csv("data/toptricks.csv", function (data) {
     .attr("y", d => y(d.trick))
     .attr("width", d => x(d.count))
     .attr("height", y.bandwidth())
-    .attr('fill', "black")
-    .style('stroke', 'black')
-    .style('stroke-width', 5)
+    .attr('fill', "yellow")
+    .style('stroke', 'green')
+    .style('stroke-width', 4)
 
 })
 

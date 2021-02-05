@@ -135,7 +135,7 @@ class LineChart {
 				var current = that.lineActual(d);
 				return d3.interpolatePath(previous, current);
 			})
-			.style('stroke', 'black')
+			.style('stroke', 'green')
 			.style("stroke-width", window.innerWidth < 1000 ? 4 : 7)
 			.style("fill", "none")
 			.style('pointer-events', 'none')
@@ -155,8 +155,8 @@ class LineChart {
 			.enter()
 			.append('circle')
 			.attr('class', 'cnt')
-			.attr('fill', 'black')
-			.style('stroke', 'white')
+			.attr('fill', 'yellow')
+			.style('stroke', 'green')
 
 			.attr('r', 1)
 			.attr('cx', d => x(d[that.xValue]))
