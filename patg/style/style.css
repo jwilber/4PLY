@@ -12,7 +12,7 @@
 
 
 #whiteflannelbg {
-  background-color: white;
+  background-color: rgba(255,255,255,.8);
   margin-top:4%;
   margin-left: 12%;
   margin-right:12%;
@@ -239,7 +239,7 @@ hr {
 	border: 2px solid #e0e0e0;
 	-moz-border-radius: 10px;
 	border-radius: 2px;
-	background: #f7f6f1;
+	background: rgb(240,255,240);
 	font-family: Bungee;
 }
 	#spaceFiller {
@@ -247,11 +247,11 @@ hr {
 		height: 1px; 
 	}
 .button:hover {
-	background: #e0e0e0;
+	background: rgb(255,182,193);
 }
 .button.current {
-	background: #c9a111;
-	color: #262520;
+	background: rgb(255,182,193);
+	color: black;
 }
 
 
@@ -465,7 +465,7 @@ g.tick text
 
 @media screen and (max-width: 900px) {
 	#whiteflannelbg {
-  background-color: white;
+  background-color: rgba(255,255,255,0.75);
   margin-top:4%;
   margin-left: 3%;
   margin-right:3%;

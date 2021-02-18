@@ -9,8 +9,8 @@ let VAL_KEY = getValKey();
 let grp_vals = {};
 
 let delay_per_unit = 30;
-let bg_color = "lightgrey";
-let cell_color = 'grey';
+let bg_color = "honeydew";
+let cell_color = "pink";
 
 // Dimensions of single chart.
 let margin = { top: 0, right: 0, bottom: 0, left: 6 };
