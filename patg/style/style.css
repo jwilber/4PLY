@@ -99,10 +99,6 @@ sup {
 
 /* Text
 ============================ */
-b {
-
-	font-style: bold;
-}
 
 
 h1 {
@@ -148,6 +144,7 @@ h5 {
 	margin-left:15%;
 	margin-right:15%;
 	font-weight: 800;
+	line-height: normal;
 }
 h6 {
 	font-size: 1rem;
@@ -366,7 +363,7 @@ hr {
 }
 b {
 	font-family: Changa;
-	font-weight: bold !important ;
+	font-weight: bolder !important ;
 }
 
 .italic {
