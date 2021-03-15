@@ -148,7 +148,8 @@ body {
 .preview_image {
   float:right;
   border: 4px solid black;
-  margin-right:7%;
+  margin-right:3%;
+  margin-left:3%;
 
 /*  height: 150px;
   width: 200px;
@@ -260,7 +261,7 @@ ul, li {
 
 
   .preview_image {
-    max-width: 8rem;
+    max-width: 9rem;
     width: 7rem;
     max-height: 10rem;
     height: 5rem;
