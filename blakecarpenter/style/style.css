@@ -55,7 +55,7 @@ p.quote {
 body {
 	font-family: Changa;
 	color: #262520;
-	background-image: url(nikebg.jpg), url("weedbg.gif");
+	background-image: url(nikebg.jpeg), url("weedbg.gif");
   	background-repeat: no-repeat,repeat;
   	background-size:100%;
 }
@@ -373,10 +373,11 @@ b {
 
 b.loud
 {
-	font-size: 2.5rem;
+	font-size: 1.8rem;
 	text-align: center;
 	margin: auto;
 	padding-left: 4rem;
+	color:green;
 }
 
 .italic {
