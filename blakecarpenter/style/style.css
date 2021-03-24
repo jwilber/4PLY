@@ -30,6 +30,11 @@
   line-height: 500pt;
 }
 
+.right {
+	float:right;
+	display:inline-block;
+}
+
 #qna2 {
 	background-image: url('../style/weedbg.gif');
 	background-repeat: repeat;
@@ -261,7 +266,7 @@ hr {
 	border: 2px solid #e0e0e0;
 	-moz-border-radius: 10px;
 	border-radius: 2px;
-	background: rgb(240,255,240);
+	background: rgb(255, 232, 115);
 	font-family: Bungee;
 }
 	#spaceFiller {
@@ -269,10 +274,10 @@ hr {
 		height: 1px; 
 	}
 .button:hover {
-	background: rgb(255,182,193);
+	background: rgb(115, 192, 255);
 }
 .button.current {
-	background: rgb(255,182,193);
+	background: rgb(115, 192, 255);
 	color: black;
 }
 
@@ -393,7 +398,7 @@ b.loud
 	font-size: 1.8rem;
 	text-align: center;
 	margin: auto;
-	padding-left: 4rem;
+	/*margin-left: 4rem;*/
 	color:green;
 }
 
@@ -461,8 +466,7 @@ font-size: 1rem;
 }
 
 .face2 {
-	max-width:15%;
-	max-height: 15%
+	max-width:16%;
 }
 
 @keyframes face-spin {
@@ -497,12 +501,24 @@ g.tick text
 
 @media screen and (max-width: 900px) {
 	#whiteflannelbg {
-  background-color: rgba(255,255,255,0.75);
+  background-color: rgba(255,255,255,1);
   margin-top:4%;
   margin-left: 3%;
   margin-right:3%;
  
   opacity: 100%;
+}
+	
+	.intro{margin:5%;}
+
+	.right {
+	float:right;
+	display:inline-block;
+	max-width:40%;
+}
+
+	.face2 {
+	max-width:25%;
 }
 
 	.main-title {
