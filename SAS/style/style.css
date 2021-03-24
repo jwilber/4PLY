@@ -12,7 +12,7 @@
 
 
 #whiteflannelbg {
-  background-color: rgba(255,255,255,0);
+  background-color: rgba(255,255,255,0.4);
   margin-top:4%;
   margin-left: 12%;
   margin-right:12%;
@@ -53,7 +53,7 @@ p.quote {
 
 
 body {
-	font-family: Changa;
+	font-family: Roboto;
 	color: #262520;
 	background-image: url(sasbg.jpeg);
   	background-repeat: repeat;
@@ -368,7 +368,7 @@ hr {
   flex: 1;
 }
 b {
-	font-family: Changa;
+	font-family: Roboto;
 	font-weight: bolder !important ;
 }
 
@@ -417,7 +417,7 @@ ul.a {
 }
 
 p, ul, li {
-	font-family: Changa;
+	font-family: Roboto;
 	padding-top: 0.5rem;
 }
 
@@ -479,7 +479,7 @@ g.tick text
 
 @media screen and (max-width: 900px) {
 	#whiteflannelbg {
-  background-color: rgba(255,255,255,0.75);
+  background-color: rgba(255,255,255,0.0);
   margin-top:4%;
   margin-left: 3%;
   margin-right:3%;
@@ -500,6 +500,10 @@ g.tick text
 	p {
 		font-size: 0.8rem;
 		max-width: 95%;
+	}
+
+	iframe {max-width:80%;
+
 	}
 
 	ul {
