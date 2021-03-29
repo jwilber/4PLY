@@ -422,7 +422,7 @@ p, ul, li {
 }
 
 img{
-	max-width:90%;
+	/*max-width:90%;*/
 }
 
 select{
