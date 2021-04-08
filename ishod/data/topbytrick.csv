@@ -1,0 +1,388 @@
+"trick","obstacle","cnt"
+"ollie","gap",22
+"bs 5050","rail",16
+"kickflip","gap",13
+"bs crook","rail",12
+"bs lipslide","rail",12
+"fs 5050","rail",12
+"fs feeble","rail",10
+"fs smith","rail",10
+"bs overcrook","rail",9
+"fs kickflip","gap",9
+"kickflip","flat",9
+"bs boardslide","rail",8
+"fs 5-0","rail",8
+"tre flip","flat",8
+"wallie","wall",8
+"bs kickflip","gap",7
+"bs smith","rail",7
+"fs kickflip","stairs",7
+"kickflip","stairs",7
+"sw heelflip","stairs",7
+"bs bigspin","stairs",6
+"bs lipslide","ledge",6
+"fs noseblunt","ledge",6
+"fs tailslide to fakie","ledge",6
+"kickflip","up",6
+"ollie","stairs",6
+"ollie","up",6
+"sw tre flip","flat",6
+"bs 180","gap",5
+"fakie kickflip","flat",5
+"fs 180","gap",5
+"fs heelflip","gap",5
+"fs tailslide","ledge",5
+"hardflip","gap",5
+"hardflip","stairs",5
+"nollie to bs crook","rail",5
+"sw fs kickflip","stairs",5
+"tre flip","gap",5
+"bs bigspin","flat",4
+"bs feeble","rail",4
+"fs 180 to sw bs crook","rail",4
+"fs blunt","rail",4
+"fs boardslide","rail",4
+"fs kickflip","flat",4
+"fs shuv","gap",4
+"heelflip","stairs",4
+"kickflip to fs boardslide","rail",4
+"nollie bs kickflip","stairs",4
+"nollie kickflip","flat",4
+"nollie kickflip","stairs",4
+"nollie to fs feeble","rail",4
+"bs 180","flat",3
+"bs 5050","ledge",3
+"bs kickflip","flat",3
+"bs noseblunt","rail",3
+"bs tailslide","transition",3
+"bs tailslide to bs kickflip","ledge",3
+"fakie fs kickflip","stairs",3
+"fs blunt","ledge",3
+"fs lipslide","rail",3
+"fs shuv","flat",3
+"halfcab kickflip","flat",3
+"halfcab kickflip","stairs",3
+"halfcab to bs crook","rail",3
+"heelflip","flat",3
+"kickflip to bs boardslide","rail",3
+"kickflip to bs crook","ledge",3
+"kickflip to bs lipslide","rail",3
+"kickflip to bs smith","rail",3
+"kickflip to fs 5050","rail",3
+"kickflip to fs crook","rail",3
+"nollie heelflip","flat",3
+"sw bs crook","ledge",3
+"sw fs bigspin","gap",3
+"sw fs heelflip","flat",3
+"sw heelflip","flat",3
+"sw heelflip","gap",3
+"sw kickflip","gap",3
+"sw kickflip to sw bs crook","ledge",3
+"tre flip","stairs",3
+"tre flip to 5050","rail",3
+"varial heelflip","gap",3
+"varial heelflip","stairs",3
+"bs 180 to sw bs 5-0","rail",2
+"bs 360","flat",2
+"bs 360 kickflip","gap",2
+"bs blunt","rail",2
+"bs boardslide","stairs",2
+"bs heelflip","stairs",2
+"bs kickflip","stairs",2
+"bs noseblunt to fakie","ledge",2
+"bs tailslide","ledge",2
+"fakie fs 180","flat",2
+"fakie fullcab","stairs",2
+"fakie kickflip","stairs",2
+"fakie tre flip","flat",2
+"fs 180","flat",2
+"fs 180","transition",2
+"fs 180 to sw bs crook","ledge",2
+"fs 180 to sw fs 5-0 to regular","ledge",2
+"fs 270 to bs lip to regular","rail",2
+"fs 360","stairs",2
+"fs 5-0","transition",2
+"fs bigspin","stairs",2
+"fs boardslide","ledge",2
+"fs boardslide to fakie","rail",2
+"fs lipslide","transition",2
+"fs noseblunt","rail",2
+"fs nosegrind","rail",2
+"fs noseslide","ledge",2
+"fs shuv","stairs",2
+"fs shuv to bs crook","rail",2
+"fs tailslide","rail",2
+"halfcab","flat",2
+"halfcab to bs crook","ledge",2
+"kickflip to bs 5050","rail",2
+"kickflip to bs lipslide","ledge",2
+"kickflip to bs tailslide","ledge",2
+"kickflip to fs 5050","ledge",2
+"kickflip to fs noseslide","ledge",2
+"late shuv","gap",2
+"nollie bs 180 to sw fs crook","ledge",2
+"nollie bs heelflip","stairs",2
+"nollie bs kickflip","gap",2
+"nollie fs 180 to sw bs crook","ledge",2
+"nollie fs 180 to sw bs crook","rail",2
+"nollie fs heelflip","stairs",2
+"nollie fs kickflip","gap",2
+"nollie fs kickflip","stairs",2
+"nollie inward heel","gap",2
+"nollie to bs 5-0","rail",2
+"nollie to bs crook","ledge",2
+"nollie to fs nosegrind","rail",2
+"shuv to fs 5050","rail",2
+"slappy bs crook","ledge",2
+"suicide 5050","rail",2
+"sw big heel","flat",2
+"sw bs crook to regular","ledge",2
+"sw bs tailslide to regular","ledge",2
+"sw fs bigspin to bs boardslide","rail",2
+"sw fs heelflip","stairs",2
+"sw heelflip to sw fs nosegrind","ledge",2
+"sw kickflip","flat",2
+"sw kickflip","stairs",2
+"sw kickflip to sw fs boardslide","rail",2
+"360 shuv","gap",1
+"barley grind","rail",1
+"blunt stall to halfcab heelflip","transition",1
+"bs 180","stairs",1
+"bs 180","transition",1
+"bs 180 to sw bs 5-0","ledge",1
+"bs 180 to sw bs nosegrind to regular","ledge",1
+"bs 180 to sw fs 5-0","rail",1
+"bs 180 to sw fs nosegrind","ledge",1
+"bs 360","gap",1
+"bs 360","stairs",1
+"bs 5-0","ledge",1
+"bs 5-0","rail",1
+"bs 5-0 to fs 180","ledge",1
+"bs bigflip","stairs",1
+"bs bigspin","gap",1
+"bs bigspin to bs tailslide","ledge",1
+"bs bigspin to bs tailslide","transition",1
+"bs blunt","ledge",1
+"bs blunt to fakie","ledge",1
+"bs blunt to fs kickflip","ledge",1
+"bs boardlside","rail",1
+"bs boardslide to bs boardslide","rail",1
+"bs boardslide to bs feeble","rail",1
+"bs crook stall","transition",1
+"bs crook to fakie","ledge",1
+"bs crook to nollie kickflip","rail",1
+"bs crook to sw fs 5-0","ledge",1
+"bs disaster","transition",1
+"bs feeble to bs lipslide","rail",1
+"bs feeble to fs 180","rail",1
+"bs heelflip","flat",1
+"bs heelflip","gap",1
+"bs hurricane","ledge",1
+"bs kickflip to sw bs 5-0","ledge",1
+"bs kickflip to sw bs nosegrind","ledge",1
+"bs kickfllip","stairs",1
+"bs lipside","rail",1
+"bs lipslide to fakie","rail",1
+"bs lipslide to kickflip","ledge",1
+"bs melon","transition",1
+"bs nosegrind","rail",1
+"bs noseslide","ledge",1
+"bs ollie","transition",1
+"bs smith","ledge",1
+"bs smith to bs 180","ledge",1
+"bs smith to fs 180","rail",1
+"bs tail block to fakie","transition",1
+"bs tail to sw fs crook","ledge",1
+"bs tailslide to bs 270","ledge",1
+"bs tailslide to bs heelflip","ledge",1
+"bs tailslide to fakie","ledge",1
+"bs tailslide to shuv","ledge",1
+"bs tailslide to sw fs crook","ledge",1
+"bs tailslide to sw fs crook to fakie kickflip","ledge",1
+"bs wallride to fs 180","bank",1
+"fakie 5-0","ledge",1
+"fakie 5-0 to sw bs 180","ledge",1
+"fakie bigspin","flat",1
+"fakie bs tailslide","ledge",1
+"fakie bs tailslide to regular","ledge",1
+"fakie fs 5-0 to regular","ledge",1
+"fakie fs boardslide","rail",1
+"fakie fs crook","ledge",1
+"fakie fs noseslide to regular","ledge",1
+"fakie fs noseslide to shuv","ledge",1
+"fakie fullcab","gap",1
+"fakie hardflip","stairs",1
+"fakie heelflip to sw bs tailslide","ledge",1
+"fakie inward heelflip","stairs",1
+"fakie kickflip","up",1
+"fakie kickflip fs noseslide to shuv","ledge",1
+"fakie kickflip to sw 5-0 to sw bs 180","ledge",1
+"fakie manny to fakie kickflip","manny pad",1
+"fakie ollie","flat",1
+"fakie overcrook","rail",1
+"fakie tre flip","stairs",1
+"fakie tre flip to sw manny","manny pad",1
+"foot plant","transition",1
+"fs 180","stairs",1
+"fs 180 to sw bs crook to regular","rail",1
+"fs 180 to sw fs 5-0","ledge",1
+"fs 180 to sw fs 5-0","rail",1
+"fs 180 to sw fs wallride","wall",1
+"fs 360","flat",1
+"fs 5050 to bs 180","rail",1
+"fs blunt to bs 360","ledge",1
+"fs blunt to bs bigspin","ledge",1
+"fs blunt to bs kickflip","ledge",1
+"fs blunt to bs kickflip","rail",1
+"fs blunt to fakie","ledge",1
+"fs blunt to shuv","rail",1
+"fs boneless","transition",1
+"fs crook to fakie","ledge",1
+"fs crook to nollie bs 180","ledge",1
+"fs disaster","transition",1
+"fs feeble to bs 180","rail",1
+"fs feeble to fs shuv","rail",1
+"fs feeble to fs smith","rail",1
+"fs heelflip","flat",1
+"fs heelflip","stairs",1
+"fs indie","transition",1
+"fs indie to fs disaster","transition",1
+"fs kickflip","rail",1
+"fs lipslide to fs shuv","rail",1
+"fs noseblunt stall","transition",1
+"fs noseblunt to fs lipslide","ledge",1
+"fs nosegrab","transition",1
+"fs nosegrab to footplant","transition",1
+"fs nosegrab to tailstall","transition",1
+"fs nosegrind","ledge",1
+"fs noseslide","rail",1
+"fs noseslide to nollie kickflip","ledge",1
+"fs ollie","hip",1
+"fs overcrook","rail",1
+"fs shuv to bs 5050","rail",1
+"fs shuv to bs boardslide","rail",1
+"fs shuv to bs nosegrind","ledge",1
+"fs smith","transition",1
+"fs smith to fs 180","ledge",1
+"fs smith to fs 180","rail",1
+"fs smith to tailgrab","transition",1
+"fs tailslide to fs kickflip","ledge",1
+"fs tailslide to fs kickflip","rail",1
+"fs tailslide to sw fs 5-0 to fakie","ledge",1
+"fs wallride","transition",1
+"fs wallride","wall",1
+"halfcab","transition",1
+"halfcab","up",1
+"halfcab kickflip to bs crook","ledge",1
+"halfcab to fs nosegrind to nollie fs 180","ledge",1
+"halfcab to manny","manny pad",1
+"halfcab to manny to bs 180","manny pad",1
+"halfcab to manual to bs bigspin","manny pad",1
+"heelflip","gap",1
+"heelflip","up",1
+"heelflip to bs crook","rail",1
+"indie grab","transition",1
+"kickflip to bs crook","rail",1
+"kickflip to bs nosegrind","rail",1
+"kickflip to bs noseslide","ledge",1
+"kickflip to bs noseslide","rail",1
+"kickflip to bs noseslide to fakie","ledge",1
+"kickflip to bs tailslide to fakie","ledge",1
+"kickflip to fs 5051","rail",1
+"kickflip to fs lipslide","ledge",1
+"kickflip to fs lipslide","rail",1
+"kickflip to fs noseslide to fakie","ledge",1
+"kickflip to fs tailslide","ledge",1
+"kickflip to manny","manny pad",1
+"late fs shuv","gap",1
+"manny to kickflip","manny pad",1
+"no comply tailslide to fakie","transition",1
+"no comply to bs blunt to fakie","transition",1
+"no comply to bs blunt to fs 360","transition",1
+"no comply to fs 180","stairs",1
+"nollie","up",1
+"nollie bs 180","ledge",1
+"nollie bs 180 to sw fs crook to fakie kickflip","ledge",1
+"nollie bs heelflip","flat",1
+"nollie bs heelflip","gap",1
+"nollie bs kickflip","flat",1
+"nollie fs 180 to sw bs crook to fakie heelflip","ledge",1
+"nollie fs heelflip","hip",1
+"nollie fs heelflip to sw bs crook","ledge",1
+"nollie fs kickflip","flat",1
+"nollie fs tailslide to fakie","ledge",1
+"nollie hardflip","stairs",1
+"nollie heelflip","gap",1
+"nollie heelflip","stairs",1
+"nollie heelflip to bs noseslide","rail",1
+"nollie heelflip to bs tailslide to fakie","ledge",1
+"nollie heelflip to fs crook to fakie","ledge",1
+"nollie inward heel","stairs",1
+"nollie inward heelflip","gap",1
+"nollie kickflip","gap",1
+"nollie kickflip to bs 5050","rail",1
+"nollie kickflip to bs 5051","rail",1
+"nollie kickflip to bs boardslide","rail",1
+"nollie kickflip to bs crook","ledge",1
+"nollie kickflip to bs lipslide","rail",1
+"nollie kickflip to bs tailslide","ledge",1
+"nollie shuv to bs crook","ledge",1
+"nollie shuv to bs noseslide to nollie fs shuv","ledge",1
+"nollie shuv to manny","manny pad",1
+"nollie to bs noseslide","rail",1
+"nollie to fs blunt to bs kickflip","ledge",1
+"nollie to fs crook","rail",1
+"nollie to fs nosegrind","ledge",1
+"nollie to fs noseslide","rail",1
+"nollie to fs noseslide to nollie bs heelflip","ledge",1
+"nollie to nose manny to nollie kickflip","manny pad",1
+"nollie tre flip","flat",1
+"nollie tre flip","stairs",1
+"nose manny to nollie kickflip","manny pad",1
+"ollie","flat",1
+"polejam to fs 180","pole",1
+"shuv","stairs",1
+"shuv to fs boardslide","rail",1
+"slappy bs 5050","ledge",1
+"sw big heel","gap",1
+"sw big heel to bs boardslide","rail",1
+"sw bs blunt to regular","ledge",1
+"sw bs crook","rail",1
+"sw bs crook to fakie kickflip","rail",1
+"sw bs crook to regular","rail",1
+"sw bs kickflip","stairs",1
+"sw bs kickflip to nose manny","manny pad",1
+"sw bs noseslide to nollie fs 180","ledge",1
+"sw bs wallride","wall",1
+"sw fs bigspin","flat",1
+"sw fs bigspin to sw bs boardslide ","rail",1
+"sw fs blunt","ledge",1
+"sw fs boardslide to regular","stairs",1
+"sw fs heelflip","gap",1
+"sw fs heelflip","up",1
+"sw fs nosegrind to fakie kickflip","ledge",1
+"sw fs shuv","gap",1
+"sw fs shuv to sw bs noseslide","ledge",1
+"sw fs tailslide","ledge",1
+"sw fs tailslide to regular","ledge",1
+"sw heelflip to bs 5-0","ledge",1
+"sw heelflip to sw fs nosegrind","gap",1
+"sw heelflip to sw fs tailslide to regular","ledge",1
+"sw heelflip to sw fs tailslide to sw fs bigspin","ledge",1
+"sw heelflip to sw manny","manny pad",1
+"sw inward heelflip to sw fs 5-0","ledge",1
+"sw kickflip to sw bs crook","rail",1
+"sw kickflip to sw bs noseslide to regular","ledge",1
+"sw kickflip to sw fs 5-0","ledge",1
+"sw ollie","flat",1
+"sw ollie","stairs",1
+"sw varial heelflip","stairs",1
+"tre flip to 50-50","rail",1
+"tre flip to 50-51","rail",1
+"wallie","gap",1
+"wallie","rail",1
+"wallie","stairs",1
+"wallie to bs boardslide","rail",1
+"wallie to fs 180","wall",1
+"wallie to fs 360","wall",1
+"wallie to fs smith","rail",1
