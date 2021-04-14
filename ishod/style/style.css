@@ -16,6 +16,7 @@
   margin-top:4%;
   margin-left: 12%;
   margin-right:12%;
+
  
   opacity: 100%;
 }
@@ -24,8 +25,8 @@
 
 .qna {
   text-align: left;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
   display: block;
   line-height: 500pt;
 }
@@ -36,7 +37,7 @@
 }
 
 #qna2 {
-	background-image: url('../style/aishodbg.jpg');
+	background-image: url('/style/ishodbg.jpg');
 	background-repeat: repeat;
 	width:100%;
 	height:1000px;
@@ -68,7 +69,7 @@ p.quote {
 body {
 	font-family: Changa;
 	color: #262520;
-	background-image: url(aishodbg.jpg)/*, url("weedbg.gif")*/;
+	background-image: url()/*, url("weedbg.gif")*/;
   	background-repeat: repeat;
   	background-size:width:100%;
 }
@@ -542,7 +543,7 @@ g.tick text
 		max-width: 85%;
 	}
 	p {
-		font-size: 8em;
+		font-size: 0.8em;
 		max-width: 95%;
 	}
 
@@ -556,7 +557,7 @@ g.tick text
 	}
 	g.tick text
 	{
-	font-size: 7em;
+	font-size: 0.7em;
 	}
 }
 

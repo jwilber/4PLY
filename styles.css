@@ -13,7 +13,7 @@
 body {
   font-family: "Bungee";
   /*font-weight: 100;*/
-  background-color: honeydew;
+  background-color: rgb(254, 237, 255);
 }
 
 .about {
@@ -139,7 +139,7 @@ body {
   padding: 10px;
   text-align: center;
   width: 100%;
-  background-color: honeydew;
+  background-color: rgb(254, 237, 255);
   margin-right: 0%;
   color: grey;
   margin-bottom: 0px;
@@ -343,7 +343,7 @@ hr {
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
+@  screen and (max-width: 700px) {
   .row, .navbar {   
     flex-direction: column;
   }
