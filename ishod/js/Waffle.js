@@ -1,4 +1,4 @@
-let USER_VIDEO = "Daylando";
+let USER_VIDEO = "Paych";
 
 
 function getValKey() {
@@ -6,6 +6,8 @@ function getValKey() {
 }
 
 let VAL_KEY = getValKey();
+console.log(USER_VIDEO)
+console.log(VAL_KEY)
 let grp_vals = {};
 
 let delay_per_unit = 30;

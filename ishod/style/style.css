@@ -37,8 +37,6 @@
 }
 
 #qna2 {
-	background-image: url('/style/ishodbg.jpg');
-	background-repeat: repeat;
 	width:100%;
 	height:1000px;
 	position:absolute;
@@ -69,7 +67,7 @@ p.quote {
 body {
 	font-family: Changa;
 	color: #262520;
-	background-image: url()/*, url("weedbg.gif")*/;
+	background-image: url("ishod.jpg");
   	background-repeat: repeat;
   	background-size:width:100%;
 }

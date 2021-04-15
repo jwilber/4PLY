@@ -12,7 +12,7 @@
 
 
 #whiteflannelbg {
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255, 241, 204,0.8);
   margin-top:4%;
   margin-left: 12%;
   margin-right:12%;
@@ -51,11 +51,25 @@ p.quote {
   /*color: white;*/
 }
 
+.right {
+	float:right;
+	display:inline-block;
+	padding-left:2%;
+	padding-bottom:2%;
+}
+
+.left {
+	float:left;
+	display:inline-block;
+	padding-right:3%;
+	padding-bottom:2%;
+}
+
 
 body {
 	font-family: Roboto;
 	color: #262520;
-	background-image: url(marbg.jpg);
+	background-image: url('marbgm.jpeg');
   	background-repeat: repeat;
   	background-size:100%;
 }
@@ -479,7 +493,7 @@ g.tick text
 
 @media screen and (max-width: 900px) {
 	#whiteflannelbg {
-  background-color: rgba(255,255,255,0.0);
+  background-color: rgba(255,255,255,0.9);
   margin-top:4%;
   margin-left: 3%;
   margin-right:3%;
