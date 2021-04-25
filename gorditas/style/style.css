@@ -53,6 +53,11 @@ a {
 	background-color: tomato;
 	color: white;
 	margin-bottom: 0px;
+}a:link{
+    color:white;
+}
+a:visited{
+    color:white;
 }
 
 #header {
