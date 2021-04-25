@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Hairline');
 @import url('https://fonts.googleapis.com/css?family=Bungee');
 @import url('https://fonts.googleapis.com/css?family=Roboto');;
-@import url('https://fonts.googleapis.com/css?family=Sarabun');
+/*@import url('https://fonts.googleapis.com/css?family=Sarabun');*/
 
 
 
@@ -33,7 +33,15 @@
 	table {
 		border-collapse: collapse;
 		border-spacing: 0; }
+		iframe {
+			height:25rem;
+			width:50rem;
+		}
 
+		video {
+			height:25rem;
+			width:auto;
+		}
 
 body {
 	font-family: Roboto;
@@ -50,7 +58,7 @@ a {
 #main-wrapper {
 	max-width: 100%;
 	margin: 20px auto;
-	font-family: Sarabun;
+	font-family: Roboto;
 	background-color: tomato;
 	color: white;
 	margin-bottom: 0px;
@@ -140,14 +148,14 @@ p, ul, li {
 h5 {font-size: 1.8em;
 	font-style: uppercase;
 	margin-bottom: .5rem;
-	padding-top: 10px;
+	padding-top: 0px;
 	font-family: Bungee;
 	color: tomato;
 	text-align: center;
 }
 
 hr {
-	max-width: 10%;
+	max-width: 20%;
 }
 
 
@@ -477,10 +485,7 @@ ul.facts1 {
 		margin-top: 7%;
 	}
 
-	video{
-		width:70%;
-		height:30%;
-	}
+
 	/*.face {
 		height: 6rem;
 	}*/
@@ -511,8 +516,10 @@ ul.facts1 {
 
 	iframe{
 		max-width: 70%;
-		max-height: 20%;
+		height:15rem;
 	}
+
+
 
 	.table th, td {
 		font-size: .5rem;
