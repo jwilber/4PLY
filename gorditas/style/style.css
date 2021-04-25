@@ -14,11 +14,12 @@
 ================================================== */
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, u, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
-		padding: 0;
+		padding:;
 		border: 0;
 		font-size: 100%;
 		font: inherit;
-		vertical-align: baseline; }
+		vertical-align: baseline; 
+		}
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block; }
 	body {
@@ -176,13 +177,13 @@ hr {
 }
 
 .section3 p {
-	color: black;
+	color: white;
 }
 .section3 a:link{
-    color: black;
+    color: white;
 }
 .section3 a:visited{
-    color: black;
+    color: orange;
 }
 
 /* Controls
@@ -475,6 +476,11 @@ ul.facts1 {
 		font-size: 3rem;
 		margin-top: 7%;
 	}
+
+	video{
+		width:70%;
+		height:30%;
+	}
 	/*.face {
 		height: 6rem;
 	}*/
@@ -487,8 +493,25 @@ ul.facts1 {
 	display: block;
 	position: relative;
 }
+
+	body {
+		padding-left:2%;
+		padding-right:2%;}
+
 	.table {
 		max-width: 85%;
+	}
+
+	/*.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}*/
+
+	iframe{
+		max-width: 70%;
+		max-height: 20%;
 	}
 
 	.table th, td {
