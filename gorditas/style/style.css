@@ -61,8 +61,19 @@ a {
 	font-family: Roboto;
 	background-color: tomato;
 	color: white;
-	margin-bottom: 0px;
-}a:link{
+	margin-bottom: 0px;}
+
+/*#fresh {
+	background-color:tomato;
+
+}
+
+#rotten {
+	background-color:limegreen;
+}
+*/
+
+a:link{
     color:white;
 }
 a:visited{
