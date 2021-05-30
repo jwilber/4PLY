@@ -1,10 +1,21 @@
 // set the dimensions and margins of the graph
-const barMargin = { top: 10, right: window.innerWidth/8, bottom: 100, left: window.innerWidth/3.7 }
-const barWidth = window.innerWidth/1.35 - barMargin.left - barMargin.right;
+var barMargin = { top: 10, right: window.innerWidth/8, bottom: 100, left: window.innerWidth/4 }
+var barWidth = window.innerWidth/1.15 - barMargin.left - barMargin.right;
 const barHeight = window.innerHeight/1.1 - barMargin.top - barMargin.bottom;
 console.log('we in')
 
+function myFunction(isMobile) {
+  if (isMobile.matches) { // If media query matches
+    barWidth.left = window.innerWidth/1.15 - barMargin.left - barMargin.right;
+  } else {
+    barWidth = window.innerWidth/1.4 - barMargin.left - barMargin.right;
+    barMargin.left = window.innerWidth/3.5;
+  }
+}
 
+var isMobile = window.matchMedia("(max-width: 900px)")
+myFunction(isMobile) // Call listener function at run time
+isMobile.addListener(myFunction) // Attach listener function on state changes
 
 // append the svg object to the body of the page
 let svg = d3.select("#my_interactivedatavis")
@@ -35,7 +46,7 @@ let obstacletricks = data.filter(function(d){ return d.obstacle == "rail" })
   .entries(data)
 
 
-
+  document.getElementById("section-header").innerHTML = 'Top Tricks';
   console.log(trickByObstacle3)
 
   // Add X axis
@@ -160,9 +171,9 @@ console.log(map.entries())
     .attr("width", function(d) {return x(d.value); })
 
     .attr("height", (y.bandwidth()))
-    .attr('fill', "black")
+    .attr('fill', "rgb(155, 28, 49)")
     // console.log("here")
-    .style('stroke', 'black')
+    .style('stroke', 'rgb(155, 28, 49)')
     .style('stroke-width', 7)
 
 
@@ -201,6 +212,8 @@ d3.select('svg')
           // console.log(trickByObstacle.property.obstacle[1])
           var selectedOption = d3.select(this).attr("obstacle")
           console.log(selectedOption)
+
+          document.getElementById("section-header").innerHTML = 'Top ' + selectedOption + ' Tricks'; 
           // console.log(selection)
           d3.selectAll("rect")
             .remove();
@@ -328,8 +341,8 @@ d3.select('svg')
     .attr("height", (y.bandwidth()))
     
     
-    .attr('fill', "black")
-    .style('stroke', 'black')
+    .attr('fill', "rgb(155, 28, 49)")
+    .style('stroke', 'rgb(155, 28, 49)')
     .style('stroke-width', 7)
 
     .on('click',function() {

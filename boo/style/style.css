@@ -68,7 +68,7 @@ p.quote {
 body {
 	font-family: Changa;
 	color: #262520;
-	background-image: url(nikebg.jpeg)/*, url("weedbg.gif")*/;
+	background-image: url(weedbg.gif)/*, url("weedbg.gif")*/;
   	background-repeat: repeat;
   	background-size:100%;
 }

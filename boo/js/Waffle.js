@@ -1,4 +1,4 @@
-let USER_VIDEO = "Daylando";
+let USER_VIDEO = "Grounded";
 
 
 function getValKey() {
@@ -22,7 +22,7 @@ let height = 134 - margin.top - margin.bottom;
 
 d3.csv("data/square_pie.csv", function (error, data) {
     if (error) throw error;
-    console.log(data)
+    console.log(data);
     let valfields = d3.keys(field_details);
     // Make data accessible by grp key
     data.forEach(function (o) {
@@ -52,7 +52,7 @@ d3.csv("data/square_pie.csv", function (error, data) {
         let grid_height = d3.max(cells, d => d.y) + 2;
         let cell_size = width / grid_width;
         let holder_width = width + margin.left + margin.right;
-
+        
 
         let chart_perc = grp_vals[VAL_KEY][v];
 

@@ -11,8 +11,8 @@ console.log(VAL_KEY)
 let grp_vals = {};
 
 let delay_per_unit = 30;
-let bg_color = "rgb(255, 232, 115)";
-let cell_color = "rgb(115, 192, 255)";
+let bg_color = "white";
+let cell_color = "rgb(7, 4, 182)";
 
 // Dimensions of single chart.
 let margin = { top: 0, right: 0, bottom: 0, left: 6 };
