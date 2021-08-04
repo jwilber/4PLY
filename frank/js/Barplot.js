@@ -1,7 +1,7 @@
 // set the dimensions and margins of the graph
-const barMargin = { top: 10, right: window.innerWidth/6, bottom: 50, left: window.innerWidth/4 }
-const barWidth = window.innerWidth/1.1 - barMargin.left - barMargin.right
-const barHeight = window.innerHeight/0.9 - barMargin.top - barMargin.bottom;
+const barMargin = { top: 0, right: window.innerWidth < 700 ? 100:10000, bottom: 0, left: window.innerWidth/4 }
+const barWidth = window.innerWidth*.38
+const barHeight = window.innerHeight/1.2 - barMargin.top - barMargin.bottom;
 console.log('we in')
 
 // append the svg object to the body of the page
@@ -33,12 +33,12 @@ d3.csv("data/toptricks.csv", function (data) {
   let y = d3.scaleBand()
     .range([0, barHeight])
     .domain(data.map(d => d.trick))
-    .padding(.5);
+    .padding(.2);
 
   svg.append("g")
     .attr('class', 'y-axis')
     .call(d3.axisLeft(y))
-    .style('font-size', '.8rem')
+    .style('font-size', '.7rem')
 
   //Bars
   svg.selectAll("myRect")
@@ -51,15 +51,15 @@ d3.csv("data/toptricks.csv", function (data) {
     .attr("height", y.bandwidth())
     .attr('fill', "black")
     .style('stroke', 'black')
-    .style('stroke-width', 4)
+    .style('stroke-width',0)
 
 })
 
 // add title
 d3.select('svg')
   .append('text')
-  .attr('x', (barWidth) / 2)
-  .attr('y', barMargin.top / 1.1)
+  .attr('x', (barWidth) / 20)
+  .attr('y', barMargin.top / 20)
   .style('font-family', "Bungee")
   .style('font-size', '1.2rem')
 
@@ -67,7 +67,7 @@ d3.select('svg')
 d3.select('svg')
   .append("text")
   .attr('x', (barWidth + barMargin.left) / 2)
-  .attr('y', barHeight + barMargin.top + 40)
+  .attr('y', barHeight + barMargin.top)
   // .style("text-anchor", "left")
   .style('font-family', "Bungee")
   .style('font-size', '1rem')
