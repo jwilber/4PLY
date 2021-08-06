@@ -44,9 +44,7 @@
 }
 
 p.quote {
-    font-size: 0.6em;
-    margin-left: 7%;
-    margin-right: 5%;
+    font-size: 0.7rem;
 
 }
 
@@ -71,6 +69,7 @@ body {
     background-image: url("frankbg2.png");
     background-repeat: no-repeat repeat;
     background-size: 100% auto;
+    font-size: .8rem;
     /*background-attachment: fixed;*/
 }
 
