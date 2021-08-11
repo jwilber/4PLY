@@ -561,7 +561,7 @@ g {
 
 g.tick text {
     overflow-wrap: normal;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 @media screen and (max-width: 900px) {

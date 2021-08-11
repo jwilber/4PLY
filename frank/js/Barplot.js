@@ -11,7 +11,7 @@ console.log("we in");
 
 // append the svg object to the body of the page
 let svg = d3
-  .select("#my_datavis")
+  // .select("#my_datavis")
   .append("svg")
   .attr("width", barWidth + barMargin.left + barMargin.right)
   .attr("height", barHeight + barMargin.top + barMargin.bottom)
