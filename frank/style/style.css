@@ -561,7 +561,7 @@ g {
 
 g.tick text {
     overflow-wrap: normal;
-    font-size: 0.6rem;
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 900px) {
@@ -658,6 +658,34 @@ g.tick text {
     g.tick text {
         width: 5px;
         overflow-wrap: normal;
-        font-size: 0.45em;
+        font-size: .9rem;
     }
 }
+
+#my_datavis {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    max-width: 80%;
+}
+
+#y-axis-force .domain {
+    opacity: 0;
+}
+
+
+#y-axis-force .tick {
+    opacity: 0.8;
+    stroke-width: 2;
+}
+
+text.trick-name {
+    font-family: Bungee;
+    stroke-linejoin: round;
+    text-anchor: middle;
+    stroke: black;
+    paint-order: stroke fill;
+    fill: rgb(248, 209, 6);
+    stroke-width: 3px;
+    pointer-events: none;
+  }
