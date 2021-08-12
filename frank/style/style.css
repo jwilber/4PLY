@@ -25,11 +25,14 @@
 }
 
 .inline{
-	float: right;
+	/*display: inline;*/
+	float: left;
 	/*border: 3px solid red;*/
-	padding-left: 2%;
-	padding-right: 2%;
-	width: 40%;
+	/*padding-left: 4%;*/
+	padding-right: 4%;
+	padding-top: 4%;
+	padding-bottom: 4%;
+	width: 15rem;
 }
 
 .qna {
@@ -444,6 +447,11 @@ td {
     font-size: .5rem;
 }
 
+.listimg{
+	
+	width: 20%;
+}
+
 /*bar chart multiples*/
 .some-page-wrapper {
     display: flex;
@@ -529,6 +537,12 @@ img {
     max-width: 90%;
 }
 
+li.fact{
+	line-height: 1.4rem;
+	/*color: green;*/
+	font-size: 1.1em;
+}
+
 select {
     font-size: 1rem;
 }
@@ -539,7 +553,7 @@ g {
 
 
 .face2 {
-    max-width: 30%;
+    max-width: 20%;
 }
 
 
