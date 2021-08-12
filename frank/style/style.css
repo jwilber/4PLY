@@ -24,6 +24,14 @@
     -webkit-font-smoothing: antialiased;
 }
 
+.inline{
+	float: right;
+	/*border: 3px solid red;*/
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 40%;
+}
+
 .qna {
     text-align: left;
     margin-left: 5%;
@@ -531,7 +539,7 @@ g {
 
 
 .face2 {
-    max-width: 16%;
+    max-width: 30%;
 }
 
 
@@ -573,6 +581,12 @@ g.tick text {
 
         opacity: 100%;
     }
+
+    .inline{
+	width: 100%;
+	padding-left: 0%;
+	float: left;
+}
 
     g.tick {
         font-family: Inconsolata;
