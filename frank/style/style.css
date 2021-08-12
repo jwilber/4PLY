@@ -587,9 +587,18 @@ g.tick text {
 	padding-left: 0%;
 	float: left;
 }
+		
+		li {
+    margin-bottom: .5em;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    line-height: 1.4em;
+}
+
 
     g.tick {
-        font-family: Inconsolata;
+        /*font-family: Inconsolata;*/
         text-transform: uppercase;
         font-size: 1rem;
         overflow-wrap: break-word;
@@ -641,7 +650,7 @@ g.tick text {
     }
 
     .face2 {
-        max-width: 25%;
+        max-width: 80%;
     }
 
     .main-title {
@@ -660,6 +669,11 @@ g.tick text {
     p {
         font-size: 0.8em;
         max-width: 95%;
+    }
+
+    p.quote{
+    	font-size: 0.7em;
+
     }
 
     ul {}
