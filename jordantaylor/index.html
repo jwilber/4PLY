@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84472984-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-84472984-4');
+    </script>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <div id="whiteflannelbg">
+    <title>Jordan Taylor</title>
+    <link rel="shortcut icon" type="image/png" href="/images/handrailchart.png"/>
+    <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
+    <script src="assets/d3.v4.min.js"></script>
+    <script src="assets/d3-interpolate-path.min.js"></script>
+    <script src="assets/textures.js"></script>
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+</head>
+
+<header>
+
+    <section class='section-intro'>
+        <center>
+            <h1>
+                <a href="/" class="homepage">4PLY MAG</a>
+            </h1>
+            <br>
+            <!--  
+            
+            <h4>April 2021</h4> -->
+                
+            <h1 class='main-title'>Jordan<br>Taylor</h1><br>
+
+            <img src="images/ishodicon.png"/ class = "face2"><br>
+            <!-- <h4>By <a href="https://www.instagram.com/fosterschild/">Harrison Lisewski</a></h4> -->
+            <!-- <br><br> -->
+        </center>
+    </section>
+
+</header>
+<body>
+
+    <!-- <div id="main-wrapper"> -->
+
+    <br>
+        
+
+        
+        <!-- <p class="intro">
+
+
+        </p> 
+
+        
+
+      
+        <hr> -->
+
+        <div class="qna"><p><br><br>
+ <br><br><br>
+        
+
+        </p></div> 
+        <h1 id='section-header'>Top Tricks</h1>
+
+    
+        <div id="my_interactivedatavis">
+    
+            </div>
+            
+
+
+
+        <div class="qna"><p><br><br>
+            <hr>
+
+        </p></div>
+
+  
+
+    <br>
+    <section class='section2'>
+    <h1>
+   OVER TIME
+    </h1>
+    
+
+   
+
+
+    <select id="metric-select" style='margin-left: 30%;'></select>
+    <center>
+        <div id="linechart" div></div>
+    </center></section>
+    <p>
+    
+
+    <br><hr>
+    </p>
+    
+    <!--
+    <section class='section2'>
+    <hr><br>
+    <h1>Video Numbers
+    </h1>
+    <div id='table'></div>
+
+    </p>
+</section>
+
+<section class='section2'>
+  <ul class='facts'>
+    <li class='fact'><b class='uline'>813</b> - Tricks logged for this article
+    </li>
+    <li class='fact'><b class='uline'>282</b> - Unique tricks (34.7%)
+    </li>
+    
+    <li class='fact'><b class='uline'>130</b> - Tricks done in/out of banks (16%)
+    </li>
+   
+    </li>
+    <li class='fact'><b class='uline'>113</b> - Tricks down stairs
+    </li>
+    <li class='fact'><b class='uline'>xx</b> - Stairs skated (including handrails)
+    </li>
+    <li class='fact'><b class='uline'>xx</b> - average stair count
+    </li>
+    
+    <li class='fact'><b class='uline'>90</b> - Flatground tricks</li>
+    <li class='fact'><b class='uline'>12</b> - Manual tricks<br>
+    <li class='fact'><b class='uline'>163</b> - Ledge tricks</li>
+    <li class='fact'><b class='uline'>189</b> - Handrail tricks (23.2%)</li>
+    <li class='fact'><b class='uline'>28</b> - Switch handrail tricks<br><img src="images/blakeswtre.gif" class='center' width="450"></li>
+
+    <li class='fact'><b class='uline'>35</b> - Transition tricks</li>
+
+    <li class='fact tab'><b class='uline'>53</b> - Slow mo tricks (6.5%) </li>
+    <br>
+    
+  </ul>
+
+  
+         
+
+
+    
+</section>
+
+    <div class="qna">
+        <p>
+
+
+        </p>
+    </div>
+        <br>
+        
+-->
+
+<section class='section1'>
+    <br>
+    <h1>Video Part Breakdown</h1>
+    <!-- <p class="desc centered">Select video part.</p> -->
+    <div id="update">
+
+        <div id="percentages" class="centered buttonsBox">
+            <!-- <h3 style="text-align: left;">Select video part</h3> -->
+
+            <div class="button" data-val="Since_Day_One">Since Day One</div>
+            <div class="button" data-val="Bonus_Reel">Bonus Reel</div>
+            <div class="button" data-val="Sabotage3">Sabotage3</div>
+            <div class="button" data-val="Chronicling_Ishod">Chronicling_Ishod</div>
+            <div class="button" data-val="Nike_SB_Chronicles">Nike SB Chronicles, Vol 2</div>
+            <div class="button" data-val="Wair_n_Tear">Wair 'n' Tair</div>
+            <div class="button current" data-val="Paych">Paych</div>
+            <!-- this is just here to line up the bottom row of buttons: -->
+            <div class="button" data-val="ECVX14">ECVX14</div>
+            <div class="button" data-val="Sabotage4">Sabotage4</div>
+            <div class="button" data-val="Push_Part">Push Part</div>
+            <div class="button" data-val="Told_Ya">Told Ya</div>
+            <div class="button" data-val="PH3">PH3</div>
+            <div class="button" data-val="Back_on_My_BS">Back On My BS</div>
+            <div class="button" data-val="Be_Free">Be Free</div>
+            <div class="button" data-val="Godspeed">Godspeed</div>
+            <div class="button" data-val="Welcome_to_Parade">Welcome to Parade</div>
+
+            <!-- <div id="spaceFiller"></div> -->
+            <!-- <div class="clr"></div> -->
+        </div>
+    </div><!-- @end #update -->
+
+    <div class="clr"></div>
+
+    <div class="genericholder">
+        <br><hr>
+        <div id="charts"></div>
+    </div>
+
+
+    
+ 
+    <p>
+         <br><br> </p>
+    
+
+</section>
+
+
+<p>
+  
+<!-- Check out the <a href="https://www.instagram.com/4plymag/">4PLY Instagram</a>.
+</p><br><br><br> -->
+
+<section class='section2'>
+   
+</body>
+
+</section>
+
+
+    </p>
+</section>
+</div><!-- @end #main-wrapper -->
+
+<script id="grid" type="text/plain">
+01 02 03 04 05 06 07 08 09 10
+11 12 13 14 15 16 17 18 19 20
+21 22 23 24 25 26 27 28 29 30
+31 32 33 34 35 36 37 38 39 40
+41 42 43 44 45 46 47 48 49 50
+51 52 53 54 55 56 57 58 59 60
+61 62 63 64 65 66 67 68 69 70
+71 72 73 74 75 76 77 78 79 80
+81 82 83 84 85 86 87 88 89 90
+91 92 93 94 95 96 97 98 99 100
+</script>
+
+<script id="field_details">
+    var field_details = {
+        "perc_switch": { desc: "Switch Tricks" },
+        "perc_slowmo": { desc: "Slowmo Tricks" },
+        "perc_fs": { desc: "FS Tricks" },
+        "perc_bs": { desc: "BS Tricks" },
+        "perc_manual": { desc: "Manual Tricks"},
+        "perc_ledge": { desc: "Ledge Tricks" },
+        "perc_stair": { desc: "Stair/Gap Tricks" },
+        // "perc_transition": { desc: "Transition Tricks" },
+        "perc_flat": { desc: "Flatground Tricks" },
+        "perc_handrail": { desc: "Handrails Tricks" },
+        "perc_distinct": { desc: "Distinct Tricks" }
+    };
+
+</script>
+
+<!-- <script type="text/javascript" src="js/Barplot.js"></script> -->
+<script type="text/javascript" src="js/InteractiveBarplot.js"></script>
+<!-- <script type="text/javascript" src="js/barplotog.js"></script> -->
+<script type="text/javascript" src="js/Waffle.js"></script>
+<!-- <script type="text/javascript" src="js/Table.js"></script> -->
+<script type="text/javascript" src="js/LineChart.js"></script>
+<!-- <script src="https://minfo.s3-us-west-2.amazonaws.com/script.js"></script> -->
+
+<script>
+    const line = new LineChart({
+        data: "data/jordan_percs_obstacles.csv",
+        element: "#linechart",
+        metric: "Flat",
+        dropdown: '#scatter-tooltip',
+        xValue: 'year',
+        yValue: 'cnt'
+    });
+
+  
+    d3.select('#metric-select').on('change', function (d) {
+        let metric = d3.select('#metric-select').property('value');
+        console.log('new metric', metric)
+        line.draw(metric);
+    })
+
+    // const table = new Table({
+    //     data: 'data/table.csv',
+    //     element: '#table',
+    //     columns: ['Video', 'Year', 'Duration', 'Tricks', 'Lines',
+    //         'Switch or Nollie', 'Wallrides', 'Flip Tricks', 'Cinched Pants']
+    // });
+</script>
