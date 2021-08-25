@@ -1,293 +1,417 @@
+
 <!DOCTYPE html>
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84472984-4"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84472984-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-        gtag('config', 'UA-84472984-4');
-    </script>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <div id="whiteflannelbg">
-    <title>Jordan Taylor</title>
-    <link rel="shortcut icon" type="image/png" href="/images/handrailchart.png"/>
-    <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
-    <script src="assets/d3.v4.min.js"></script>
-    <script src="assets/d3-interpolate-path.min.js"></script>
-    <script src="assets/textures.js"></script>
-
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-
+    gtag('config', 'UA-84472984-4');
+  </script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Jordan Taylor</title>
+  <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
 </head>
 
 <header>
 
-    <section class='section-intro'>
-        <center>
-            <h1>
-                <a href="/" class="homepage">4PLY MAG</a>
-            </h1>
-            <br>
-            <!--  
-            
-            <h4>April 2021</h4> -->
-                
-            <h1 class='main-title'>Jordan<br>Taylor</h1><br>
+  <section class='section-intro'>
+    <center>
+      <h1>
+        <a class='homepage' href="http://4plymag.com" class="homepage">4PLY MAG</a>
+      </h1>
+      <br>
+      <h4>August 2021</h4>
+      <h1 class='main-title'>Jordan<br>Taylor</h1>
+      <img src="images/jordan_t.png" width="350"><br><br>
 
-            <img src="images/ishodicon.png"/ class = "face2"><br>
-            <!-- <h4>By <a href="https://www.instagram.com/fosterschild/">Harrison Lisewski</a></h4> -->
-            <!-- <br><br> -->
-        </center>
-    </section>
+      <h4 class='author'>By <a href="http://warmupzone.com/" target="_blank">Pete Glover</a></h4>
+    </center><br>
+  </section>
+</header>
+
+    <div id="main-wrapper">
+
+  <p>
+    Spot hunter. Mirth maker. Studded belt manufacturer. Pro Skater. Jordon ‘Gordo’ Taylor has nestled into quite a comfortable place in our collective skater-hearts. He keeps things fun and festive with both his skating and comedy skits for companies like New Balance Numeric and WKND Skateboards. But beneath the facade of laughter and striped shirts there lies a dark and disturbed individual. A man tormented by, yet disconcertingly comfortable with, a myriad of personal demons… just kidding. He’s super friendly and awesome. Everybody loves Gordo and you should too.<br><br>
+	  4Ply wrangled up every full part Jordan has ever produced and then utilized the awesome power of mathematics to analyze the tricks, spots, and fits. We then confronted him with the hard numbers and percentage points to see what he had to say for himself.
+	<hr>
+  </p>
 
 </header>
-<body>
-
-    <!-- <div id="main-wrapper"> -->
-
-    <br>
-        
-
-        
-        <!-- <p class="intro">
-
-
-        </p> 
-
-        
-
-      
-        <hr> -->
-
-        <div class="qna"><p><br><br>
- <br><br><br>
-        
-
-        </p></div> 
-        <h1 id='section-header'>Top Tricks</h1>
-
-    
-        <div id="my_interactivedatavis">
-    
-            </div>
-            
-
-
-
-        <div class="qna"><p><br><br>
-            <hr>
-
-        </p></div>
-
-  
-
-    <br>
-    <section class='section2'>
-    <h1>
-   OVER TIME
-    </h1>
-    
-
-   
-
-
-    <select id="metric-select" style='margin-left: 30%;'></select>
-    <center>
-        <div id="linechart" div></div>
-    </center></section>
-    <p>
-    
-
-    <br><hr>
-    </p>
-    
-    <!--
-    <section class='section2'>
-    <hr><br>
-    <h1>Video Numbers
-    </h1>
-    <div id='table'></div>
-
-    </p>
-</section>
-
-<section class='section2'>
-  <ul class='facts'>
-    <li class='fact'><b class='uline'>813</b> - Tricks logged for this article
-    </li>
-    <li class='fact'><b class='uline'>282</b> - Unique tricks (34.7%)
-    </li>
-    
-    <li class='fact'><b class='uline'>130</b> - Tricks done in/out of banks (16%)
-    </li>
-   
-    </li>
-    <li class='fact'><b class='uline'>113</b> - Tricks down stairs
-    </li>
-    <li class='fact'><b class='uline'>xx</b> - Stairs skated (including handrails)
-    </li>
-    <li class='fact'><b class='uline'>xx</b> - average stair count
-    </li>
-    
-    <li class='fact'><b class='uline'>90</b> - Flatground tricks</li>
-    <li class='fact'><b class='uline'>12</b> - Manual tricks<br>
-    <li class='fact'><b class='uline'>163</b> - Ledge tricks</li>
-    <li class='fact'><b class='uline'>189</b> - Handrail tricks (23.2%)</li>
-    <li class='fact'><b class='uline'>28</b> - Switch handrail tricks<br><img src="images/blakeswtre.gif" class='center' width="450"></li>
-
-    <li class='fact'><b class='uline'>35</b> - Transition tricks</li>
-
-    <li class='fact tab'><b class='uline'>53</b> - Slow mo tricks (6.5%) </li>
-    <br>
-    
-  </ul>
-
-  
-         
-
-
-    
-</section>
-
-    <div class="qna">
-        <p>
-
-
-        </p>
-    </div>
-        <br>
-        
--->
-
 <section class='section1'>
-    <br>
-    <h1>Video Part Breakdown</h1>
-    <!-- <p class="desc centered">Select video part.</p> -->
-    <div id="update">
+	<img src="images/dumped.gif" class="center" alt="Gordon Taylor">
+	<h2>DATA & METHODOLOGY</h2>
+  <p>
+    For the Gordo dataset (which will be referred to as the Gordataset from now on), we logged all the tricks from Jordan Taylor’s 7 full parts. Although Jordan has had clips in other skate videos, the Gordataset was limited to only his full parts, as these are generally what we consider when looking at the "career" of a skater. Guest tricks from other skaters in Jordan’s parts were not included. Please note: Jordan’s String Theory “Case Files” and the 5 minute ‘credits’ section of WKND 2021 was not included, either. 
+	<br>
+  	<br>
+  </p>
+    <hr>
+  <p><b>4Ply: What did you think of the <a href="http://4plymag.com/gorditas/" target="_blank">Rotten Gorditas skits article</a> we made for you? Did you get a chance to check that out?</b><br><br>
 
-        <div id="percentages" class="centered buttonsBox">
-            <!-- <h3 style="text-align: left;">Select video part</h3> -->
+  Jordan: Yeah. I was pleasantly surprised because I had no idea you guys were doing that. It was actually pretty sick to read because I think they were all real quotes. I’m not actually sure. Were they?<br><br>
 
-            <div class="button" data-val="Since_Day_One">Since Day One</div>
-            <div class="button" data-val="Bonus_Reel">Bonus Reel</div>
-            <div class="button" data-val="Sabotage3">Sabotage3</div>
-            <div class="button" data-val="Chronicling_Ishod">Chronicling_Ishod</div>
-            <div class="button" data-val="Nike_SB_Chronicles">Nike SB Chronicles, Vol 2</div>
-            <div class="button" data-val="Wair_n_Tear">Wair 'n' Tair</div>
-            <div class="button current" data-val="Paych">Paych</div>
-            <!-- this is just here to line up the bottom row of buttons: -->
-            <div class="button" data-val="ECVX14">ECVX14</div>
-            <div class="button" data-val="Sabotage4">Sabotage4</div>
-            <div class="button" data-val="Push_Part">Push Part</div>
-            <div class="button" data-val="Told_Ya">Told Ya</div>
-            <div class="button" data-val="PH3">PH3</div>
-            <div class="button" data-val="Back_on_My_BS">Back On My BS</div>
-            <div class="button" data-val="Be_Free">Be Free</div>
-            <div class="button" data-val="Godspeed">Godspeed</div>
-            <div class="button" data-val="Welcome_to_Parade">Welcome to Parade</div>
+  <b>4Ply: They were real. We put out the call on Instagram and then hit Grant up and made a Google Form and have people check the skits out. Did you actually read through all the reviews?</b><br><br>
 
-            <!-- <div id="spaceFiller"></div> -->
-            <!-- <div class="clr"></div> -->
-        </div>
-    </div><!-- @end #update -->
+  J: Yeah. I read through and some of them were pretty funny and on point and honest. I was cracking up reading some of those.<br><br>
 
-    <div class="clr"></div>
+  <b>4Ply: There was a few we had to eliminate because it was clearly, like, ballot stuffing where every video got a 10.</b><br><br>
 
-    <div class="genericholder">
-        <br><hr>
-        <div id="charts"></div>
-    </div>
+  J: They could’ve been super-fans, though. You never know.<br><br>
 
+  <b>4Ply: I thought it was interesting that a percentage of people didn’t even know who you were. They just kind of responded to the call to take a survey.</b><br><br>
 
-    
- 
-    <p>
-         <br><br> </p>
-    
+  J: That’s awesome. I would love to watch someone who has no idea who I was, like a fly on the wall to watch them watch Shorts Over Pants.<br><br>
 
-</section>
+  <img src="images/shortsoverpants.gif" class="center" alt="Shorts Over Pants"><br><br>
 
+  <b>4Ply: So, you’re kinda getting a reputation as being a comedy acting guy with the skits. Do you feel you’re getting pigeon-holed?</b><br><br>
 
+  J: Um - I guess maybe a little. Hopefully not pigeon-holed but sometimes people pitch me skit ideas like as if I’m the skit guy and I’m like “eeeeeh”. I like doing skits but I’m not some, like, genius actor who knows what my next move is. I just like to fuck off with my friends and laugh. That’s more what that is.<br><br>
+
+ <b>4Ply: Do you feel like you need to be “on”?</b>
+
+ J: I guess I get nervous because it’s fun for me to just mess around and act with friends and when someone says you’re good at it, like “you could be an actor”, I’m kinda like “really?”, and you start thinking “Am I good at this? Is it just a friend telling me that?" So now if we do a WKND skit I’ll kinda get nervous. Like, “Do people think I’m good at this and know what I’m doing? I’m supposed to be a great actor doing this skit right now?” So I kinda get nervous sometimes doing it so I can live up to this idea that I’m good at acting. So there is a pressure there that I’ll be good at that and that can backfire.<br><br>
+
+ <b>4Ply: With both the skits and the skate parts, are people sycophantic? Especially on social media? Do you get criticisms? Do you get haters?</b><br><br>
+
+ J: For the skits? Not really, dude. It seems people either really like them and whoever is commenting and letting me know their opinion is all pretty down. I think that anybody who doesn’t like it probably doesn’t even care enough to comment. The haters don’t even bother.<br><br>
+
+ <b>4Ply: Are you getting internet famous?</b><br><br>
+
+ J: Ahhh. No. No way. No.… I’m working on it.<br><br>
+
+ <b>4Ply: Do you have any favorite skate video skits? There used to be a lot of them. Like, every 411 part had to have some kind of skit intro. Do you have any favorites?</b><br><br>
+
+  J: The Chomp On This one, dude. I don’t know what it was for and no one remembers it or knows what I’m talking about but it was sick. It was the guy driving in a taxi car and a skater skating down the street in the rain and then they cross paths at one point. And the skater just, like, looks up with a surprised face and airs over the taxi. I don’t know why but it always stuck with me. And then it just goes into a Chomp On This montage or something. It isn’t really a skit with dialog it is just randomly in there and nobody seems to remember it but me.<br><br>
+
+ <img src="images/chompskit.gif" class="center" alt="Chomp On This skit"><br><br>
+
+ <b>4Ply: It’s just kind of randomly there.</b><br><br>
+
+  J: Yeah. Random. I mean, even little things in, like, Fulfill the Dream really stuck with me. Not even the skits but Steve Olsen jumping off a bridge and then they made a dummy for him. <br><br>
+
+  <b>4Ply: Yeah, after Hubba Hideout.</b><br><br>
+
+  J: Yeah. Little snippets like that are so sick.<br><br>
+
+  <b>4Ply: Fulfill the Dream is a good example. Like, here’s the team on a horsey ride. And that’s three minutes of the video right there.</b><br><br>
+
+  J: I love that. For sure anything in Fulfill the Dream. Those ones are rad.<br><br>
+  
+  <b>4Ply: Are people pitching you ideas for skits?</b><br><br>
+
+  J: Now that has actually been happening a lot more lately.<br><br>
+
+  <b>4Ply: Have you ever pitched a skit to New Balance that got rejected.</b><br><br>
+
+  J: Hmmm, not really. They're pretty open to most ideas. Usually we just have a meeting and brainstorm together to see what sticks. I feel like I have some wild ideas so they’re good at helping me reel them back in to something we can actually do. Haha.</p>
+  <hr>
+  <h2>The Parts</h2>
+  <p>[spreadsheet of parts with Name, Year, RunTime, Tricks, Clips, Lines]</p>
+  <hr>
+  <p>
+  <b>4Ply: So, was Brainwash your only, like, full-length video? Cause I know String Theory was sort of what a modern full-length would be since shoe companies can’t really have the whole team in one video anymore, cause the teams are just so big. But, looking at the list I think Brainwash is the only, like, video.</b><br><br>
+
+  J: Yeah, dude. I guess you’re right. I haven’t thought about that. That is probably the only full-length I was in. Except Get Radish, I guess.<br><br>
+
+  <b>4Ply: Oh yeah. Get Radish was your first part?</b><br><br>
+
+  J: Its cool you found that part. I looked for it online and couldn’t find it.<br><br>
+
+  <b>4Ply: It’s out there. The resolution isn’t great but we found it. Anyways, it seems like your Brainwash part has some longevity maybe because it is from a full length. It seems like when there’s discussion of Jordan Taylor, that video gets brought up even though it is a pretty old part. It isn’t a huge contribution to your career considering what you’ve done since then.</b><br><br>
+
+  J: That one is just cool because, dude, I grew up loving Toy Machine. So like looking back just knowing I had a part in a Toy Machine video… that’s just really cool for me. Like, just as a little kid loving it, you know.<br><br> 
+
+  <b>4Ply: That brand just has so much longevity and people have such connection to it from its different eras. For me, particularly Welcome to Hell is by far my favorite skate video because as I got obsessed with skating that was what came out at the time. </b><br><br>
+
+  J: Same. That one’s up there for me, too. Jump Off A Building / Welcome To Hell / Misled Youth… like all those. Growing up and watching those and then later I’m in a video where the monster comes out and laughs at the beginning, you know? It is just trippy. I don’t know. That one has a special place for me.<br><br>
+
+  <b>4Ply: That’s awesome. What about that Welcome To Ashbury part? How do you see that as part of your career?</b><br><br>
+
+  J: I don’t know if I would consider that a part. It was just fun and goofing off. I think of a part like something that is a struggle and that one was just going out and skating.<br><br>
+
+  <b>4Ply: Your younger brother Logan is in the skate game as well; Do you intentionally not share a part with him. I know he’s had guest tricks in your part. Is it something you are conscious of? Are you competitive with him at all, or him with you? How is the dynamic?</b><br><br>
+
+  J: No. We both do completely different tricks I think. It’s weird. He’s am for Lovesick and he has goals in skateboarding. He can impossible and back 3 and switch bigspin and he can do all these tricks that I can never even do on flat. Which is so annoying because he hasn’t even teached me that. But its never been competitive or purposely not shared a part. It’s just kinda like he’s always doing his thing and I’m always doing my thing and we meet in the middle somewhere.<br><br>
+
+  <b>4Ply: And I’m pitching the idea that, especially if Logan has a different bag of tricks, and also with him being goofy, of you two secretly sharing a part but you dress the same or have the same mustache or something like that, and basically be one skater. Like a Parent Trap situation.</b><br><br>
+
+  J: I think you’re on to something with that. We talked about that before. I don’t know if it would be his part or mine. He super good so it would be a great part if we were combined into one person.<br><br>
+
+  <b>4Ply: I think it’s a good idea. More skaters could collaborate in that way. Combine forces to become one super skater.</b></p>
+  <hr>
+  <h2>The Data</h2>
+  <hr>
+  <p>
+  <b>4Ply: So let’s talk about the data. The team at 4Ply logged every trick from all your full parts and then we processed the dataset to create an analysis of your skating. So let’s get into the percentages and the top tricks:</b><br><br>
+
+  J: I was curious about this. Like, do you guys have a computer program that can extract the tricks?<br><br>
+
+  <b>4Ply: Like trick recognition software?</b><br><br>
+
+  J: Yeah. Grant and I were speculating on it and I was pretty sure that there is a program that does all that.<br><br>
+
+  <b>4Ply: No. We just writing it all down and pausing the videos and rewinding constantly. There’s some programing to help us analyze the data, but the spreadsheet is made by hand.</b><br><br>
+
+  J: Oh man. I totally thought it was completely automated.<br><br>
+
+  <b>4Ply: Not yet, anyways. Speaking of spreadsheets, let’s look at your top tricks.</b><br><br>
+
+  <img src="images/gordotoptricks.png" class="center" alt="Jordan Taylor Top Tricks" height="600"><br><br>
+
+  <b>It is pretty typical that the ollie is on top and you’re no exception.</b><br><br>
+
+  J: That kinda surprises me. I like ollieing but I wouldn’t have thought that I filmed that many. So does that include like ollie up, like in a line ollieing up a curb?<br><br>
+
+  <b>4Ply: Not really. Unless we feel it is significant enough of a gap. So an ollie up a curb we won’t generally include as a trick. A kickflip up a curb is enough to count as a trick. It needs to be a trick, not just, like, avoiding a crack in the sidewalk. But even without that it is still 3 times the next leading contender. Ollies have a significant lead. What would you think are your most common tricks?</b><br><br>
+
+  J: I probably would say 50-50s or kickflips. I guess. I would almost think I filmed more 50-50s than ollies or something. <br><br>
+
+  <b>4Ply: Well, 50-50s and kickflips are numbers 2 and 3 with 11 fronstside 50-50s and 10 kickflips. But that is just straight-up 50-50s without any tricks in or out or any fancy pants stuff going on. And that is frontside.</b><br><br>
+
+  J: Yeah, I don’t go backside often.<br><br>
+
+  <img src="images/gordo5050s.png" class="center" alt="Gordo's 50-50s" height="550"><br>
+
+  <b>4Ply: So, digging deeper into 50-50s total, so that includes all tricks that involve a 50-50 in some way, there is 29 instances. Some of these are roll-on 50-50s, pole jams, or frontside 180 to switch 50-50 to a half cab out.</b><br><br>
+
+  J: So, wait, does that count?<br><br>
+
+  <b>4Ply: It’s a 50-50, but it is a different trick than just a straight-up frontside 50-50. With this in mind, it can make some tricks seem less common than they are. The little variances are enough to technically change what the specific trick is. A good example of this is when we analyzed Fred Gall we discovered he has filmed literally 35 unique variations of 5-0 grinds.</b><br><br>
+
+  J: Yeah. Yeah. I love that. That’s sick.
+</p>
+<hr>
+<h2>Percentages by Video</h2>
+  <p>[Waffle chart: percentages by video]</p>
 <p>
-  
-<!-- Check out the <a href="https://www.instagram.com/4plymag/">4PLY Instagram</a>.
-</p><br><br><br> -->
+  <b>4Ply: Moving on, and maybe this is where Logan pretending to be you can help out, but switch and nollie tricks combine for just 7.6% of all tricks. So, you’re very regular footed.</b><br><br>
 
-<section class='section2'>
-   
-</body>
+  J: Haha. Wow. That’s pretty brutal. I’m very regular footed so I’m mostly just skating regular or fakie. I didn’t think it was like that, though. I feel like I can skate switch decently like on flat or something, I’m not the best but I’m not the worst, maybe. But when it comes to filming something, that’s when you really know, like, oh yeah. I thought I can do a switch flip well on flat but now I can film it and it’s like “I can’t do this properly”... like going fast and stuff.<br><br>
 
+  <b>4Ply: Well, the good news is that the most recent part was 14% switch/nollie and String Theory was 12%, so it is slowly trending upwards. There’s more switch getting in there. And because we included the Welcome To Ashbury part in this analysis, which has no switch at all...</b><br><br>
+
+  J: Oh gosh.<br><br>
+
+  <b>4Ply: Well that might’ve thrown the career average down a bit.</b><br><br>
+
+  J: Well, it’s good that it’s growing.<br><br>
+
+  <b>4Ply: The Welcome To Ashbury, however, was 100% lines. So it brought that career lines average up.</b><br><br>
+
+  J: I mean, I’ll try to put something together. I’ll always be checking around the spot to see what else we can do. How can we expand this and make it interesting.<br><br>
+
+  <b>4Ply: Another observation we have is that manuals were also surprisingly low. Also just 7.3%. Can you comment about that?</b><br><br>
+
+  J: Haha. That’s weird too. I’m kinda surprised on that too. I thought I would manual more than I would skate switch. Cause I do love a good manual. Or, like, trying to connect a manual with, like, another obstacle. But, I guess not as much as I thought.<br><br>
+
+  <b>4Ply: There is a chance that if a ‘combo’ trick has a manual as an element but another part of the trick takes precedence, it will be recorded not as a manual. Tricks are currently logged as only belonging to one type of obstacle. If you were to do a ledge trick into a manual, 4Ply would record it as either a ledge trick or a manual, not both.</b><br><br>
+
+  J: Um, ok.<br><br>
+</p>
+<h2>Obstacles</h2>
+
+  <p>[Interactive Obstacles Chart: percentages by video]</p>
+<p>
+  <b>4Ply: Let’s talk obstacles. The most common obstacle you skate is ledges which is 22.7% of your tricks. And that’s been pretty consistent throughout your whole career. So, about a quarter of all your tricks are ledge tricks.</b><br><br>
+
+  J: Interesting. I’m a ledge skater, dude. I’m a technical ledge skater.<br><br>
+
+  <b>4Ply: And that doesn’t include hubbas. We scored hubbas separate from ledges for you. And there were a few of those as well. You got some handrails in there. About 9% handrails overall. Some videos have no handrails, but back in Get Radish it was over 20%. So it might be a youth thing.</b><br><br>
+
+  J: Yeah. That’s an age thing, maybe, huh? Or as time goes on it’s like the handrail game just got out of control and I’m like, "Yeah, I can’t go that route”. <br><br>
+
+  <b>4Ply: OK, here’s something interesting for you as well: The amount of tricks that go into banks has been going up. The last part had 14 different tricks into a bank. String Theory before that had 13. Other than that, it’s maybe been 4 or 7, so the into bank things has jumped up. </b><br><br>
+
+  J: Oh wow. I love my banks, dude.<br><br>
+
+  <b>4Ply: But on the flip side, there is, like, no transition skating. Are you just not into transition skating? Is it something you didn’t grow up skating?</b><br><br>
+
+  J: I kinda grew up skating it, like mini ramp and stuff. But I’m just scared of transition. It scares me to the point where I’m like.. I can’t even. It’s kind of past the point. Like surfing. I’m past the point of learning. Like, when I get out there in the waves I think, oh it’s a mellow day with 2 foot waves, I’m gonna try. Bu then I go out there and it feels humongous. That’s what tranny feels like to me now. When it gets over head high it just isn’t happening.<br><br>
+
+  <b>4Ply: Wait. I see here that even more than ledges, gaps are big for you too. 26.9% of your tricks have involved gaps.</b><br><br>
+
+  J: Interesting. Yeah. I would not think that either. I would not think that I skate a lot of gaps. Like, I don’t find myself ever like “Look. A gap.” I don’t know how that’s possible.<br><br>
+
+  <b>4Ply: Well. A lot of things qualify as gaps. Not just like “huge-gaps” gaps. But flat gaps as well.</b><br><br>
+
+  J: Still seems high.<br><br>
+
+  <b>4Ply: We also tracked some of the more uncommon spots. There’s a grand total of 26 tricks that involve rooftops. So, like, 7 to 9 roof tricks in each of the more recent video parts, starting with Gordo2K. So, other than the first WKND part, there are a lot of rooftops.</b><br><br>
+
+  <img src="images/rooftrick.gif" class="center" alt="Jordan Taylor Roof"><br><br>
+
+  J: Haha. Yeah. I definitely find myself on rooftops a lot. I think that just comes from going to a spot and there is really nothing going on there for me so I kinda of just start looking up. And then one day it worked. Like, “Oh wait. There’s nothing down here but there’s kind of a sick spot up there on the roof.” So ever since then its triggered me to keep looking at them. And then, you know, growing up on Misled Youth and Thrill Of It All where Ellington’s part opens up with him sticking a kickflip off a roof. He doesn’t even land it. And things like that always stuck with me. I’d go to my neighbor’s house and try and drop in on his shed. I think a lot of it comes from those old videos. I think skating roofs is pretty sick but I’m not sure if I really want to be the roof guy.<br><br>
+
+  <b>4Ply: Similarly there’s a handful of tricks on dumpsters and there’s a handful of tricks that involve cars in one way or another. Whether it was hippie jumping through the window of an open door or rolling on the roof of a car or that moving truck bed boardslide you did.</b><br><br>
+
+  <img src="images/carride.gif" class="center" alt="Skating Cars"><br><br>
+
+  J: Yeah. I got some more ideas with cars coming up but I don’t know if they’ll pan out. We’ll have to find out. Yeah. Dumpsters. Same thing. Growing up and going behind the grocery store and just skating off the dock. And then incorporating this dumpster. I feel like that’s what people used to skate when I watched videos as a kid. They would always skate over the dumpster off the dock. Or even those old shopping cart handrails they’d put down the dock. Remember those? I’d love to find one of those. That would be sick.<br><br>
+
+  <b>4Ply: Yeah. Those shopping cart corrals.</b><br><br>
+
+  J: Yeah, and they would just make it a handrail down the dock. So sick.<br><br>
+
+  <b>4Ply: How about the trick where you simultaneously do a noseslide on one obstacle and a tailslide on another? We logged them a ‘nailslides’, but what do you call them? And how would you consider it frontside or backside?</b><br><br>
+
+  J: I call it a bridge slide. Like, you become a bridge between the two ledges. But I’ve heard it called a nailslide before. I think of it like a rail in the middle when considering it frontside or backside.<br><br> 
+
+  <img src="images/bridgeslide.gif" class="center" alt="Jordan Bridgeslide"><br><br>
+
+  <b>4Ply: That’s a logical way to think about it. How about this: Until the recent WKND 2021 part, You didn’t have any tricks in slow motion. None.</b><br><br>
+
+  J: That’s crazy. It’s funny that when I showed Grant a cut of the String Theory part and he told me that I should get some of those things in slow motion. I guess I just am not looking better when it’s slower.
+  </p>
+  <hr>
+  <h2>The Fits</h2>
+  <hr>
+  <p>
+  <b>4Ply: Probably more important than tricks, we also tracked pants colors… as best we could. In some of the older videos the resolution is really low so all the pants just kinda look blackish.</b><br><br>
+
+  <img src="images/4PantsColors.jpg" class="center" alt="Gordopants"><br><br>
+
+  <b>How much thought goes into pants? How much thought do you put into an outfit when you go out to film?</b><br><br>
+
+  J: Ummm. Not a whole lot. I mean I wanna feel kinda cool on my skateboard. I guess you have to feel kinda ok or cool in your clothes and then feel like you can have a good day skating, maybe. Like if you can’t move in your pants it’s like just gonna fuck with you the whole day skating. So, as far as that goes, yeah. I think about flexibility. I don’t want to be wearing like 5 different colored camos or something. I don’t know. Or maybe I do? Shit. Maybe I just haven’t gotten there yet. But for the most part with pants I’m just going with what feels good and comfortable.<br><br>
+
+  <img src="images/gordopants.png" class="center" alt="Pants by Video chart"><br><br>
+
+  <b>4Ply: Is that the same pair of maroon pants we’re seeing over and over or do you have several pairs?</b><br><br>
+
+  J: It’s that same pair of maroon pants that I’ve been stoked on for a while. Everyone thinks they are purple pants, but they are maroon. I got a clip in the new video in them and it was one of the earliest clips I got. But it’s just been the one pair.<br><br>
+
+  <b>4Ply: So have they been retired?</b><br><br>
+
+  J: Yeah, they’ve been retired.<br><br>
+
+  <b>4Ply: What about the one clip in lavender pants?</b><br><br>
+
+  J: Ha. Maybe that is what they are talking about when they talk about my purple pants. Those were just white pants the I dyed with some RIT dye one time.<br><br>
+
+  <img src="images/stripedshirts.png" class="center" alt="Striped Shirt Perc by Video" height="550"><br><br>
+
+  <b>4Ply: Another thing 4Ply tracked was the prevalence of stripped shirts, which were mostly horizontal but we also included the vertical stripes. Even if it was under a hoodie, if we could spot it we counted it. For your entire career, you have worn striped shirts a solid 21.4% of the time.</b><br><br>
+
+  J: I love the striped shirts. I’m into it. Ha, that’s awesome.<br><br>
+
+  <b>4Ply: It peaked out with your first WKND part at 39%, and has declined down to 28% in your most recent part. Comments?</b><br><br>
+
+  J: I got to get my that striped shirt game up.<br><br>
+
+  <b>4Ply: What if you and Tom K shared a part and you were all in horizontal stripes and Tom K wore vertical stripes like Ernie and Bert?</b><br><br>
+
+  J: I guess that could be funny.<br><br>
+
+  <img src="images/erniebert.jpg" class="center" alt="Ernie & Bert image" width="400"><br><br>
+
+  <b>4Ply: So that is a good segue into the recent outlying and more noticeable outfits of late. Having the sleeveless shirt, how much thought went into that? How much is it a put-on versus genuinely you wanted to show your arms for this clip?</b><br><br>
+
+  J: I think it’s pretty genuine, honestly. Sometime I’ll give some extra thought as to what I’m wearing. Sometimes I review what I’ve got for the part already and think, "Yeah, I’ve got a bunch of clips in that shirt already. I better take that one out of the rotation.”<br>
+  The wilder stuff is that maybe I was just a little insecure at first, and then I just got to a point where I’m like “Why am I insecure about this? I want to wear this.” It goes back to seeing people I grew up on wear stuff like that. Like Greco had hacked sleeves. Or like Reynolds would wear a tie when he skated. Like a blazer with a tie. I’m like, dude that looks so sick. But you think, “Who am I? I can’t pull that off.” But then at some point you’re just, like, “You know what, fuck it. I want to wear that. Who gives a shit?” I think it’s just maybe not giving a shit anymore. I just want to wear what I want to wear.<br><br>
+
+  <b>4Ply: I think you’re in a good place where even if people don’t like it, you haven’t established yourself as a ‘cool guy’. You seem like someone who’s having fun so you can get away with it. If you do show up with just a leather jacket and no shirt it could be interpreted as a character that is doing this trick, or something.</b><br><br>
+
+  J: Ha. I can always fall back on that. It is just some other person I’m playing who is wearing that.
+  </p>
+  <h2>Other Outfit Observations</h2>
+  <p>
+    <ul class='facts1'>
+    <li class='fact'>Jordan in gloves (WKND 2021)<br><img src="images/Jordan_gloves.png" width="400" class="center" alt="Jordan in gloves"></li>
+    <li class='fact'>Jordan in a silly hat (Brainwash)<br><img src="images/Jordan_hat.png" width="400" class="center" alt="Jordan in a silly hat"></li>
+    <li class='fact'>Jordan in a House of Hammers shirt (String Theory)<br><img src="images/hammers.png" width="400" class="center" alt="Jordan House of Hammers"></li>
+    <li class='fact'>Jordan with no shirt (Welcome to Ashbury)<br><img src="images/Jordan_noshirt.png" width="400" class="center" alt="Gordo No Shirt"></li>
+    <li class='fact'>Jordan with no sleeves (WKND 2021)<br><img src="images/Jordan_hackedsleeves.png" width="400" class="center" alt="Jordan Hacked Sleeves"></li>
+    <li class='fact'>Jordan in shorts (WKND 2021)<br><img src="images/Jordan_shorts.png" width="400" class="center" alt="Jordan in shorts"></li></ul>
+  </p>
+  <hr>
+  <p>
+  <b>4Ply: The Shorty’s shirt…</b><br><br>
+
+  J: I’ve always wanted one of those Shorty’s shirts, so I got one and got a clip in it. I’m aware that I’m wearing it, but it isn’t a gimmick. Same thing with the studded belts. I just wanted to do this so I did.<br><br>
+
+  <img src="images/shortys.gif" class="center" alt="Gordo wears Shorty's"><br><br>
+
+  <b>4Ply: And now you’ve started your own clothing brand that seems to be centered around the studded belt. That’s the showpiece for Loosey brand. What made you decide to make belts?</b><br><br>
+
+  J: I think that, yeah, it’s the same kind of thing. I always wanted a studded belt as a kid and never had one. I’m not sure what sparked it. One day I was like, you know what, I want a studded belt. Maybe I saw one somewhere and I was like, “It’s time”. That kinda thing. And then it turns out it was hard to find the right fitting one. Like they all had 3 rows of studs and that almost doesn’t fit the pants I wear properly. So I had to find a 2 row one, and that was kind of hard. And then, I was like “I’m just gonna try and make one how I want it.” And that’s how that happened pretty much. <br><br>
+
+  <b>4Ply: Did you try to hand make one first? Like with a Bedazzler?</b><br><br>
+
+  J: Well. I bought a studded belt off Amazon that I really liked. This was the best one. How do I make this? How do I rip this one off? But then it’s kind of hard finding the right material. I got, like, 5 samples before I got it how I wanted.<br><br>
+
+  <b>4Ply: And then did you do market research? I feel like if you’re starting a t-shirt brand you can do whatever. You don’t have to look at the space to see who your competing with. But with belts, are you looking at other companies and competitors, or is it not nearly as sophisticated as all that?</b><br><br>
+
+  J: I would say not nearly as sophisticated as that. But, if I see a company I like I’ll look at them differently now, you know. I’ll look a little further into it, rather than just say “that’s cool”. I’ll be like “Huh? Why is that cool?” A little more thought, I guess.<br><br>
+
+  <b>4Ply: Are you just in that mindset now that you’re making belts that’s all you see is people’s belts.</b><br><br>
+
+  J: Haha. Naw. Not really. Maybe I should though.<br><br>
+
+  <b>4Ply: Is the company named after your dog, Lucy?</b><br><br>
+
+  J: I mean, it’s spelled differently, but yeah, there is a connection there. ‘Anything’ was  another name I had, but my wife said that was stupid. Sometimes it is the brand that makes the name cool, not the other way around.<br><br>
+
+  <b>4Ply: Is your basement actually Loosey headquarters? How much truth was in that one video?</b><br><br>
+
+  J: That is 100% true. That’s the Loosey Headquarters, dude. The basement. Anything goes down there.<br><br>
+
+  [Loosies skit GIF]
+
+  <b>4Ply: Does it still have that writing on the wall?</b><br><br>
+
+  J: Oh yeah. That’s still up there. That’s permanent marker. I’m not sure if I’m gonna paint over it or just let it hang out there for a while.<br><br>
+
+  <b>4Ply: Speaking of your dog, do you take her skating with you? That’s happening a lot these days, having a dog at the session.</b><br><br>
+
+  J: Naw, I tried that but she can just be too aggressive. Grant has a new dog named Bondo, so maybe he’ll be the dog in the session guy.<br><br>
+  </p>
+    <hr>
 </section>
-
-
-    </p>
+<section class='section3'>
+  <h3>Facts</h3>
+  <ul class='facts1'>
+    <li class='fact'><b class='uline'>7</b> - Parts</li>
+    <li class='fact'><b class='uline'>235</b> - Total number of tricks</li>
+    <li class='fact'><b class='uline'>5</b> - Tricks involving dumpsters<br><img src="images/dumpster.gif" alt="Skate A Dumpster" width="450"></li>
+    <li class='fact'><b class='uline'>4</b> - Tricks on the back of flat bed trucks</li>
+    <li class='fact'><b class='uline'>1</b> - Tricks on a moving vehicle</li>
+    <li class='fact'><b class='uline'>5</b> - Additional tricks involving vehicles</li>
+    <li class='fact'><b class='uline'>3</b> - Tricks that involve a 'duck under'<br><img src="images/duckunder.gif" alt="Dunk Under Tailslide" width="450"></li>
+    <li class='fact'><b class='uline'>10</b> - Second angles or repeated tricks</li>
+    <li class='fact'><b class='uline'>14</b> - Total bluntslides</li>
+    <li class='fact'><b class='uline'>12</b> - Unique bluntslide variations</li>
+    <li class='fact'><b class='uline'>13</b> - Sum of all 5-0s</li>
+    <li class='fact'><b class='uline'>11</b> - Unique 5-0 variations</li>
+    <li class='fact'><b class='uline'>7</b> - Wallrides</li>
+    <li class='fact'><b class='uline'>7</b> - Hippie jumps<br><img src="images/hippieblunt.gif" alt="Gordo Hippie to Blunt" width="450"></li>
+    <li class='fact'><b class='uline'>3</b> - Pole jams</li>
+    <li class='fact'><b class='uline'>3</b> - "Bridge slides"</li>
+    <li class='fact'><b class='uline'>3</b> - Unique "bridge slide" variations</li>
+    <li class='fact'><b class='uline'>2</b> - 360flips</li>
+    <li class='fact'><b class='uline'>1</b> - No complies</li>
+    <li class='fact'><b class='uline'>1</b> - Crooked grinds</li>
+    <li class='fact'><b class='uline'>9 to 1</b> - Kickflip to heelflip ratio</li>
+    <li class='fact'><b class='uline'>17</b> - Switch tricks</li>
+    <li class='fact'><b class='uline'>11</b> - Fakie tricks</li>
+    <li class='fact'><b class='uline'>1</b> - Nollie trick (nollie kickflip, String Theory)</li>
+    <li class='fact'><b class='uline'>0</b> - Full loops</li>
+  </ul>
+  <hr>
 </section>
-</div><!-- @end #main-wrapper -->
+    <p>
+    <img src="images/byebye.gif" class="center" alt="Jordan Taylor & Lucy" width="500">
+    <br>Get more Gordo on his <a href="https://www.instagram.com/j0rdan_tayl0r_/" target="blank">Instagram</a>.<br>Big thanks to Grant Yansura at WKND.<br>
+    <br>Follow <a href="https://www.instagram.com/4plymag/" target="blank">@4plymag</a> on the 'gram and hit us up for free stickers or to let us know how statistical analysis has the potential to ruin skateboarding. Or both.
+  </p>
+</div>
 
-<script id="grid" type="text/plain">
-01 02 03 04 05 06 07 08 09 10
-11 12 13 14 15 16 17 18 19 20
-21 22 23 24 25 26 27 28 29 30
-31 32 33 34 35 36 37 38 39 40
-41 42 43 44 45 46 47 48 49 50
-51 52 53 54 55 56 57 58 59 60
-61 62 63 64 65 66 67 68 69 70
-71 72 73 74 75 76 77 78 79 80
-81 82 83 84 85 86 87 88 89 90
-91 92 93 94 95 96 97 98 99 100
-</script>
 
-<script id="field_details">
-    var field_details = {
-        "perc_switch": { desc: "Switch Tricks" },
-        "perc_slowmo": { desc: "Slowmo Tricks" },
-        "perc_fs": { desc: "FS Tricks" },
-        "perc_bs": { desc: "BS Tricks" },
-        "perc_manual": { desc: "Manual Tricks"},
-        "perc_ledge": { desc: "Ledge Tricks" },
-        "perc_stair": { desc: "Stair/Gap Tricks" },
-        // "perc_transition": { desc: "Transition Tricks" },
-        "perc_flat": { desc: "Flatground Tricks" },
-        "perc_handrail": { desc: "Handrails Tricks" },
-        "perc_distinct": { desc: "Distinct Tricks" }
-    };
 
-</script>
 
-<!-- <script type="text/javascript" src="js/Barplot.js"></script> -->
-<script type="text/javascript" src="js/InteractiveBarplot.js"></script>
-<!-- <script type="text/javascript" src="js/barplotog.js"></script> -->
-<script type="text/javascript" src="js/Waffle.js"></script>
-<!-- <script type="text/javascript" src="js/Table.js"></script> -->
-<script type="text/javascript" src="js/LineChart.js"></script>
-<!-- <script src="https://minfo.s3-us-west-2.amazonaws.com/script.js"></script> -->
-
-<script>
-    const line = new LineChart({
-        data: "data/jordan_percs_obstacles.csv",
-        element: "#linechart",
-        metric: "Flat",
-        dropdown: '#scatter-tooltip',
-        xValue: "year",
-        yValue: 'cnt'
-    });
-
-  
-    d3.select('#metric-select').on('change', function (d) {
-        let metric = d3.select('#metric-select').property('value');
-        console.log('new metric', metric)
-        line.draw(metric);
-    })
-
-    // const table = new Table({
-    //     data: 'data/table.csv',
-    //     element: '#table',
-    //     columns: ['Video', 'Year', 'Duration', 'Tricks', 'Lines',
-    //         'Switch or Nollie', 'Wallrides', 'Flip Tricks', 'Cinched Pants']
-    // });
-</script>
