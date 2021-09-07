@@ -15,6 +15,9 @@
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>Jordan Taylor</title>
   <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
+  <script src="assets/d3.v4.min.js"></script>
+        <script src="assets/d3-interpolate-path.min.js"></script>
+        <script src="assets/textures.js"></script>
 </head>
 
 <header>
@@ -30,6 +33,7 @@
       <img src="images/jordan_t.png" width="350"><br><br>
 
       <h4 class='author'>By <a href="http://warmupzone.com/" target="_blank">Pete Glover</a></h4>
+      <h4 class='subauthor'>Charts by <a href="www.instagram.com/fosterschild/">Harrison Lisewski</a></h3>
     </center><br>
   </section>
 </header>
@@ -112,8 +116,9 @@
 
   J: Hmmm, not really. They're pretty open to most ideas. Usually we just have a meeting and brainstorm together to see what sticks. I feel like I have some wild ideas so they’re good at helping me reel them back in to something we can actually do. Haha.</p>
   <hr>
-  <h2>The Parts</h2>
-  <p>[spreadsheet of parts with Name, Year, RunTime, Tricks, Clips, Lines]</p>
+  <h2>The Parts</h2><br>
+  <img src="images/gordoparts.png" class="center" alt="Gordo Parts Spreadsheet"><br><br>
+  <!-- <p>[spreadsheet of parts with Name, Year, RunTime, Tricks, Clips, Lines]</p> -->
   <hr>
   <p>
   <b>4Ply: So, was Brainwash your only, like, full-length video? Cause I know String Theory was sort of what a modern full-length would be since shoe companies can’t really have the whole team in one video anymore, cause the teams are just so big. But, looking at the list I think Brainwash is the only, like, video.</b><br><br>
@@ -189,7 +194,31 @@
 </p>
 <hr>
 <h2>Percentages by Video</h2>
-  <p>[Waffle chart: percentages by video]</p>
+  
+  <div id="update">
+            <div id="percentages" class="centered buttonsBox">
+                <!-- <h3 style="text-align: left;">Select video part</h3> -->
+                <div class="button current" data-val="get_radish">Get Radish</div>
+                <div class="button" data-val="brainwash">Brainwash</div>
+                <div class="button" data-val="gordo2k">Gordo2k</div>
+                <div class="button" data-val="welcome_to_ashbury">Welcome to Ashbury</div>
+                <div class="button" data-val="wknd_part">WKND Part</div>
+                <div class="button" data-val="string_theory">String Theory</div>
+                <div class="button" data-val="wknd_2021">WKND 2021</div>
+                <!-- this is just here to line up the bottom row of buttons: -->
+                <div id="spaceFiller"></div>
+                <div class="button" data-val="career_average">Career Average</div>
+                <!-- <div class="clr"></div> -->
+            </div>
+        </div><!-- @end #update -->
+        <div class="clr"></div>
+        <div class="genericholder">
+            <br>
+            <hr>
+            <div id="charts"></div>
+
+
+
 <p>
   <b>4Ply: Moving on, and maybe this is where Logan pretending to be you can help out, but switch and nollie tricks combine for just 7.6% of all tricks. So, you’re very regular footed.</b><br><br>
 
@@ -216,8 +245,12 @@
   J: Um, ok.<br><br>
 </p>
 <h2>Obstacles</h2>
-
-  <p>[Interactive Obstacles Chart: percentages by video]</p>
+<section class='section2'>
+<select id="metric-select" style='margin-left: 30%;'></select>
+        <center>
+            <div id="linechart" div></div>
+        </center>
+      </section>
 <p>
   <b>4Ply: Let’s talk obstacles. The most common obstacle you skate is ledges which is 22.7% of your tricks. And that’s been pretty consistent throughout your whole career. So, about a quarter of all your tricks are ledge tricks.</b><br><br>
 
@@ -297,7 +330,7 @@
 
   <img src="images/stripedshirts.png" class="center" alt="Striped Shirt Perc by Video" height="550"><br><br>
 
-  <b>4Ply: Another thing 4Ply tracked was the prevalence of stripped shirts, which were mostly horizontal but we also included the vertical stripes. Even if it was under a hoodie, if we could spot it we counted it. For your entire career, you have worn striped shirts a solid 21.4% of the time.</b><br><br>
+  <b>4Ply: Another thing 4Ply tracked was the prevalence of striped shirts, which were mostly horizontal but we also included the vertical stripes. Even if it was under a hoodie, if we could spot it we counted it. For your entire career, you have worn striped shirts a solid 21.4% of the time.</b><br><br>
 
   J: I love the striped shirts. I’m into it. Ha, that’s awesome.<br><br>
 
@@ -413,5 +446,64 @@
 </div>
 
 
+    <script id="grid" type="text/plain">
+        01 02 03 04 05 06 07 08 09 10
+        11 12 13 14 15 16 17 18 19 20
+        21 22 23 24 25 26 27 28 29 30
+        31 32 33 34 35 36 37 38 39 40
+        41 42 43 44 45 46 47 48 49 50
+        51 52 53 54 55 56 57 58 59 60
+        61 62 63 64 65 66 67 68 69 70
+        71 72 73 74 75 76 77 78 79 80
+        81 82 83 84 85 86 87 88 89 90
+        91 92 93 94 95 96 97 98 99 100
+</script>
+    <script id="field_details">
+    var field_details = {
+        perc_switch: { desc: "Switch Tricks" },
+        perc_lines: { desc: "Tricks in Lines" },
+        perc_intobank: { desc: "Tricks into Banks" },
+        perc_roof: { desc: "Roof Tricks" },
+        perc_slowmo: { desc: "Slowmo Tricks" },
+        perc_slide: { desc: "Slide Tricks" },
+        // "perc_transition": { desc: "Transition Tricks" },
+        perc_flip: { desc: "Flip Tricks" },
+        perc_manual: { desc: "Manual Tricks" },
+        // "perc_distinct": { desc: "Distinct Tricks" }
+    };
+    </script>
+    <!-- <script type="text/javascript" src="js/ForceBubble.js"></script> -->
+    <!-- <script type="text/javascript" src="js/InteractiveBarplot.js"></script> -->
+    <!-- <script type="text/javascript" src="js/barplotog.js"></script> -->
+    <script type="text/javascript" src="js/Waffle.js"></script>
+    <!-- <script type="text/javascript" src="js/Table.js"></script> -->
+    <script type="text/javascript" src="js/LineChart.js"></script>
+    <!-- <script src="https://minfo.s3-us-west-2.amazonaws.com/script.js"></script> -->
+    <script>
+    const line = new LineChart({
+        data: "data/jordan_obstacle_time.csv",
+        element: "#linechart",
+        metric: "Flat",
+        dropdown: "#scatter-tooltip",
+        xValue: "year",
+        yValue: "cnt",
+    });
+    // >>>>>>> 4bb336853665686f343793503a45389a09e2900f
+
+    d3.select('#metric-select').on('change', function(d) {
+        let metric = d3.select('#metric-select').property('value');
+        console.log('new metric', metric)
+        line.draw(metric);
+    })
+
+    // const table = new Table({
+    //     data: 'data/table.csv',
+    //     element: '#table',
+    //     columns: ['Video', 'Year', 'Duration', 'Tricks', 'Lines',
+    //         'Switch or Nollie', 'Wallrides', 'Flip Tricks', 'Cinched Pants']
+    // });
+    </script>
+
+    
 
 

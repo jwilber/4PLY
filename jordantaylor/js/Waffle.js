@@ -1,4 +1,4 @@
-let USER_VIDEO = "Paych";
+let USER_VIDEO = "get radish";
 
 
 function getValKey() {
@@ -11,18 +11,18 @@ console.log(VAL_KEY)
 let grp_vals = {};
 
 let delay_per_unit = 30;
-let bg_color = "white";
-let cell_color = "rgb(7, 4, 182)";
+let cell_color = "white";
+let bg_color = "#abd4ef";
 
 // Dimensions of single chart.
-let margin = { top: 0, right: 0, bottom: 0, left: 6 };
+let margin = { top: 0, right: 0, bottom: 0, left: 0 };
 let width = 134 - margin.left - margin.right;
 let height = 134 - margin.top - margin.bottom;
 
 
 
 
-d3.csv("data/square_pie.csv", function (error, data) {
+d3.csv("data/jordan_percs_waffle.csv", function (error, data) {
     if (error) throw error;
     console.log(data)
     let valfields = d3.keys(field_details);

@@ -13,7 +13,7 @@ class LineChart {
 		this.MARGIN = { TOP: 10, BOTTOM: 70, LEFT: window.innerWidth / 9.5 + 5, RIGHT: window.innerWidth / 9 };
 		const width = window.innerWidth < 1000 ? (window.innerWidth / 1.05) : (window.innerWidth / 1.3)
 		this.WIDTH = width - this.MARGIN.RIGHT - this.MARGIN.LEFT;
-		this.HEIGHT = (window.innerHeight / 1.6) - this.MARGIN.TOP - this.MARGIN.BOTTOM;
+		this.HEIGHT = (window.innerHeight / 2) - this.MARGIN.TOP - this.MARGIN.BOTTOM;
 
 		this.svg = d3.select(this.element)
 			.append('svg')
@@ -29,7 +29,7 @@ class LineChart {
 			.attr('x', this.WIDTH / 2)
 			.attr('y', this.HEIGHT + 50)
 			.attr('text-anchor', 'middle')
-			.text("Part")
+			.text("Year")
 			.style('font-size', '1rem')
 
 
@@ -98,8 +98,8 @@ class LineChart {
 		let currData = this.data.filter(d => d.obstacle == currMetric);
 
 		const x = d3.scaleLinear()
-			.domain([d3.min(currData, d => +d[this.xValue]) - 1,
-			d3.max(currData, d => +d[this.xValue])])
+			.domain([d3.min(currData, d => d[this.xValue]) - 1,
+			d3.max(currData, d => d[this.xValue])])
 			.range([0, this.WIDTH]);
 
 		const y = d3.scaleLinear()
@@ -108,7 +108,7 @@ class LineChart {
 			.range([this.HEIGHT, 0]);
 
 		this.lineActual = d3.line()
-			.x(function (d) { return x(+d[that.xValue]) })
+			.x(function (d) { return x(d[that.xValue]) })
 			.y(function (d) { return y(+d[that.yValue]) })
 			.curve(d3.curveCatmullRom.alpha(.5))
 
@@ -147,7 +147,7 @@ class LineChart {
 		// handle circles
 		// update circles
 		let circles = this.svg.selectAll(`circle.${this.yValue}`)
-			.data(currData, d => +d[this.xValue]);
+			.data(currData, d => d[this.xValue]);
 
 		circles.exit().remove();
 
@@ -159,7 +159,7 @@ class LineChart {
 			.style('stroke', 'white')
 
 			.attr('r', 1)
-			.attr('cx', d => x(+d[that.yValue]))
+			.attr('cx', d => x(d[that.xValue]))
 			.attr('cy', d => y(+d[that.yValue]))
 
 
@@ -167,7 +167,7 @@ class LineChart {
 		circles = circles.merge(circlesEnter);
 
 		circles.transition(t)
-			.attr('cx', d => x(+d[that.xValue]))
+			.attr('cx', d => x(d[that.xValue]))
 			.attr('cy', d => y(+d[that.yValue]))
 			.attr('r', window.innerWidth < 1000 ? 5 : 10)
 			.attr('stroke-width', 3)

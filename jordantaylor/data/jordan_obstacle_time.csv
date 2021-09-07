@@ -1,0 +1,71 @@
+"obstacle","year","cnt"
+"Stairs",2008,0
+"Stairs",2010,3
+"Stairs",2015,2
+"Stairs",2016,4
+"Stairs",2017,5
+"Stairs",2019,0
+"Stairs",2021,0
+"Gap",2008,37
+"Gap",2010,19
+"Gap",2015,29
+"Gap",2016,24
+"Gap",2017,30
+"Gap",2019,26
+"Gap",2021,23
+"Ledge",2008,16
+"Ledge",2010,22
+"Ledge",2015,31
+"Ledge",2016,16
+"Ledge",2017,25
+"Ledge",2019,23
+"Ledge",2021,26
+"Hubba",2008,0
+"Hubba",2010,8
+"Hubba",2015,0
+"Hubba",2016,0
+"Hubba",2017,0
+"Hubba",2019,15
+"Hubba",2021,0
+"Manual",2008,5
+"Manual",2010,6
+"Manual",2015,11
+"Manual",2016,12
+"Manual",2017,10
+"Manual",2019,2
+"Manual",2021,5
+"Transition",2008,0
+"Transition",2010,0
+"Transition",2015,0
+"Transition",2016,0
+"Transition",2017,2
+"Transition",2019,0
+"Transition",2021,0
+"Handrail",2008,21
+"Handrail",2010,14
+"Handrail",2015,0
+"Handrail",2016,0
+"Handrail",2017,8
+"Handrail",2019,9
+"Handrail",2021,10
+"Flat Rail",2008,5.6
+"Flat Rail",2010,44.4
+"Flat Rail",2015,22.2
+"Flat Rail",2016,11.1
+"Flat Rail",2017,11.1
+"Flat Rail",2019,22.2
+"Flat Rail",2021,16.7
+"Wall",2008,5.6
+"Wall",2010,0.0
+"Wall",2015,16.7
+"Wall",2016,5.6
+"Wall",2017,11.1
+"Wall",2019,0
+"Wall",2021,5.6
+"Flat",2008,5
+"Flat",2010,6
+"Flat",2015,7
+"Flat",2016,20
+"Flat",2017,2
+"Flat",2019,19
+"Flat",2021,15
