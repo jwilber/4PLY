@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84472984-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-84472984-4');
+    </script>
+    <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-base.min.js"></script>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <div id="whiteflannelbg">
+        <title>Thrasher Covers</title>
+        <link rel="shortcut icon" type="image/png" href="/images/handrailchart.png" />
+        <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
+        <script src="assets/d3.v4.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <script src="assets/d3-interpolate-path.min.js"></script>
+        <script src="assets/textures.js"></script>
+        <script>
+            function toggle() {
+              // toggle gallery
+              var x = document.getElementById("barplot");
+              if (x.style.display != "none") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+
+              // toggle grid
+              var y = document.getElementById("linechart");
+              if (x.style.display === "block") {
+                y.style.display = "none";
+
+
+              } else {
+                y.style.display = "block";
+
+              }}
+            </script>
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <header>
+            <section class='section-intro'>
+                <center>
+                    <h1>
+                        <a href="/" class="homepage">4PLY MAG</a>
+                    </h1>
+                    <br>
+                    <h4>December 2021</h4>
+                    <!-- <h1 class='main-title'>Thrasher<br>Covers</h1><br> -->
+                    <img src="images/thrasherlogo.jpeg"/ class="face2"><br>
+                    <h4>
+                        By <a href="https://www.instagram.com/fosterschild/">Harrison Lisewski</a>
+                    </h4>
+                    <!-- <br><br> -->
+                </center>
+            </section>
+        </header>
+
+<body>
+    <br>
+    <p>
+        41 years x 12 covers + x extra covers = x covers.
+        If a picture says a thousand words we're already at a couple million words and I'd assume there's an even more generous conversion between words and graphs so I'll keep the writing to a minimum. Since Mike Burnett already got mad at me for it, I'll admit that I don't even read Thrasher.. but I've always enjoyed the big pictures on the front. Getting the cover of Thrasher has always seemed like a big deal and I've always seen it as a good measure of whats hot and whats not. Assuming skate 'milestones' like (Jaws' 25 stair ollie) are covered by covers, it seems like you could get a pretty clean picture of the progression of skating by looking at what I'd like to assume are the 12 buckest tricks of any given year. <br><br>
+       
+    </p>
+    <hr>
+    <div class="qna">
+        <p><br>
+            <br>
+            <hr>
+        </p>
+    </div>
+    <!-- <div id="button"> -->
+        <!-- <button onclick="toggle()">Click me</button> -->
+    <!-- </div> -->
+    <h1 id='section-header'><br>Top Tricks<br></h1>
+
+    <div id="linechart">
+       <h3>obstacle frequency</h3> 
+
+    </div>
+    <div id="barplot">
+        <h3>obstacle frequency stacked</h3>
+        <div id="tooltip3">
+        </div>
+    </div>
+    <!-- <div display="none" id="areaplot"> -->
+    <!-- </div> -->
+     <h3>top tricks</h3> 
+    <div id="my_datavis">
+  
+
+    </div>
+
+    <div class="qna">
+        <p>
+            kickflip is the only flip trick in the top 20. <br>
+            x flip ins<br>
+            0 flip outs<br>
+            makes sense when we're looking at photos<br>
+            i imagine the covers are more about the spot than the skater more often than not.
+        </p>
+    </div>
+    <br>
+    <section class='section2'>
+        <br><br>
+        <h1>
+            <!-- OVER TIME -->
+        </h1>
+        <br>
+       <!-- <select id="metric-select" style='margin-left: 30%;'></select> -->
+        <center>
+            <!-- <div id="linechart" div></div> -->
+        </center>
+    </section>
+    <div class="qna">
+        <p>
+        </p>
+        <p class="quote">
+        </p>
+    </div>
+    <div id="popup" class="popup">
+    </div>
+    <div id="tooltip2">
+    </div>
+    <div id="stairchart">
+        <h3>staircount by year</h3>
+    </div>
+    <div>
+        <p>
+            <b>
+                Stairs</b>
+            <br>
+            This is the highest stair count of each year split into handrails, hubbas and tricks down stairs. <br>
+            <br>
+            <b>Rails</b><br>
+            The stair count for rails plateaus around the start of the 2000's. People traded out bigger rails for better rails and it got progressively harder to get a rail cover without a kink, curve, gap or drop.
+            <br>
+            Steve Nesser deserves an honourable mention for grinding a 51 stair rail and crunching the whole chart. I think this is a genius way to get a cover. If you can sit in them like that, the only thing between you and a cover is the lack of mellow 60 stair rails in your area. I couldnt see the rest of the stairs on Dane's 50 so I assumed the lower set was 17 as well. I actually have no idea if that's 34 stairs but that was fucked. Felipe Nunes' cover is the only outlier that's under the trend line but he's lightyears above the trendline for people with no legs.
+            You can sidestep whatever physical limitations that would stop you from skating a classic 51 and just skate a mellow 51. Find a 10 flat 10 flat 10 flat 11 and don't wax it. Find a curved kinked rail like that one Nyjah and the Redbull kid skate. You don't have to actually put yoursel at risk, you just have to get a photo that makes people feel like they would die if they tried it. Either that or percieved time from pop to land.
+            What happened in 2007 & 2013? Steve Nesser.
+            <br><br>
+            <b>Hubbas</b>
+            <br><br>
+            <b>Stairs</b><br>
+            Couldn't imagine a more understandable plateau. 
+            If people kept trying to skate bigger stairs there's going to be a point where the impact would give everyone flamingo legs. Look what it's doing to Jaws. No one is going to give a shit about stairs again until someone ollies a 30. 
+            <br><br>
+            <b>Combos</b><br>
+            It makes sense that flipping in/out of tricks for a photo is probably more trouble than its worth. Save that for the video part brother nobody cares.
+        </p>
+        <p>
+            I've been trying to work out what the video equivalent of Thrasher covers would be. 411s were basically the thrasher cover of video documentation. QS top 10 fills that hole right now, but differently. Of course you'll see an 18 stair here and there but only if its cool. No one gives a fuck about jeffwons double fs flip down the double set. If QS had covers I imagine it would be mostly cool NY spots. That's why Thrasher is dominating the hard mag game. Clickbait.
+        </p>
+    </div>
+    <br>
+    <br>
+    <center>
+        <p class="quote">
+            Follow the <a href="https://www.instagram.com/4plymag/">4PLY Instagram</a>.
+        </p>
+    </center><br><br><br>
+    <section class='section2'>
+    </section>
+    <br><br><br>
+    <script id="grid" type="text/plain">
+        01 02 03 04 05 06 07 08 09 10
+        11 12 13 14 15 16 17 18 19 20
+        21 22 23 24 25 26 27 28 29 30
+        31 32 33 34 35 36 37 38 39 40
+        41 42 43 44 45 46 47 48 49 50
+        51 52 53 54 55 56 57 58 59 60
+        61 62 63 64 65 66 67 68 69 70
+        71 72 73 74 75 76 77 78 79 80
+        81 82 83 84 85 86 87 88 89 90
+        91 92 93 94 95 96 97 98 99 100
+</script>
+    <script id="field_details">
+    var field_details = {
+        "perc_switch": { desc: "Switch Tricks" },
+        "perc_fs": { desc: "FS Tricks" },
+        "perc_bs": { desc: "BS Tricks" },
+        "perc_manual": { desc: "Manual Tricks" },
+        "perc_ledge": { desc: "Ledge Tricks" },
+        "perc_stair": { desc: "Stair/Gap Tricks" },
+        // "perc_transition": { desc: "Transition Tricks" },
+        "perc_flat": { desc: "Flatground Tricks" },
+        "perc_handrail": { desc: "Handrails Tricks" },
+        "perc_distinct": { desc: "Distinct Tricks" }
+    };
+    </script>
+    <!-- <script type="text/javascript" src="js/ForceBubble.js"></script> -->
+    <script type="text/javascript" src="js/Barplot.js"></script>
+    <script type="text/javascript" src="js/areaplot.js"></script>
+    <script type="text/javascript" src="js/LineChart.js"></script>
+    <script type="text/javascript" src="js/Scatterplot.js"></script>
+    <script type="text/javascript" src="js/Trickbar.js"></script>
+    <!-- <script src="https://minfo.s3-us-west-2.amazonaws.com/script.js"></script> -->
+    <script id="field_details">
+    var field_details = {
+        perc_switch: { desc: "Switch Tricks" },
+        // perc_slowmo: { desc: "Slowmo Tricks" },
+        perc_fs: { desc: "FS Tricks" },
+        perc_bs: { desc: "BS Tricks" },
+        perc_manual: { desc: "Manual Tricks" },
+        perc_ledge: { desc: "Ledge Tricks" },
+        perc_stair: { desc: "Stair/Gap Tricks" },
+        // "perc_transition": { desc: "Transition Tricks" },
+        perc_flat: { desc: "Flatground Tricks" },
+        perc_handrail: { desc: "Handrails Tricks" },
+        perc_distinct: { desc: "Distinct Tricks" },
+    };
+    </script>
+    
