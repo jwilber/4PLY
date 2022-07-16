@@ -2,9 +2,11 @@
 var margin1 = {top: 5, right: window.innerWidth / 10,
  bottom: 70, left: window.innerWidth / 10},
     width1 = (window.innerWidth < 1000
-        ? window.innerWidth / 1.2
+        ? window.innerWidth / 1.1
         : window.innerWidth / 1.3) - (window.innerWidth / 10) - (window.innerWidth / 10);
-    height1 = window.innerHeight / 2 - 75;
+    height1 = (window.innerHeight < 1000
+      ? window.innerHeight / 3
+      :window.innerHeight / 2.3) - 5;
 
 
 
@@ -95,8 +97,8 @@ svg1.append("path")
 svg1.append("circle").attr("cx",width1-90).attr("cy",30).attr("r", 5).style("fill", "steelblue")
 svg1.append("circle").attr("cx",width1-90).attr("cy",50).attr("r", 5).style("fill", "orange")
 svg1.append("text").attr("x", width1-80).attr("y", 10).text("hubbas/out ledges").style("font-size", "0.8rem").attr("alignment-baseline","middle")
-svg1.append("text").attr("x", width1-80).attr("y", 30).text("handrails").style("font-size", "0.8rem").attr("alignment-baseline","middle")
-svg1.append("text").attr("x", width1-80).attr("y", 50).text("stairs").style("font-size", "0.8rem").attr("alignment-baseline","middle")
+svg1.append("text").attr("x", width1-80).attr("y", 30).text("stairs/gaps").style("font-size", "0.8rem").attr("alignment-baseline","middle")
+svg1.append("text").attr("x", width1-80).attr("y", 50).text("handrails").style("font-size", "0.8rem").attr("alignment-baseline","middle")
 
 svg1.append("path")
       .datum(data3)
@@ -127,8 +129,8 @@ svg1.append("path")
     .append("circle")
       .attr("cx", function (d) { return x(d.year); } )
       .attr("cy", function (d) { return y(d.topstairs); } )
-      .attr("r", 3)
-      .style("fill", "black")
+      .attr("r", 0)
+      // .style("fill", "black")
 
           .on('mouseover', function (d, i) {
          d3.select(this).transition()
@@ -147,7 +149,8 @@ svg1.append("path")
      // .duration(100)
      .html("<img class='tooltipcover' src='covers/"+ 
         d.month + d.year + ".jpg'></img><br><br>" + 
-        d.skater + ", " + d.month + " " + d.year)
+        d.skater + ", " + d.month + " " + d.year + 
+        " - " + d.staircount + "stairs")
       // .style("pointer-events", "none")
       .style("left", (d3.mouse(this)[0]+50) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
       .style("bottom", (d3.mouse(this)[1]/2) + "px")
@@ -169,10 +172,11 @@ svg1.append("path")
     .style("max-height","80%")
      .style("opacity", 1)
      .html("<img class='popupcover' src='covers/"+ 
-        d.month + d.year + ".jpg'></img><br>" + d.skater + ", " + d.month + ", " + d.year)
+        d.month + d.year + ".jpg'></img><br><br>" + d.skater + ", " + d.month + ", " + d.year + 
+        " - " + d.staircount + "stairs")
       
       .style("left", "0") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
-      .style("top", "-10%")
+      // .style("top", "-10%")
       .style("right", "0")
       .style("margin", "5%, auto")
       .style("z-index","1");
@@ -198,8 +202,9 @@ svg1.append("path")
     .append("circle")
       .attr("cx", function (d) { return x(d.year); } )
       .attr("cy", function (d) { return y(d.staircount); } )
-      .attr("r", 3)
-      .style("fill", "brown") 
+      .attr("r", 4)
+      .style("fill", "orange") 
+      .style("stroke","black")
 
           .on('mouseover', function (d, i) {
          d3.select(this).transition()
@@ -240,10 +245,10 @@ svg1.append("path")
     .style("max-height","80%")
      .style("opacity", 1)
      .html("<img class='popupcover' src='covers/"+ 
-        d.month + d.year + ".jpg'></img>" + d.skater + ", " + d.month + ", " + d.year)
+        d.month + d.year + ".jpg'><br></img>" + d.skater + ", " + d.month + ", " + d.year)
       
       .style("left", "0") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
-      .style("top", "-10%")
+      // .style("top", "-10%")
       .style("right", "0")
       .style("margin", "5%, auto")
       .style("z-index","1");
@@ -269,8 +274,9 @@ svg1.append("path")
     .append("circle")
       .attr("cx", function (d) { return x(d.year); } )
       .attr("cy", function (d) { return y(d.staircount); } )
-      .attr("r", 3)
-      .style("fill", "#00008B")  
+      .attr("r", 4)
+      .style("fill", "steelblue")  
+      .style("stroke","black")
 
       .on('mouseover', function (d, i) {
          d3.select(this).transition()
@@ -288,7 +294,7 @@ svg1.append("path")
      // .transition()
      // .duration(100)
      .html("<img class='tooltipcover' src='covers/"+ 
-        d.month + d.year + ".jpg'></img><br><br>" + 
+        d.month + d.year + ".jpg'></img><br>" + 
         d.skater + ", " + d.month + " " + d.year)
       // .style("pointer-events", "none")
       .style("left", (d3.mouse(this)[0]+50) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
@@ -311,10 +317,10 @@ svg1.append("path")
     .style("max-height","80%")
      .style("opacity", 1)
      .html("<img class='popupcover' src='covers/"+ 
-        d.month + d.year + ".jpg'></img>" + d.skater + ", " + d.month + ", " + d.year)
+        d.month + d.year + ".jpg'></img><br>" + d.skater + ", " + d.month + ", " + d.year)
       
       .style("left", "0") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
-      .style("top", "-10%")
+      // .style("top", "-10%")
       .style("right", "0")
       .style("margin", "5%, auto")
       .style("z-index","1");
@@ -340,8 +346,9 @@ svg1.append("path")
     .append("circle")
       .attr("cx", function (d) { return x(d.year); } )
       .attr("cy", function (d) { return y(d.staircount); } )
-      .attr("r", 3)
-      .style("fill", "#8B0000")  
+      .attr("r", 4)
+      .style("fill", "red") 
+      .style("stroke","black") 
 
           .on('mouseover', function (d, i) {
          d3.select(this).transition()
@@ -384,7 +391,7 @@ svg1.append("path")
         d.month + d.year + ".jpg'></img>" + d.skater + ", " + d.month + ", " + d.year)
       
       .style("left", "0") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
-      .style("top", "-10%")
+      // .style("top", "-10%")
       .style("right", "0")
       .style("margin", "5%, auto")
       .style("z-index","1");

@@ -1,10 +1,10 @@
 // set the dimensions and margins of the graph
-var barMargin = {top: 5, right: window.innerWidth / 3,
- bottom: 70, left: window.innerWidth / 7},
+var barMargin = {top: 5, right: window.innerWidth / 2.5,
+ bottom: 70, left: window.innerWidth / 6},
     barWidth = (window.innerWidth < 1000
         ? window.innerWidth / 1.2
-        : window.innerWidth / 1.3) - (window.innerWidth / 6) - (window.innerWidth / 7);
-    barHeight = window.innerHeight / 1.2;
+        : window.innerWidth / 1.3) - (window.innerWidth / 6) - (window.innerWidth / 5);
+    barHeight = window.innerHeight / 2;
 
 
 // const barMargin = { top: 10, right: window.innerWidth/7, bottom: 50, left: window.innerWidth/3.5 }
@@ -82,7 +82,7 @@ d3.csv("data/toptricks.csv", function (data) {
     .attr("y", d => y(d.trick))
     .attr("width", d => x(d.count))
     .attr("height", y.bandwidth())
-    .attr('fill', "pink")
+    .attr('fill', "steelblue")
     .style('stroke', 'black')
     .style('stroke-width', 1.5)
     .attr("filter", filter)

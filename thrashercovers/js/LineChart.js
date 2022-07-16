@@ -2,9 +2,13 @@
 var margin5 = {top: 5, right: window.innerWidth / 10,
  bottom: 70, left: window.innerWidth / 10},
     width5 = (window.innerWidth < 1000
-        ? window.innerWidth / 1.2
+        ? window.innerWidth / 1
         : window.innerWidth / 1.3) - (window.innerWidth / 10) - (window.innerWidth / 10);
-    height5 = window.innerHeight / 2 - 5;
+    height5 = (window.innerHeight < 1000
+      ? window.innerHeight / 3
+      :window.innerHeight / 2.3) - 5;
+
+ 
 
 
 
@@ -36,7 +40,7 @@ d3.csv("data/barplot.csv", function(data) {
 
   // Add Y axis
   var y = d3.scaleLinear()
-    .domain([0, 17])
+    .domain([0, 12])
     .range([ height5, 0]);
   svg5.append("g")
     .call(d3.axisLeft(y).ticks(7).tickFormat(d3.format("d")));
@@ -73,7 +77,7 @@ svg5.append("path")
 svg5.append("path")
       .datum(data)
       .attr("fill", "none")
-      .attr("stroke", "steelblue")
+      .attr("stroke", "orange")
       .attr("stroke-width", 3)
       .attr("d", d3.line()
         .x(function(d) { return x(d.year) })
@@ -113,14 +117,14 @@ svg5.append("circle").attr("cx",width5-90).attr("cy",30).attr("r", 5).style("fil
 svg5.append("circle").attr("cx",width5-90).attr("cy",50).attr("r", 5).style("fill", "orange")
 svg5.append("circle").attr("cx",width5-90).attr("cy",70).attr("r", 5).style("fill", "mediumseagreen")
 
-svg5.append("text").attr("x", width5-80).attr("y", 10).text("ledges").style("font-size", "0.8rem").attr("alignment-baseline","middle")
-svg5.append("text").attr("x", width5-80).attr("y", 30).text("handrails").style("font-size", "0.8rem").attr("alignment-baseline","middle")
-svg5.append("text").attr("x", width5-80).attr("y", 50).text("stairs/gaps").style("font-size", "0.8rem").attr("alignment-baseline","middle")
+svg5.append("text").attr("x", width5-80).attr("y", 10).text("ledges/hubbas").style("font-size", "0.8rem").attr("alignment-baseline","middle")
+svg5.append("text").attr("x", width5-80).attr("y", 30).text("stairs/gaps").style("font-size", "0.8rem").attr("alignment-baseline","middle")
+svg5.append("text").attr("x", width5-80).attr("y", 50).text("handrails").style("font-size", "0.8rem").attr("alignment-baseline","middle")
 svg5.append("text").attr("x", width5-80).attr("y", 70).text("transition").style("font-size", "0.8rem").attr("alignment-baseline","middle")
 svg5.append("path")
       .datum(data)
       .attr("fill", "none")
-      .attr("stroke", "orange")
+      .attr("stroke", "steelblue")
       .attr("stroke-width", 3)
       .attr("d", d3.line()
         .x(function(d) { return x(d.year) })
@@ -137,22 +141,22 @@ svg5.append("path")
 
 
 
-     svg5.append("path")
-      .datum(data)
-      .attr("fill", "none")
-      .attr("stroke", "hotpink")
-      .attr("stroke-width", 3)
-      .attr("d", d3.line()
-        .x(function(d) { return x(d.year) })
-        .y(function(d) { return y(d.flat) })
-        )
-      .attr('pointer-events', 'visibleStroke')
-      .on("mouseover", function(d) {
-        d3.select(this).style("stroke-width", "6");
-      })                  
-      .on("mouseout", function(d) {
-        d3.select(this).style("stroke-width", "3")   
-      })
+     // svg5.append("path")
+     //  .datum(data)
+     //  .attr("fill", "none")
+     //  .attr("stroke", "hotpink")
+     //  .attr("stroke-width", 3)
+     //  .attr("d", d3.line()
+     //    .x(function(d) { return x(d.year) })
+     //    .y(function(d) { return y(d.flat) })
+     //    )
+     //  .attr('pointer-events', 'visibleStroke')
+     //  .on("mouseover", function(d) {
+     //    d3.select(this).style("stroke-width", "6");
+     //  })                  
+     //  .on("mouseout", function(d) {
+     //    d3.select(this).style("stroke-width", "3")   
+     //  })
 
  
 
@@ -165,8 +169,8 @@ svg5.append("path")
     .append("circle")
       .attr("cx", function (d) { return x(d.year); } )
       .attr("cy", function (d) { return y(d.transition); } )
-      .attr("r", 3)
-      .style("fill", "black")
+      .attr("r", 2)
+      .style("fill", "(0, 0, 0, 0.5)")
 
           .on('mouseover', function (d, i) {
          d3.select(this).transition()
@@ -236,8 +240,8 @@ svg5.append("path")
     .append("circle")
       .attr("cx", function (d) { return x(d.year); } )
       .attr("cy", function (d) { return y(d.gapstairs); } )
-      .attr("r", 3)
-      .style("fill", "black") 
+      .attr("r", 2)
+      .style("fill", "(0, 0, 0, 0.5)")
 
           .on('mouseover', function (d, i) {
          d3.select(this).transition()
@@ -307,8 +311,8 @@ svg5.append("path")
     .append("circle")
       .attr("cx", function (d) { return x(d.year); } )
       .attr("cy", function (d) { return y(d.ledge); } )
-      .attr("r", 3)
-      .style("fill", "black")  
+      .attr("r", 2)
+      .style("fill", "(0, 0, 0, 0.5)") 
 
       .on('mouseover', function (d, i) {
          d3.select(this).transition()
@@ -378,18 +382,18 @@ svg5.append("path")
     .append("circle")
       .attr("cx", function (d) { return x(d.year); } )
       .attr("cy", function (d) { return y(d.rail); } )
-      .attr("r", 3)
-      .style("fill", "black")  
+      .attr("r", 2)
+      .style("fill", "(0, 0, 0, 0.5)")  
 
-       svg5.append('g')
-    .selectAll("dot")
-    .data(data)
-    .enter()
-    .append("circle")
-      .attr("cx", function (d) { return x(d.year); } )
-      .attr("cy", function (d) { return y(d.flat); } )
-      .attr("r", 3)
-      .style("fill", "black") 
+    //    svg5.append('g')
+    // .selectAll("dot")
+    // .data(data)
+    // .enter()
+    // .append("circle")
+    //   .attr("cx", function (d) { return x(d.year); } )
+    //   .attr("cy", function (d) { return y(d.flat); } )
+    //   .attr("r", 3)
+    //   .style("fill", "black") 
 
 })
 

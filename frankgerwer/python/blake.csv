@@ -1,0 +1,287 @@
+clip_index,trick_index,trick,obstacle,obstacle_detailer,slowmo,bank,switch,line,video,year
+1,1,ollie,gap,,1,0,0,0,Programming Injection,2019
+2,2,sw bs kickflip,gap,bump to gap,1,1,1,0,Programming Injection,2019
+3,2,sw bs kickflip,gap,bump to gap,1,1,1,0,Programming Injection,2019
+4,3,fs heelflip,flat,,0,0,0,1,Programming Injection,2019
+4,4,fakie fs noseslide to bigspin,ledge,,0,0,0,1,Programming Injection,2019
+5,5,sw fs shuv,flat,,0,0,1,1,Programming Injection,2019
+5,6,sw fs boardslide,rail,bump to rail,0,1,1,1,Programming Injection,2019
+6,7,fs 180 to late fs shuv,gap,bump to gap,0,1,0,0,Programming Injection,2019
+7,8,fs 360,gap,bump to gap,0,1,0,0,Programming Injection,2019
+8,9,sw heelflip,up,3,0,0,1,1,Programming Injection,2019
+9,10,sw bs bigspin,stairs,10,0,0,1,1,Programming Injection,2019
+10,11,sw kickflip,gap,bump to gap,0,0,1,0,Programming Injection,2019
+11,12,sw heelflip,flat,,0,0,1,1,Programming Injection,2019
+11,13,sw tre flip,flat,into bank,0,1,1,1,Programming Injection,2019
+11,14,sw bs 180,flat,,0,0,1,1,Programming Injection,2019
+11,15,bs bennet grind,ledge,,0,0,0,1,Programming Injection,2019
+12,16,fs 180 to sw fs boardslide,handrail,8,0,0,0,0,Programming Injection,2019
+13,17,kickflip to bs crook,handrail,8,0,0,0,0,Programming Injection,2019
+14,18,nollie heelflip to bs noseslide,hubba,,0,0,0,0,Programming Injection,2019
+15,19,sw bs lipslide,handrail,9,0,0,1,0,Programming Injection,2019
+16,20,sw bs bigspin to fs boardslide,handrail,9,0,0,1,0,Programming Injection,2019
+17,21,nollie to bs crook,hubba,,0,0,0,0,Programming Injection,2019
+18,22,nollie heelflip to bs boardslide,handrail,9,0,0,1,0,Programming Injection,2019
+19,23,fs 180 to sw fs nosegrind,hubba,8,0,0,0,0,Programming Injection,2019
+20,24,fs heelflip to sw fs 5-0,handrail,6,0,0,0,0,Programming Injection,2019
+21,25,wallie,rock,,0,0,0,1,Programming Injection,2019
+21,26,fs 180 to sw fs 5-0 to regular,handrail,8,0,0,0,1,Programming Injection,2019
+22,27,nollie kickflip to bs noseslide to fakie,handrail,8,0,0,1,0,Programming Injection,2019
+23,28,sw bs 180,stairs,5 flat 5,1,0,1,0,Programming Injection,2019
+24,29,nollie kickflip to bs feeble,handrail,9,1,0,1,0,Programming Injection,2019
+25,30,sw bigflip to fs boardslide to regular,handrail,6,1,0,1,0,Programming Injection,2019
+26,31,nollie kickflip to bs crook,handrail,12,1,0,1,0,Programming Injection,2019
+26,32,nollie kickflip to bs crook,handrail,12,1,0,1,0,Programming Injection,2019
+27,33,sw ollie,gap,,0,0,1,0,Programming Injection,2019
+28,34,sw big heel,gap,4 block,0,0,1,0,Programming Injection,2019
+29,35,sw fs heelflip,gap,into bank,0,1,1,0,Programming Injection,2019
+30,36,sw heelflip,gap,bump to gap,0,1,1,0,Programming Injection,2019
+31,37,sw kickflip to sw bs tailslide to regular,handrail,5,0,0,1,0,Programming Injection,2019
+32,38,sw kickflip to sw bs tailslide to regular,hubba,8,0,0,1,0,Programming Injection,2019
+33,39,sw kickflip to sw bs tailslide to regular,handrail,6,0,0,1,0,Programming Injection,2019
+34,40,sw kickflip to sw bs tailslide to regular,handrail,7,0,0,1,0,Programming Injection,2019
+35,41,fs heelflip,gap,euro gap,0,1,0,0,Programming Injection,2019
+1,1,sw tre flip,flat,flat gap,1,0,1,0,Push Part,2017
+2,2,kickflip to bs 5050 to bs 180,handrail,,0,0,0,0,Push Part,2017
+3,3,fs 180 to sw fs wallride,wall,,0,1,0,0,Push Part,2017
+4,4,sw fs wallride,wall,,0,1,1,0,Push Part,2017
+5,5,bs crook,rail,outrail,1,0,0,0,Push Part,2017
+6,6,fs 5050,rail,,0,0,0,0,Push Part,2017
+7,7,bs 5050,rail,,0,0,0,0,Push Part,2017
+8,7,bs 5050,rail,,0,0,0,0,Push Part,2017
+9,8,fs 180 to sw bs crook,handrail,8,0,0,0,0,Push Part,2017
+10,9,fs 180 to sw fs boardslide,handrail,8,0,0,0,0,Push Part,2017
+11,10,sw kickflip to fs boardslide,handrail,8,0,0,0,0,Push Part,2017
+12,11,fs lipslide,ledge,,0,0,0,1,Push Part,2017
+12,12,nollie fs heelflip,stairs,7,0,0,1,1,Push Part,2017
+13,13,halfcab to bs crook to regular,ledge,,0,0,0,1,Push Part,2017
+13,14,heelflip to fs 5-0,ledge,,0,0,0,1,Push Part,2017
+14,15,bs bennet grind,handrail,8,0,0,0,0,Push Part,2017
+15,16,bs crook,handrail,,0,0,0,0,Push Part,2017
+16,17,ollie,stairs,6,0,0,0,1,Push Part,2017
+16,18,fs 180 to sw fs boardslide,handrail,6,0,0,0,1,Push Part,2017
+17,19,fs 180 to sw fs 5-0,handrail,7,0,0,0,1,Push Part,2017
+18,20,sw heelflip,stairs,7,0,0,0,1,Push Part,2017
+19,21,sw bigflip,gap,,0,0,0,0,Push Part,2017
+20,22,fs shuv to bs boardslide,handrail,8,1,0,0,0,Push Part,2017
+21,23,bs 5-0,handrail,11,0,0,0,0,Push Part,2017
+22,24,sw bs feeble,rail,,0,0,1,1,Push Part,2017
+22,25,sw bs bigspin to fs boardslide,rail,,0,0,1,1,Push Part,2017
+23,26,fs 180 to sw fs wallride,wall,,0,1,0,0,Push Part,2017
+24,27,bs bennet grind,handrail,,0,0,0,0,Push Part,2017
+25,27,bs bennet grind,handrail,,0,0,0,0,Push Part,2017
+26,28,fs lipslide to fakie,rail,,1,0,0,0,Push Part,2017
+27,29,sw big heel,gap,into bank,1,1,1,0,Push Part,2017
+28,30,bs boardslide,handrail,,1,0,0,0,Push Part,2017
+29,31,fs shuv to bs noseslide,hubba,8,0,0,0,0,Push Part,2017
+30,32,nollie heelflip to bs 5-0,hubba,8,1,0,1,0,Push Part,2017
+31,33,sw ollie,gap,,1,0,1,0,Push Part,2017
+32,34,nollie kickflip,stairs,11,1,0,1,0,Push Part,2017
+33,35,sw bs kickflip,gap,into bank,0,1,1,0,Push Part,2017
+34,36,nollie to noseslide,hubba,,0,0,1,0,Push Part,2017
+35,37,fs heelflip to sw fs 5-0 to regular,handrail,7,0,0,0,0,Push Part,2017
+36,37,fs heelflip to sw fs 5-0 to regular,handrail,7,1,0,0,0,Push Part,2017
+37,38,nollie heelflip to bs crook,handrail,,1,0,1,0,Push Part,2017
+1,1,kickflip,stairs,7 flat 1,1,0,0,0,Daylando,2011
+2,1,kickflip,stairs,8 flat 1,1,0,0,0,Daylando,2011
+3,2,fs 5050,rail,bump to rail,0,1,0,0,Daylando,2011
+4,3,fs smith,rail,bump to rail,0,1,0,0,Daylando,2011
+5,4,sw heelflip to sw manny,manny pad,,0,0,1,0,Daylando,2011
+6,5,sw bs 5-0,ledge,,0,0,1,1,Daylando,2011
+6,6,sw kickflip,gap,,0,0,1,1,Daylando,2011
+7,7,fs 180,gap,bump to bar,0,1,0,1,Daylando,2011
+7,8,sw fs shuv,flat,,0,0,1,1,Daylando,2011
+8,9,sw heelflip,flat,over block,0,0,1,1,Daylando,2011
+8,10,sw fs bigspin to bs boardslide,handrail,7,0,0,1,1,Daylando,2011
+9,11,sw bs heelflip,stairs,,0,0,1,0,Daylando,2011
+10,12,sw bs 180,flat,over block,0,0,1,0,Daylando,2011
+11,13,sw bs kickflip,flat,over block,1,0,1,1,Daylando,2011
+11,14,bs feeble to fs 180,handrail,6,0,0,0,1,Daylando,2011
+12,14,bs feeble to fs 181,handrail,6,1,0,0,1,Daylando,2011
+13,15,ollie,gap,,0,0,0,0,Daylando,2011
+14,16,sw tre flip,flat,,0,0,1,1,Daylando,2011
+14,17,sw fs tailslide to fakie,handrail,,0,0,1,1,Daylando,2011
+15,18,sw fs lipslide,handrail,,0,0,1,0,Daylando,2011
+16,19,nollie kickflip to bs crook,ledge,,0,0,1,1,Daylando,2011
+16,20,bs noseslide to fs shuv,ledge,,0,0,0,1,Daylando,2011
+17,21,sw kickflip to fs boardslide,rail,,0,0,1,0,Daylando,2011
+18,22,fs smith to fs 180,rail,,0,0,0,0,Daylando,2011
+19,22,fs smith to fs 181,rail,,0,0,0,0,Daylando,2011
+20,23,bs noseblunt,ledge,bump to ledge,1,1,0,0,Daylando,2011
+21,24,ollie,gap,bump to bar,0,0,0,1,Daylando,2011
+21,25,fs heelflip to sw manny,manny pad,,1,0,0,1,Daylando,2011
+22,26,fs nosegrind to fs 180,ledge,,0,0,0,1,Daylando,2011
+22,27,sw heelflip to bs crook,ledge,,0,0,1,1,Daylando,2011
+23,28,sw bs 180,gap,bump to bar,1,1,1,0,Daylando,2011
+24,29,halfcab kickflip,flat,,0,0,0,1,Daylando,2011
+24,30,sw big heel,stairs,7,1,0,1,1,Daylando,2011
+25,31,halfcab kickflip,stairs,6,0,0,0,0,Daylando,2011
+26,32,sw bs heelflip,stairs,3 flat 4,0,0,1,0,Daylando,2011
+27,33,nollie heelflip to bs boardslide,handrail,8,1,0,1,0,Daylando,2011
+28,34,heelflip to bs crook,handrail,7,0,0,0,0,Daylando,2011
+29,35,bs crook,handrail,5,1,0,0,0,Daylando,2011
+30,36,sw fs bigspin to bs boardslide,handrail,6,0,0,1,0,Daylando,2011
+31,37,fs shuv to bs boardslide,handrail,5,0,0,0,0,Daylando,2011
+32,38,nollie kickflip to bs boardslide,handrail,10,0,0,1,0,Daylando,2011
+33,39,fs 180,gap,bump to bar,0,1,0,1,Daylando,2011
+33,40,sw tre flip,flat,,0,0,1,1,Daylando,2011
+33,41,sw varial heelflip,flat,,0,0,1,1,Daylando,2011
+34,42,nollie heelflip to bs 5050,hubba,7,1,0,1,0,Daylando,2011
+35,42,nollie heelflip to bs 5051,hubba,7,0,0,1,0,Daylando,2011
+36,43,bs feeble,handrail,6,0,0,0,0,Daylando,2011
+37,44,kickflip to bs crook,handrail,6,0,0,0,0,Daylando,2011
+38,44,kickflip to bs crook,handrail,6,0,0,0,0,Daylando,2011
+39,45,sw bs kickflip,gap,,1,0,1,0,Daylando,2011
+40,46,bs crook,rail,bump to rail,1,1,0,0,Daylando,2011
+41,47,fs heelflip,gap,bump to bar,1,1,0,0,Daylando,2011
+42,48,sw heelflip,gap,bump to bar,1,1,1,0,Daylando,2011
+43,48,sw heelflip,gap,bump to bar,1,1,1,0,Daylando,2011
+44,49,bs crook,rail,bump to rail,1,1,0,0,Daylando,2011
+44,50,shuv to fs boardslide,handrail,,1,0,0,0,Daylando,2011
+45,51,sw tre flip to sw fs lipslide to regular,handrail,7,1,0,1,0,Daylando,2011
+46,52,kickflip,gap,bump to bar,1,1,0,0,Daylando,2011
+47,43,fs wallride,wall,bump to bar,1,1,0,0,Daylando,2011
+1,1,ollie,gap,bump to bar,0,1,0,0,Cosmic Vomit 2,2012
+2,1,ollie,gap,bump to bar,0,1,0,0,Cosmic Vomit 2,2012
+3,2,nollie fs 360,gap,bump to gap,0,1,1,0,Cosmic Vomit 2,2012
+4,3,sw tre flip,gap,bump to gap,0,1,1,0,Cosmic Vomit 2,2012
+5,4,fs nosegrind,rail,,0,1,0,0,Cosmic Vomit 2,2012
+6,5,fs heelflip,stairs,12,0,0,0,0,Cosmic Vomit 2,2012
+7,6,sw bs nosegrind to bs 180,ledge,,0,0,1,0,Cosmic Vomit 2,2012
+8,7,fs noseslide,handrail,6,0,0,0,0,Cosmic Vomit 2,2012
+9,8,ollie,hip,,0,0,0,1,Cosmic Vomit 2,2012
+9,9,nolle heelflip,flat,,0,0,1,1,Cosmic Vomit 2,2012
+9,10,kickflip,gap,bump to bar,0,1,0,1,Cosmic Vomit 2,2012
+9,11,fs 180,flat,,0,0,0,1,Cosmic Vomit 2,2012
+10,12,sw kickflip,gap,bump to bar,0,1,1,0,Cosmic Vomit 2,2012
+11,13,nollie heelflip,stairs,7,0,0,1,0,Cosmic Vomit 2,2012
+12,14,fs tailslide to fs 360,hubba,6,0,0,0,0,Cosmic Vomit 2,2012
+13,14,fs tailslide to fs 361,hubba,6,0,0,0,0,Cosmic Vomit 2,2012
+14,15,nollie kickflip to bs crook,handrail,9,0,0,1,0,Cosmic Vomit 2,2012
+15,15,nollie kickflip to bs crook,handrail,9,0,0,1,0,Cosmic Vomit 2,2012
+16,16,sw ollie,up,,0,0,1,1,Cosmic Vomit 2,2012
+16,17,sw bs heelflip,gap,into bank,0,1,1,1,Cosmic Vomit 2,2012
+17,18,heelflip to fs wallride,wall,bank to wall,1,1,0,0,Cosmic Vomit 2,2012
+18,19,bs feeble to fs shuv,rail,,0,0,0,0,Cosmic Vomit 2,2012
+19,20,sw bs 5-0,hubba,,1,0,1,0,Cosmic Vomit 2,2012
+20,21,sw fs heelflip,gap,over rail,0,1,1,0,Cosmic Vomit 2,2012
+21,22,bs 180 to sw 5-0 to sw bs 360 shuv,ledge,bump to ledge,0,1,0,0,Cosmic Vomit 2,2012
+22,23,fs 180,gap,bump to bar,0,1,0,0,Cosmic Vomit 2,2012
+23,24,bs feeble to pop over,rail,bump to rail,0,1,0,0,Cosmic Vomit 2,2012
+24,25,sw fs bigspin,gap,flat gap,0,0,1,0,Cosmic Vomit 2,2012
+25,26,bs crook,handrail,gap to kink,0,0,0,0,Cosmic Vomit 2,2012
+26,27,bs blunt,handrail,gap to kink,0,0,0,0,Cosmic Vomit 2,2012
+27,28,nollie bs crook,handrail,12,1,0,1,0,Cosmic Vomit 2,2012
+28,29,sw bs hurricane,handrail,7,1,0,1,0,Cosmic Vomit 2,2012
+29,30,sw bs heelflip,flat,0,0,0,1,1,Cosmic Vomit 2,2012
+29,31,fs heelflip,gap,bump to bar,0,1,0,1,Cosmic Vomit 2,2012
+30,32,sw bs kickflip,gap,bump to bar,0,1,1,0,Cosmic Vomit 2,2012
+31,33,sw bs feeble,handrail,5,0,0,1,0,Cosmic Vomit 2,2012
+32,33,sw bs feeble,handrail,5,0,0,1,0,Cosmic Vomit 2,2012
+33,34,fs hurricane,handrail,5,1,0,0,0,Cosmic Vomit 2,2012
+34,35,nollie heelflip to bs crook,handrail,5,1,0,1,0,Cosmic Vomit 2,2012
+1,1,kickflip,stairs,up 3 flat 2,1,1,0,0,Trust Fall,2019
+2,2,sw bs kickflip,gap,up melbourne museum gap,0,0,1,0,Trust Fall,2019
+3,3,nollie heelflip,gap,flat gap,0,0,1,0,Trust Fall,2019
+4,4,sw fs nosegrind to fakie kickflip,ledge,,0,0,0,0,Trust Fall,2019
+5,5,fs lipslide,handrail,9,0,0,0,0,Trust Fall,2019
+6,6,nollie fs 360,gap,,0,1,1,0,Trust Fall,2019
+7,7,fs heelflip,gap,bump to bump,0,1,0,1,Trust Fall,2019
+7,8,sw fs bigspin,gap,,0,1,1,1,Trust Fall,2019
+8,9,sw heelflip to 5-0,ledge,,0,0,1,1,Trust Fall,2019
+9,10,sw kickflip to bs nosegrind to bs 180,ledge,,0,0,1,1,Trust Fall,2019
+10,11,ollie,gap,bump to bar,0,1,0,0,Trust Fall,2019
+11,12,bs crook to nollie fs 180,rail,bump to rail,0,1,0,0,Trust Fall,2019
+12,13,bs boardslide to nollie fs shuv,rail,bump to rail,0,1,0,0,Trust Fall,2019
+13,14,heelflip,gap,,0,0,0,0,Trust Fall,2019
+14,15,sw bs 180,gap,,0,0,1,0,Trust Fall,2019
+15,16,sw heelflip,gap,,0,0,1,0,Trust Fall,2019
+16,17,nollie heelflip,stairs,6,0,0,1,1,Trust Fall,2019
+16,18,fs 360,stairs,7,0,0,0,1,Trust Fall,2019
+17,19,kickflip to bs crook,handrail,7,0,0,0,0,Trust Fall,2019
+18,20,tre flip,flat,,0,0,0,1,Trust Fall,2019
+18,21,pole jam,pole,,0,0,0,1,Trust Fall,2019
+19,22,nollie kickflip to bs noseslide to fakie,ledge,,0,0,1,1,Trust Fall,2019
+19,23,halfcab to bs 5-0 to bs 180,ledge,,0,0,0,1,Trust Fall,2019
+20,24,sw tre flip,gap,bump to gap,0,1,1,0,Trust Fall,2019
+21,25,sw fs heelflip,gap,into bank,0,1,1,0,Trust Fall,2019
+22,26,sw tre flip to sw fs lipslide to regular,handrail,9,0,0,1,0,Trust Fall,2019
+23,27,sw bs hurricane,handrail,7,0,0,1,0,Trust Fall,2019
+24,28,sw bs kickflip to bs 5-0,handrail,7,1,0,1,0,Trust Fall,2019
+25,29,fs heelflip to sw fs 5-0,handrail,7,1,0,1,0,Trust Fall,2019
+26,30,sw kickflip to sw bs tailslide to regular,handrail,10,0,0,1,0,Trust Fall,2019
+27,30,sw kickflip to sw bs tailslide to regular,handrail,10,0,0,1,0,Trust Fall,2019
+1,1,sw fs shuv to sw bs 5050,ledge,,0,0,1,1,True Blue,2014
+1,2,sw big heel,flat,,0,0,1,1,True Blue,2014
+1,3,fs heelflip,gap,,0,0,0,1,True Blue,2014
+2,4,fs heelflip,gap,,0,0,0,0,True Blue,2014
+3,5,sw kickflip to sw bs 5-0,ledge,,0,0,1,0,True Blue,2014
+4,6,sw bs nosegrind,ledge,,0,0,1,1,True Blue,2014
+4,7,sw kickflip to sw bs 5-0 to sw fs 180,ledge,,0,0,1,1,True Blue,2014
+5,8,heelflip to bs 5-0,ledge,outledge,0,0,0,0,True Blue,2014
+6,9,sw kickflip to sw bs tailslide to regular,ledge,outledge,0,0,1,0,True Blue,2014
+7,10,sw bs 180,gap,,0,0,1,0,True Blue,2014
+8,10,sw bs 180,gap,,0,0,1,0,True Blue,2014
+9,11,sw heelflip,stairs,4 flat 4,0,0,1,0,True Blue,2014
+10,12,fs 360,stairs,4 flat 5,0,0,0,0,True Blue,2014
+11,13,sw bs kickflip,stairs,11,0,0,1,0,True Blue,2014
+12,14,ollie,gap,,0,0,0,0,True Blue,2014
+13,15,sw ollie,gap,bump to gap,0,1,1,0,True Blue,2014
+14,16,sw bs 180,gap,bump to gap,0,1,1,0,True Blue,2014
+15,17,fs shuv to bs boardslide,handrail,10,0,0,0,1,True Blue,2014
+15,18,nollie to bs feeble,handrail,10,0,0,1,1,True Blue,2014
+16,19,nollie to bs feeble,handrail,11,0,0,1,0,True Blue,2014
+17,20,nollie to bs 5050,handrail,10,0,0,1,0,True Blue,2014
+18,21,sw bs feeble,handrail,10,0,0,1,0,True Blue,2014
+19,22,sw bs tailslide to regular,handrail,10,0,0,1,0,True Blue,2014
+20,23,nollie kickflip to bs noseslide,handrail,10,0,0,1,0,True Blue,2014
+21,24,fs 360 lipslide,handrail,8,0,0,0,0,True Blue,2014
+22,25,heelflip to bs feeble,rail,,0,0,0,0,True Blue,2014
+23,26,sw fs nosegrind to nollie fs 180,rail,,0,0,1,0,True Blue,2014
+24,27,fakie ollie to bs blunt to fakie,rail,,0,0,0,0,True Blue,2014
+25,28,fs heelflip,gap,bump to bar,0,1,0,0,True Blue,2014
+26,29,sw bs kickflip,gap,,0,0,1,0,True Blue,2014
+27,30,sw fs heelflip,gap,into bank,0,1,1,0,True Blue,2014
+28,31,fs 180,gap,bump to gap,0,1,0,0,True Blue,2014
+29,32,ollie,gap,bump to gap,0,1,0,0,True Blue,2014
+30,33,nollie kickflip to bs boardslide to fakie,handrail,8,0,0,1,0,True Blue,2014
+31,34,sw fs shuv to sw bs boardslide,handrail,7,0,0,1,0,True Blue,2014
+32,35,sw kickflip to fs boardslide to fakie,handrail,,0,0,1,0,True Blue,2014
+33,36,heelflip to bs crook,handrail,8,0,0,0,0,True Blue,2014
+34,37,varial heelflip to bs boardslide,handrail,8,0,0,0,0,True Blue,2014
+35,38,sw varial heelflip to sw bs boarslide to regular,handrail,8,0,0,1,0,True Blue,2014
+36,39,nollie heelflip to bs boardslide,handrail,10,0,0,1,0,True Blue,2014
+37,40,heelflip to bs crook,handrail,9,0,0,0,0,True Blue,2014
+38,41,sw fs lipslide,handrail,10,0,0,1,0,True Blue,2014
+39,42,halfcab to bs crook,handrail,10,0,0,0,0,True Blue,2014
+40,43,sw kickflip to sw bs lipslide,handrail,9,0,0,1,0,True Blue,2014
+41,43,sw kickflip to sw bs lipslide,handrail,9,0,0,1,0,True Blue,2014
+42,44,kickflip to bs crook,handrail,9,1,0,0,0,True Blue,2014
+43,45,nollie to bs crook,handrail,14,0,0,1,0,True Blue,2014
+44,46,sw bs 180,gap,7 block,1,0,1,0,True Blue,2014
+45,46,sw bs 180,gap,7 block,1,0,1,0,True Blue,2014
+46,47,fs shuv to bs crook,hubba,,0,0,0,0,True Blue,2014
+47,48,nollie heelflip to bs 5050,hubba,13,1,0,1,0,True Blue,2014
+48,49,heelflip to fs lipslide to fakie,handrail,10,1,0,0,0,True Blue,2014
+49,50,sw tre flip to sw fs lipslide to regular,handrail,8,1,0,1,0,True Blue,2014
+50,50,sw tre flip to sw fs lipslide to regular,handrail,8,1,0,1,0,True Blue,2014
+51,51,sw tre flip to fs 5-0,handrail,7,0,0,1,0,True Blue,2014
+52,51,sw tre flip to fs 5-1,handrail,7,0,0,1,0,True Blue,2014
+1,1,bs crook,handrail,,0,0,0,0,"Nike SB Chronicles, Vol 3",2015
+2,2,ollie,gap,up euro,0,1,0,0,"Nike SB Chronicles, Vol 3",2015
+3,3,kickflip,gap,up euro,1,1,0,0,"Nike SB Chronicles, Vol 3",2015
+4,4,bs feeble,rail,,0,0,0,0,"Nike SB Chronicles, Vol 3",2015
+5,5,nollie inward heelflip,flat,over ball,0,0,1,1,"Nike SB Chronicles, Vol 3",2015
+5,6,fs 360,stairs,9,0,0,0,1,"Nike SB Chronicles, Vol 3",2015
+6,7,nollie fs 360,stairs,8,0,0,1,0,"Nike SB Chronicles, Vol 3",2015
+7,8,bs feeble to fs 180,rail,bump to rail,1,1,0,0,"Nike SB Chronicles, Vol 3",2015
+8,9,fs 360,gap,,0,0,0,0,"Nike SB Chronicles, Vol 3",2015
+9,10,fs heelflip,gap,channel,0,1,0,0,"Nike SB Chronicles, Vol 3",2015
+10,11,sw bs kickflip,gap,flat gap,0,0,1,0,"Nike SB Chronicles, Vol 3",2015
+11,12,sw bs 180,gap,bump to gap,1,1,1,0,"Nike SB Chronicles, Vol 3",2015
+12,13,sw kickflip to bs 5050,hubba,7,0,0,1,0,"Nike SB Chronicles, Vol 3",2015
+13,14,bs hurricane,handrail,7,1,0,0,0,"Nike SB Chronicles, Vol 3",2015
+14,15,sw varial heelflip to sw bs boarslide to regular,handrail,7,0,0,1,0,"Nike SB Chronicles, Vol 3",2015
+15,16,sw fs 180 to bs crook,hubba,10,1,0,1,0,"Nike SB Chronicles, Vol 3",2015
+16,17,nollie heelflip to bs noseslide,hubba,10,1,0,1,0,"Nike SB Chronicles, Vol 3",2015
+17,18,kickflip,gap,bump to gap,1,1,0,0,"Nike SB Chronicles, Vol 3",2015

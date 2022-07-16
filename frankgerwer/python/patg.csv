@@ -1,0 +1,527 @@
+clip_index,trick_index,trick,obstacle,obstacle_detailer,push,jazzpush,slowmo,bank,switch,line,video,year
+1,1,ollie ,gap,over rail,0,0,0,1,0,0,thnku,2015
+2,2,fs bigspin,gap,over barrier,0,0,0,1,0,0,thnku,2015
+3,3,fs 5050,ledge,bump to bar,0,0,0,1,1,0,thnku,2015
+4,4,bs boardslide to fakie,transition,barrier,0,0,0,1,0,0,thnku,2015
+5,5,sw bs boardslide to fakie,transition,spine,0,0,0,1,1,0,thnku,2015
+6,6,nollie to bs crook to fakie,ledge,,2,0,,0,0,1,thnku,2015
+6,7,sw fs nosegrind to sw fs 5050,ledge,drop to ledge,0,0,0,0,0,1,thnku,2015
+7,8,sw fs tailslide,ledge,blubba,0,0,0,0,1,0,thnku,2015
+8,9,fs boardslide,handrail,handrail,0,0,0,0,0,0,thnku,2015
+9,10,sw fs shuv,gap,euro gap,0,0,0,1,1,0,thnku,2015
+10,11,sw fs nosegrind,transition,barrier,0,0,0,1,1,0,thnku,2015
+11,12,tre flip,flat,up curb,0,0,0,0,0,1,thnku,2015
+11,13,fs kickflip,flat,over hydrant,0,0,0,0,0,1,thnku,2015
+12,14,sw bs 5050 to sw bs 5050,ledge,drop to ledge,0,0,0,0,1,0,thnku,2015
+13,15,sw bs crook to regular,ledge,bank to ledge,0,0,0,1,1,0,thnku,2015
+14,16,bs boardslide,rail,out rail,0,0,0,0,0,0,thnku,2015
+15,17,fs nosegrind,ledge,into bank,0,0,0,1,0,0,thnku,2015
+16,18,sw bs boardslide to bs 5-0 to fakie,ledge,,0,0,0,0,1,0,thnku,2015
+17,19,sw ollie,flat,over hydrant,0,0,0,0,0,1,thnku,2015
+17,20,halfcab,flat,,2,0,0,0,0,1,thnku,2015
+17,21,fs boardslide to shuv,handrail,handrail,0,0,0,0,0,1,thnku,2015
+18,22,sw fs boardslide to shuv,handrail,handrail,0,0,0,0,0,0,thnku,2015
+19,23,sw wallie 180 to manny,manny pad,,0,0,0,0,1,0,thnku,2015
+20,24,sw bs 180,stairs,10,0,0,0,0,1,0,thnku,2015
+21,25,sw bs crook,handrail,10,0,0,0,0,1,0,thnku,2015
+22,26,ollie ,up,rock,0,0,0,0,0,1,thnku,2015
+22,27,bs kickflip,flat,rock,0,0,0,0,0,1,thnku,2015
+23,28,sw manny,manny pad,gap,0,0,0,0,1,0,thnku,2015
+24,29,bs boardslide to sw manny,rail,bench,0,,,0,,,thnku,2015
+25,30,kickflip to fs 5050 to bs 180,ledge,bank to ledge,0,,,1,,,thnku,2015
+26,31,sw kickflip to sw bs 5050 to sw fs 180,ledge,into bank,0,,,1,,,thnku,2015
+27,32,nollie fs 180,gap,,0,,,0,,,thnku,2015
+28,33,nollie fs lipslide to fakie,ledge,into bank,0,,,1,,,thnku,2015
+29,34,sw fs overcrook,ledge,bank to ledge,0,,,1,,,thnku,2015
+30,35,fs kickflip,gap,,0,,,0,,,thnku,2015
+31,36,sw bs tailslide to regular,handrail,9,0,0,0,0,1,0,thnku,2015
+32,36,sw bs tailslide to regular,handrail,9,0,0,0,0,1,0,thnku,2015
+33,37,kickflip to bs 5050,ledge,into bank,0,0,0,1,0,0,thnku,2015
+1,1,fs 5050,ledge,barrier,0,0,0,0,0,0,DEBRI2,2014
+2,2,sw fs heelflip,flat,,3,0,0,0,1,1,DEBRI2,2014
+2,3,ollie ,flat,up curb,0,0,0,0,0,1,DEBRI2,2014
+2,4,kickflip fs 5050 to bs 180,ledge,into bank,0,0,0,1,0,1,DEBRI2,2014
+3,5,fs 5050 to bs 180,rail,,0,0,,,0,0,DEBRI2,2014
+4,6,fs 5050 to bs 180,ledge,,0,0,,,0,1,DEBRI2,2014
+4,7,sw heelflip,flat,,0,0,,,1,1,DEBRI2,2014
+4,8,sw fs nosegrind,ledge,into bank,0,0,,,1,1,DEBRI2,2014
+5,9,fs 5-0 to fs 180,ledge,,0,0,,,0,1,DEBRI2,2014
+5,10,sw tre flip,flat,,0,0,,,1,1,DEBRI2,2014
+5,11,bs crook to fakie,ledge,into bank,0,0,,,0,1,DEBRI2,2014
+6,12,nollie to bs crook,handrail,7,0,0,0,,1,0,DEBRI2,2014
+7,13,sw tre flip,gap,,0,0,0,0,1,1,DEBRI2,2014
+8,14,sw fs tailslide,ledge,outledge,0,0,0,0,1,1,DEBRI2,2014
+9,15,no comply fs 180,gap,into bank,0,0,0,1,0,0,DEBRI2,2014
+10,16,fs shuv,gap,3 block,0,0,,0,0,0,DEBRI2,2014
+11,17,sw bs 180,flat,,0,0,,0,1,1,DEBRI2,2014
+11,18,wallie bs boardslide to fakie,transition,barrier,0,0,0,1,0,1,DEBRI2,2014
+12,19,bs boardslide to fakie,transition,barrier,0,,,1,0,1,DEBRI2,2014
+12,20,fakie kickflip,flat,,2,,,0,0,1,DEBRI2,2014
+12,21,sw fs shuv,flat,curb cut,0,,,1,1,1,DEBRI2,2014
+13,22,sw fs shuv,gap,,0,,,0,1,0,DEBRI2,2014
+14,23,fakie kickflip,gap,into bank,0,,,1,0,0,DEBRI2,2014
+15,24,sw fs 180 to manny to bs 180,manny pad,,0,,,0,1,0,DEBRI2,2014
+16,25,manny to gap to manny,manny pad,,0,,,0,0,0,DEBRI2,2014
+17,26,fs boardslide,transition,barrier,0,,,1,0,1,DEBRI2,2014
+17,27,tre flip,flat,,0,,,0,0,1,DEBRI2,2014
+18,28,fs boardslide to fakie,transition,barrier,0,,,1,0,0,DEBRI2,2014
+19,29,slappy bs 5050 to fs 180,ledge,into bank,0,,,1,0,0,DEBRI2,2014
+20,29,fakie kickflip,ledge,,0,,,0,0,0,DEBRI2,2014
+21,30,nollie fs 180 to sw bs crook,ledge,,0,,,0,1,1,DEBRI2,2014
+21,31,fakie bs 5050 to sw fs 180,ledge,,0,,,0,0,1,DEBRI2,2014
+21,32,nollie bs heelflip,flat,,1,,,0,1,1,DEBRI2,2014
+22,33,sw fs lipslide,ledge,bank to ledge,0,,,1,1,0,DEBRI2,2014
+23,34,sw bs feeble,handrail,9,0,,,0,1,0,DEBRI2,2014
+24,35,sw kickflip,gap,bump to barrel,0,,,1,1,0,DEBRI2,2014
+25,36,bs boardslide to sw manny,handrail,8,0,,,0,0,0,DEBRI2,2014
+26,37,sw tre flip,flat,flat gap,0,,,0,1,0,DEBRI2,2014
+27,38,sw bs crook,ledge,blubba,0,,,0,1,0,DEBRI2,2014
+28,39,sw fs noseblunt ,ledge,bank to ledge,0,,,1,1,0,DEBRI2,2014
+29,40,nollie fs 180 to sw bs crook,handrail,9,0,,,0,1,0,DEBRI2,2014
+1,1,sw bs crook,ledge,outledge,0,0,1,0,1,0,insano,2016
+2,2,sw bs 180,gap,bump to bar,0,0,0,1,1,1,insano,2016
+2,3,fakie fs kickflip,flat,,0,0,0,0,0,1,insano,2016
+3,4,fs lipslide,ledge,into bank,0,0,0,1,0,0,insano,2016
+4,4,fs lipslide,ledge,into bank,0,0,0,1,0,0,insano,2016
+5,5,bs 5050,ledge,,0,0,0,0,0,0,insano,2016
+6,5,bs 5050,ledge,,0,0,0,0,0,1,insano,2016
+6,6,bs crook,rail,,,,,,,1,insano,2016
+7,7,sw bs 180,gap,into bank,0,0,0,1,1,0,insano,2016
+8,8,sw fs shuv,gap,into bank,0,0,0,1,1,0,insano,2016
+9,9,fakie crook,handrail,7,0,0,0,0,0,0,insano,2016
+10,9,fakie crook,handrail,7,0,0,0,0,0,0,insano,2016
+11,10,sw fs 5050,ledge,,0,0,0,1,1,0,insano,2016
+12,11,fs 5050 to manny,ledge,up ledge,0,0,0,0,0,0,insano,2016
+13,12,manny to fs 180,manny pad,,1,0,0,1,0,1,insano,2016
+13,13,sw fs 5050 to bs 180,ledge,into bank,0,0,0,1,1,1,insano,2016
+14,14,bs 5050,ledge,hubba,0,0,0,0,0,0,insano,2016
+15,14,bs 5050,ledge,hubba,0,0,0,0,0,0,insano,2016
+16,15,sw bs 5050 to sw fs 180,ledge,outledge,0,0,0,0,1,0,insano,2016
+17,16,kickflip fs 5050,ledge,outledge,0,0,0,0,0,0,insano,2016
+18,17,sw fs boardslide,handrail,9,0,0,0,0,1,0,insano,2016
+19,18,sw fs shuv,flat,into bank,0,0,0,1,1,1,insano,2016
+19,19,sw fs 180,stairs,1,1,0,0,0,1,1,insano,2016
+19,20,sw tre flip,flat,,0,0,0,0,1,1,insano,2016
+20,21,ollie ,gap,into bank,0,0,0,1,0,0,insano,2016
+21,22,sw ollie,gap,into bank,0,0,0,1,1,0,insano,2016
+22,23,pivot to fakie,transition,,0,0,0,0,,,insano,2016
+23,24,sw fs nosegrind to regular,ledge,,0,0,0,0,1,,insano,2016
+24,25,sw bs crook,ledge,,0,0,0,0,1,1,insano,2016
+24,26,sw fs shuv,flat,,0,0,0,0,1,1,insano,2016
+25,27,nollie fs 180,gap,,0,0,0,0,1,1,insano,2016
+25,28,sw fs 5050 to bs 180,ledge,into bank,0,0,0,1,1,1,insano,2016
+25,29,tre flip,flat,,0,0,0,0,0,1,insano,2016
+26,30,nollie fs noseslide to fakie,ledge,,0,0,0,0,1,1,insano,2016
+26,31,fakie kickflip to sw bs 5050,ledge,,2,0,0,0,1,1,insano,2016
+27,32,sw bs 5-0,ledge,outledge,0,0,0,0,1,0,insano,2016
+28,33,sw fs noseblunt ,transition,,0,0,0,1,1,0,insano,2016
+29,34,ollie ,gap,,0,0,0,0,0,0,insano,2016
+30,35,bs nosegrind to bs 5050,ledge,,0,0,0,0,0,0,insano,2016
+31,36,casper stall,ledge,bank to ledge,0,0,0,1,0,0,insano,2016
+32,37,bs 5050 to bs boardslide,rail,,0,0,0,0,0,0,insano,2016
+33,38,bs 5050 to fs shuv to bs 5050,ledge,,0,0,0,0,0,0,insano,2016
+34,39,ollie ,up,,0,0,0,1,0,1,insano,2016
+34,40,nollie kickflip,flat,,0,0,0,1,0,1,insano,2016
+34,41,ollie ,gap,,0,0,0,1,0,1,insano,2016
+35,42,sw bs boardslide,ledge,hubba,0,0,0,0,1,1,insano,2016
+35,43,sw fs slappy,ledge,curb,0,0,0,0,1,1,insano,2016
+36,42,sw bs boardslide,ledge,hubba,0,0,0,0,1,0,insano,2016
+37,44,fakie manny to fakie kickflip to 5050,manny pad,,0,0,0,1,0,0,insano,2016
+1,1,ride-on pinch grind,rail,14,0,0,0,0,0,0,Skating Is Easy,2018
+2,2,kickflip,flat,flat gap,0,0,0,0,0,1,Skating Is Easy,2018
+2,3,fs kickflip to sw manny,manny pad,,0,0,0,0,0,1,Skating Is Easy,2018
+3,4,bs crook,rail,,0,0,0,0,0,,Skating Is Easy,2018
+4,4,bs crook,rail,,0,0,0,0,0,,Skating Is Easy,2018
+5,5,bs nosegrind,ledge,,0,0,0,0,0,1,Skating Is Easy,2018
+5,6,ollie ,up,3,,2,0,0,0,1,Skating Is Easy,2018
+5,7,fs bigspin,stairs,3,,,0,0,0,1,Skating Is Easy,2018
+5,8,fs 50-50 to gap to 50-50,ledge,,,1,0,0,0,1,Skating Is Easy,2018
+6,9,fs kickflip,gap,,0,0,0,1,0,,Skating Is Easy,2018
+7,10,sw fs shuv,gap,wedge,0,0,0,1,0,,Skating Is Easy,2018
+8,11,sw bs crook,ledge,bump to ledge,0,0,0,1,1,0,Skating Is Easy,2018
+9,12,kickflip,on bank,,0,0,0,1,0,0,Skating Is Easy,2018
+10,13,wallie to fs 180,hip,,0,0,0,1,0,,Skating Is Easy,2018
+11,14,kickflip to fs 5050 to fs 180,ledge,,0,0,0,0,0,1,Skating Is Easy,2018
+11,15,fakie bs 5050,ledge,,2,0,0,0,1,1,Skating Is Easy,2018
+11,16,sw tre flip,flat,flat gap,0,0,0,0,1,,Skating Is Easy,2018
+12,17,ollie ,gap,loading dock,0,0,0,1,0,,Skating Is Easy,2018
+13,17,ollie ,gap,loading dock,0,0,0,1,0,,Skating Is Easy,2018
+14,18,sw fs tailslide to regular,ledge,bank to ledge,0,0,0,1,1,,Skating Is Easy,2018
+15,19,kickflip to nose manny,manny pad,,0,0,0,1,0,,Skating Is Easy,2018
+16,20,blunt to fakie,transition,,0,0,0,1,0,,Skating Is Easy,2018
+17,21,fs kickflip,gap,,0,0,0,0,0,1,Skating Is Easy,2018
+17,22,sw ollie,stairs,4,0,0,0,0,1,1,Skating Is Easy,2018
+17,23,fakie kickflip,flat,,1,0,0,0,0,1,Skating Is Easy,2018
+18,24,kickflip to fs 5050 to bs 180,ledge,bank to ledge,0,0,0,1,0,0,Skating Is Easy,2018
+19,25,fs 5050 to kickflip to manny,manny pad,,0,0,0,0,0,,Skating Is Easy,2018
+20,26,bs kickflip,gap,,0,0,0,0,0,,Skating Is Easy,2018
+21,27,sw 5050 to sw bs 180,ledge,bank to ledge,0,0,0,1,1,,Skating Is Easy,2018
+22,28,bs 5050 to fs kickflip,ledge,bank to ledge,0,0,0,1,0,,Skating Is Easy,2018
+23,29,tail drop kickflip to bs 5050,ledge,,0,0,0,0,0,,Skating Is Easy,2018
+24,30,sw bs crook to regular,ledge,into bank,0,0,0,1,1,,Skating Is Easy,2018
+25,31,sw bs crook to regular,ledge,into bank,0,0,0,1,1,,Skating Is Easy,2018
+26,32,sw tail drop to 5050,handrail,9,0,0,1,0,1,1,Skating Is Easy,2018
+26,33,fakie kickflip,flat,,0,0,0,0,0,1,Skating Is Easy,2018
+1,1,sw drop in grind,rail,,,,,,1,0,this door is a bucket,2018
+2,2,kickflip,flat,into bank,0,0,0,1,0,0,this door is a bucket,2018
+3,2,kickflip,flat,into bank,0,0,0,1,0,0,this door is a bucket,2018
+4,3,fs kickflip,gap,wedge,0,0,0,1,0,0,this door is a bucket,2018
+5,4,pinch hop,flat,,0,0,0,1,0,1,this door is a bucket,2018
+5,5,pinch shuv,flat,into bank,0,0,0,1,0,1,this door is a bucket,2018
+6,6,sw tre flip to regular,bank,,0,0,0,1,1,0,this door is a bucket,2018
+7,7,fs 5-0 to bs 180,transition,bank,0,0,0,1,0,0,this door is a bucket,2018
+8,8,sw bs crook,ledge,outledge,0,0,0,0,1,1,this door is a bucket,2018
+8,9,fakie kickflip,flat,,0,0,0,0,0,1,this door is a bucket,2018
+8,10,early grab indie,gap,loading dock,0,0,0,0,0,1,this door is a bucket,2018
+9,11,kickflip to bs 5050,ledge,outledge,0,1,0,0,0,0,this door is a bucket,2018
+10,12,sw fs tailslide to regular,ledge,,0,0,0,0,1,0,this door is a bucket,2018
+11,13,5-0 to fakie,transition,,0,0,0,1,0,0,this door is a bucket,2018
+12,14,ollie ,gap,flat gap,0,0,0,0,0,0,this door is a bucket,2018
+13,14,ollie ,gap,flat gap,0,0,0,0,0,0,this door is a bucket,2018
+14,15,bs 180,gap,,0,0,0,0,0,0,this door is a bucket,2018
+15,16,ollie ,gap,,0,0,0,0,0,0,this door is a bucket,2018
+16,17,ride-on fs feeble,handrail,5,0,0,0,0,0,0,this door is a bucket,2018
+17,17,ride-on fs feeble,handrail,5,0,0,0,0,0,0,this door is a bucket,2018
+18,18,sw shuv,gap,flat gap,0,0,0,0,0,0,this door is a bucket,2018
+19,19,kickflip to bs 5050 to bs 180,ledge,into bank,0,0,0,1,0,0,this door is a bucket,2018
+20,20,bs 5050,ledge,into bank,0,0,0,1,0,0,this door is a bucket,2018
+21,21,bs noseslide to shuv,ledge,into bank,0,0,0,1,0,0,this door is a bucket,2018
+22,22,tail drop to boardslide,handrail,8,0,0,0,0,0,0,this door is a bucket,2018
+23,23,casper stall,flat,bump,0,0,0,1,0,0,this door is a bucket,2018
+24,24,sw fs lipslide,transition,ditch,0,0,0,1,1,0,this door is a bucket,2018
+24,25,fakie tre flip,flat,,0,0,0,0,0,0,this door is a bucket,2018
+25,26,bs crook to fakie,ledge,,0,0,0,0,0,1,this door is a bucket,2018
+25,27,sw bs crook,ledge,,0,0,0,0,1,1,this door is a bucket,2018
+25,28,sw tre flip,flat,,0,0,0,0,1,1,this door is a bucket,2018
+26,29,fakie kickflip,flat,,0,0,0,0,0,1,this door is a bucket,2018
+1,1,kickflip to fs 5050,ledge,bank to ledge,0,0,0,1,0,1,Dr. Scarecrow,2016
+2,2,kickflip to fs 5050 to bs 180,ledge,bank to ledge,0,0,0,1,0,0,Dr. Scarecrow,2016
+3,3,fakie kickflip,stairs,3,0,0,0,0,0,1,Dr. Scarecrow,2016
+3,4,sw fs tailslide,ledge,outledge,1,0,0,0,1,1,Dr. Scarecrow,2016
+4,5,kickflip to bs 5050,ledge,into bank,0,0,0,1,0,0,Dr. Scarecrow,2016
+5,6,sw bs crook,ledge,gap to ledge,0,0,0,0,1,0,Dr. Scarecrow,2016
+6,7,fs boardslide to fakie,rail,outrail,0,0,0,0,0,0,Dr. Scarecrow,2016
+7,8,nollie to bs lipslide,rail,barrier,0,0,0,1,1,0,Dr. Scarecrow,2016
+8,8,nollie to bs lipslide,rail,barrier,0,0,0,1,0,0,Dr. Scarecrow,2016
+9,9,wallie,frog,,0,0,1,0,0,0,Dr. Scarecrow,2016
+10,10,sw ollie,gap,bump to gap,0,0,1,1,1,0,Dr. Scarecrow,2016
+11,11,fs 180 to sw manny,manny pad,gap to manny pad,0,0,0,1,0,0,Dr. Scarecrow,2016
+12,12,sw bs crook,ledge,,0,0,0,0,1,0,Dr. Scarecrow,2016
+1,1,tre flip,flat,,0,0,0,0,0,1,Home Grown,2012
+1,2,fs lipslide to fakie,ledge,barrier,2,0,0,0,0,1,Home Grown,2012
+2,3,sw heelflip,flat,,2,0,0,0,1,1,Home Grown,2012
+3,4,sw bs crook,handrail,10,0,0,1,0,1,0,Home Grown,2012
+4,5,fs 180,flat,,0,0,0,0,0,1,Home Grown,2012
+4,6,sw fs boardslide to fakie,ledge,up ledge,2,0,0,1,1,1,Home Grown,2012
+5,7,fs noseblunt,handrail,6,0,0,1,0,0,0,Home Grown,2012
+6,8,sw bs feeble,handrail,6,0,0,1,0,1,0,Home Grown,2012
+7,9,sw fs nosegrind to regular,ledge,,0,0,0,0,1,1,Home Grown,2012
+7,10,kickflip to fs 5050,ledge,,1,0,0,0,0,1,Home Grown,2012
+7,11,ollie ,gap,,1,0,0,0,0,1,Home Grown,2012
+8,11,ollie ,gap,,0,0,1,0,0,0,Home Grown,2012
+9,12,nollie to bs crook,handrail,5,0,0,1,1,0,0,Home Grown,2012
+10,13,bs lipslide to shuv,handrail,5,0,0,0,1,0,0,Home Grown,2012
+11,14,kickflip to fs boardslide,handrail,9,0,0,0,0,0,0,Home Grown,2012
+12,15,fs 5050,rail,,0,0,0,1,0,0,Home Grown,2012
+13,16,fs 180 to sw 5-0,handrail,8,0,0,0,0,0,0,Home Grown,2012
+14,17,halfcab to bs crook,ledge,outledge,0,0,0,0,0,0,Home Grown,2012
+15,18,nollie fs 180 to sw bs crook,handrail,8,0,0,1,0,1,0,Home Grown,2012
+16,19,bs 5050 to fs 180,ledge,hubba,0,0,0,1,0,1,Home Grown,2012
+16,20,fakie kickflip,flat,,0,0,0,0,0,1,Home Grown,2012
+16,21,sw fs shuv,flat,,0,0,0,0,1,1,Home Grown,2012
+17,22,bs 5050,ledge,hubba,0,0,1,0,0,0,Home Grown,2012
+18,23,fs 180 to sw 5-0,handrail,8,0,0,0,0,0,0,Home Grown,2012
+19,23,fs 180 to sw 5-1,handrail,8,0,0,0,0,0,0,Home Grown,2012
+20,24,ollie ,gap,bump to bar,0,0,0,1,0,1,Home Grown,2012
+20,25,tre flip,flat,,5,0,0,0,0,1,Home Grown,2012
+21,26,fs kickflip,gap,,0,0,0,0,0,1,Home Grown,2012
+21,27,sw ride-on grind,rail,pole jam,3,0,0,0,1,1,Home Grown,2012
+22,28,sw fs heelflip,gap,,0,0,1,0,1,0,Home Grown,2012
+23,29,nollie to noseslide,ledge,hubba,0,0,0,0,0,0,Home Grown,2012
+24,30,sw bs crook,ledge,outledge,0,0,0,0,1,0,Home Grown,2012
+25,31,sw bs tailslide,ledge,outledge,0,0,0,0,1,0,Home Grown,2012
+26,32,fs 5050,handrail,,0,0,0,0,0,0,Home Grown,2012
+27,33,fakie fs tailslide,handrail,,0,0,0,0,0,0,Home Grown,2012
+28,34,fs kickflip,gap,bump to bump,0,0,0,1,0,0,Home Grown,2012
+29,35,sw tre flip,flat,into bank,0,0,0,1,1,1,Home Grown,2012
+29,36,sw bs boardslide,handrail,,0,0,0,1,1,1,Home Grown,2012
+30,37,bs noseblunt,handrail,,0,0,0,0,0,0,Home Grown,2012
+31,38,fakie kickflip,flat,,0,0,0,0,0,1,Home Grown,2012
+31,39,sw bs lipslide to regular,ledge,barrier,3,0,0,1,1,1,Home Grown,2012
+32,40,sw fs nosegrind,handrail,9,0,0,0,0,1,0,Home Grown,2012
+33,40,sw fs nosegrind,handrail,9,0,0,1,0,1,0,Home Grown,2012
+34,41,fakie 5050,handrail,8,0,0,0,0,0,1,Home Grown,2012
+34,42,sw bs 180,stairs,9,0,0,0,0,1,1,Home Grown,2012
+35,43,sw tre flip,gap,,0,0,0,0,1,0,Home Grown,2012
+36,44,fs 5050,ledge,hubba,2,0,0,0,0,0,Home Grown,2012
+37,44,fs 5050,ledge,hubba,0,0,0,0,0,0,Home Grown,2012
+1,1,pinch grind,ledge,,0,0,0,0,0,0,Clean,2017
+2,2,tail drop 5050,handrail,9,0,0,0,0,0,0,Clean,2017
+3,2,tail drop 5050,handrail,9,0,0,0,0,0,0,Clean,2017
+4,3,sw bs 5-0,ledge,,0,0,0,0,1,1,Clean,2017
+4,4,sw heelflip,flat,,0,0,0,0,1,1,Clean,2017
+5,5,bs 5050,ledge,,0,0,0,0,0,0,Clean,2017
+6,6,fs tailslide to fakie,ledge,into bank,0,0,0,1,0,0,Clean,2017
+7,7,sw shuv,gap,over hydrant,0,0,0,1,1,0,Clean,2017
+8,8,bs kickflip,gap,,0,0,0,1,0,0,Clean,2017
+9,9,sw bs crook,ledge,outledge,0,0,0,0,1,0,Clean,2017
+10,10,fakie ollie to sw bs crook,ledge,outledge,0,0,0,0,0,0,Clean,2017
+11,11,sw bs crook to regular,ledge,,0,0,0,0,1,1,Clean,2017
+11,12,kickflip to fs 5050 to manny to kickflip,ledge,to manny pad,0,0,0,0,0,1,Clean,2017
+12,13,fakie fs board,rail,outrail,0,0,0,0,0,0,Clean,2017
+13,14,kickflip to fs 5050 to nose manny,ledge,to manny pad,0,0,0,0,0,0,Clean,2017
+14,15,fakie kickflip to sw bs 5050,ledge,outledge,0,0,0,0,0,0,Clean,2017
+1,1,flying a plane,air,,0,0,0,0,0,0,Flow Trash,2010
+2,2,kickflip,stairs,8,0,0,0,0,0,1,Flow Trash,2010
+2,3,fs noseblunt,handrail,8,0,0,0,0,0,1,Flow Trash,2010
+3,4,bs lipslide,handrail,5,0,0,0,1,0,0,Flow Trash,2010
+4,5,sw bs 5050,ledge,,0,0,0,0,1,0,Flow Trash,2010
+5,6,sw tre flip,gap,,0,0,0,0,1,0,Flow Trash,2010
+6,7,halfcab to bs crook,ledge,,0,0,0,0,0,1,Flow Trash,2010
+6,8,kickflip to fs tailslide to fakie,ledge,,0,0,0,0,0,1,Flow Trash,2010
+7,9,sw bs crook,handrail,10,0,0,1,0,1,0,Flow Trash,2010
+8,10,sw kickflip,gap,into bank,0,0,0,1,1,0,Flow Trash,2010
+9,11,kickflip,gap,bump to bump,0,0,0,1,0,0,Flow Trash,2010
+10,12,fakie bs boardslide,handrail,5,0,0,0,1,0,0,Flow Trash,2010
+11,13,fs hurricane,handrail,5,0,0,0,1,0,0,Flow Trash,2010
+12,13,fs hurricane,handrail,5,0,0,0,1,0,0,Flow Trash,2010
+13,14,sw fs heelflip,stairs,8,0,0,0,0,1,0,Flow Trash,2010
+14,15,bs noseblunt stall,transition,,0,0,0,1,0,0,Flow Trash,2010
+15,16,fs blunt to bs bigspin,transition,china bank,0,0,0,1,0,0,Flow Trash,2010
+16,17,fs bigspin,gap,,0,0,0,0,0,0,Flow Trash,2010
+17,18,fs noseblunt,handrail,9,0,0,0,0,0,0,Flow Trash,2010
+18,19,sw fs lipslide,ledge,barrier,0,0,0,1,1,0,Flow Trash,2010
+19,20,nollie fs kickflip,gap,,0,0,1,0,0,0,Flow Trash,2010
+20,21,fs 5050,handrail,,0,0,1,0,0,0,Flow Trash,2010
+21,22,kickflip to bs 5050,ledge,outledge,0,0,1,0,0,0,Flow Trash,2010
+22,23,sw bs 5050,handrail,9,0,0,1,0,1,0,Flow Trash,2010
+23,24,sw bs lipslide,handrail,9,0,0,1,0,1,0,Flow Trash,2010
+1,1,ollie ,gap,over hydrant,0,0,0,0,0,1,Debris,2013
+1,2,tre flip,,,0,0,0,0,0,1,Debris,2013
+1,3,fs 5050,rail,,0,0,0,0,0,1,Debris,2013
+2,4,fs 180,gap,into bank,0,0,0,1,0,1,Debris,2013
+2,5,sw tre flip,stairs,4,0,0,0,0,1,1,Debris,2013
+3,6,sw fs nosegrind,ledge,bank to ledge,0,0,0,1,1,0,Debris,2013
+4,6,sw fs nosegrind,ledge,bank to ledge,0,0,0,1,1,0,Debris,2013
+5,7,fakie bs lipslide,handrail,9,0,0,0,0,0,0,Debris,2013
+6,8,sw bs crook,handrail,9,0,0,0,0,1,1,Debris,2013
+6,9,fakie ollie,stairs,8,0,0,0,0,0,1,Debris,2013
+7,10,tre flip,flat,,0,0,0,0,0,1,Debris,2013
+7,11,fs nosegrind,handrail,6,1,0,0,0,0,1,Debris,2013
+8,12,fs 180 to sw fs 5050,handrail,5,1,0,0,1,0,0,Debris,2013
+9,13,fs 5050 to bs 180,handrail,7,0,0,0,0,0,0,Debris,2013
+10,14,nollie to fs feeble,handrail,9,0,0,1,0,0,0,Debris,2013
+11,15,fs noseblunt,ledge,bank to ledge,0,0,0,1,0,1,Debris,2013
+12,16,ollie ,gap,over hydrant,1,0,0,0,0,1,Debris,2013
+13,17,sw bs crook,handrail,,0,0,0,0,1,0,Debris,2013
+14,18,fs 5050,rail,bank to rail,0,0,1,1,0,0,Debris,2013
+15,19,sw ollie,gap,over barrier,0,0,0,1,1,0,Debris,2013
+16,20,fs kickflip,gap,,0,0,0,1,0,0,Debris,2013
+17,21,fs lipslide to fakie,rail,,0,0,0,0,0,0,Debris,2013
+18,22,kickflip,flat,,0,0,0,0,0,1,Debris,2013
+18,23,bs crook,rail,,0,0,0,0,0,1,Debris,2013
+19,24,fs smith,handrail,8,0,0,0,0,0,0,Debris,2013
+20,25,nollie to bs crook,ledge,,0,0,0,0,0,1,Debris,2013
+20,26,bs 5050,ledge,,0,0,0,0,0,1,Debris,2013
+21,27,sw fs 5050,ledge,bank to ledge,0,0,0,1,1,0,Debris,2013
+22,28,kickflip to fs tailslide,ledge,into bank,0,0,0,1,0,0,Debris,2013
+23,29,halfcab to bs crook,ledge,,0,0,0,0,0,1,Debris,2013
+23,30,nollie fs 180,gap,over hydrant,3,0,0,1,1,1,Debris,2013
+24,31,nollie to bs crook,handrail,8,0,0,0,0,1,0,Debris,2013
+25,32,sw tre flip,stairs,8,0,0,1,0,1,0,Debris,2013
+26,33,kickflip to fs 5050,handrail,7,0,0,0,0,0,0,Debris,2013
+27,34,sw fs 5050,ledge,hubba,0,0,0,0,1,0,Debris,2013
+28,35,fs bigspin,gap,,0,0,0,0,0,0,Debris,2013
+29,36,sw bs crook,ledge,outledge,0,0,0,0,1,0,Debris,2013
+30,36,sw bs crook,ledge,outledge,0,0,1,0,1,0,Debris,2013
+31,37,sw fs tailslide,ledge,into bank,0,0,0,1,1,0,Debris,2013
+32,38,sw bs 5050,ledge,hubba,0,0,1,0,1,0,Debris,2013
+1,1,fs 5050 to bs 180,ledge,into bank,0,0,1,1,0,0,Ultra,2019
+2,2,kickflip to fs 5-0 to fs 180,ledge,,0,0,0,0,0,1,Ultra,2019
+2,3,tre flip,flat,,1,0,0,0,0,1,Ultra,2019
+3,4,ollie ,up,,0,0,0,0,0,1,Ultra,2019
+3,5,bs noseslide to fakie,ledge,0,0,0,0,0,0,1,Ultra,2019
+3,6,sw fs boardslide to fakie,rail,,2,0,0,0,1,1,Ultra,2019
+4,7,ollie ,stairs,4,0,0,0,0,0,1,Ultra,2019
+4,8,kickflip,gap,into bank,0,0,0,1,0,1,Ultra,2019
+5,9,suicide grind,rail,0,0,0,0,0,0,0,Ultra,2019
+6,10,ride on 5050,rail,,0,0,0,1,0,0,Ultra,2019
+7,11,bs noseslide to fakie,ledge,hubba,0,0,0,0,0,0,Ultra,2019
+8,12,ollie ,gap,into bank,0,0,0,1,0,0,Ultra,2019
+9,13,wallie to indie grab,wall,,0,0,0,1,0,0,Ultra,2019
+10,14,sw fs tailslide to sw fs shuv,ledge,bank to ledge,0,0,0,1,1,0,Ultra,2019
+11,15,ride-on fs 5050 to bs kickflip,ledge,bank to ledge,0,0,0,1,0,0,Ultra,2019
+12,15,ride-on fs 5050 to bs kickflip,ledge,bank to ledge,0,0,1,1,0,0,Ultra,2019
+13,16,fs kickflip,gap,,0,0,1,0,0,1,Ultra,2019
+14,17,halfcab flip,flat,,1,0,0,0,0,1,Ultra,2019
+15,18,wallie to fs 5050 to bs 180,rail,bank to rail,0,0,0,1,0,1,Ultra,2019
+15,19,sw fs shuv,flat,,0,0,0,0,1,1,Ultra,2019
+16,20,fs kickflip to sw manny to sw bs 180,manny pad,,0,0,0,1,0,0,Ultra,2019
+17,21,suicide grind,handrail,,0,0,0,0,0,0,Ultra,2019
+18,22,sw fs boardslide to regular,rail,,0,0,0,0,1,0,Ultra,2019
+19,23,fs kickflip,gap,,0,0,1,1,0,0,Ultra,2019
+20,24,kickfip to manny,manny pad,,0,0,0,0,0,0,Ultra,2019
+21,25,kickflip,gap,into bank,0,0,1,1,0,0,Ultra,2019
+22,26,sw tre flip,gap,into bank,0,0,0,1,1,0,Ultra,2019
+23,27,ride-on grind,rail,,0,0,0,0,0,0,Ultra,2019
+24,28,ride-on grind to kickflip,rail,,0,0,0,0,0,0,Ultra,2019
+25,29,sw ride-on grind,rail,,0,0,0,0,1,0,Ultra,2019
+26,30,sw fs tailslide to body varial,ledge,into bank,0,0,0,1,1,0,Ultra,2019
+1,1,fakie kickflip,gap,bank,0,0,0,1,0,0,Boondoggle,2008
+2,2,nollie bs heelflip,gap,,0,0,0,0,1,0,Boondoggle,2008
+3,3,bs blunt to fs shuv to fakie,transition,,0,0,0,1,0,0,Boondoggle,2008
+4,4,kickflip,hip,roof,0,0,0,1,0,0,Boondoggle,2008
+5,5,nollie to bs lipslide,rail,,0,0,0,0,1,0,Boondoggle,2008
+6,6,nollie to fs lipslide,handrail,,0,0,0,0,1,0,Boondoggle,2008
+7,7,fs blunt,ledge,outledge,0,0,0,0,0,0,Boondoggle,2008
+8,8,sw bs lipslide,ledge,,0,0,1,0,1,0,Boondoggle,2008
+9,9,fs tailslide,ledge,,0,0,0,0,0,1,Boondoggle,2008
+9,10,ollie ,up,,2,0,0,0,0,1,Boondoggle,2008
+9,11,nose manny,manny pad,,0,0,0,0,0,1,Boondoggle,2008
+10,12,fs boardslide to fakie,rail,,0,0,0,0,0,1,Boondoggle,2008
+10,13,bs boardslide to regular,rail,,2,0,0,0,0,1,Boondoggle,2008
+11,14,sw bs 180,flat,into bank,0,0,0,1,1,1,Boondoggle,2008
+11,15,fs 5-0,rail,bank to rail,0,0,0,1,0,1,Boondoggle,2008
+12,16,sw heelflip,stairs,3 flat 2 flat 1 ,0,0,0,0,1,0,Boondoggle,2008
+13,17,fs lipslide,transition,,0,0,0,1,0,0,Boondoggle,2008
+14,18,pivot to fakie,transition,,0,0,0,1,0,0,Boondoggle,2008
+15,19,bs lipslide,ledge,barrier,0,0,0,1,0,0,Boondoggle,2008
+16,20,sw heelflip,flat,,0,0,0,0,1,1,Boondoggle,2008
+16,21,fakie nosegrind to fs 180,ledge,,0,0,0,0,0,1,Boondoggle,2008
+17,22,sw fs 180,gap,over rail,0,0,0,1,1,0,Boondoggle,2008
+18,22,sw fs 180,gap,over rail,0,0,0,1,1,0,Boondoggle,2008
+19,23,sw bs lipslide,rail,,0,0,0,0,1,0,Boondoggle,2008
+20,24,fakie kickflip,gap,into bank,0,0,0,1,0,0,Boondoggle,2008
+21,25,bs noseblunt stall,transition,,0,0,0,1,0,0,Boondoggle,2008
+22,26,nollie to fs boardslide,handrail,9,0,0,0,0,1,0,Boondoggle,2008
+23,26,nollie to fs boardslide,handrail,9,0,0,0,0,1,0,Boondoggle,2008
+24,27,bs kickflip,gap,,0,0,0,0,0,0,Boondoggle,2008
+25,28,nollie to bs crook,handrail,8,0,0,1,0,1,0,Boondoggle,2008
+26,29,kickflip to bs crook,ledge,,0,0,0,0,0,1,Boondoggle,2008
+26,30,nollie fs shuv,flat,,0,0,0,0,1,1,Boondoggle,2008
+26,31,nollie to sw bs crook to regular,ledge,,2,0,0,0,1,1,Boondoggle,2008
+27,32,sw bs kickflip,gap,,0,0,0,0,1,0,Boondoggle,2008
+28,33,nollie bs kickflip,gap,,0,0,0,0,1,0,Boondoggle,2008
+29,34,nollie bs 180,up,,0,0,0,0,1,1,Boondoggle,2008
+29,35,sw tre flip,flat,,2,0,0,0,1,1,Boondoggle,2008
+29,36,fakie fs kickflip,stairs,5,2,0,0,0,0,1,Boondoggle,2008
+30,37,nollie fs 360,stairs,8,0,0,1,0,1,0,Boondoggle,2008
+31,38,sw kickflip,flat,,0,0,0,0,1,1,Boondoggle,2008
+31,39,fakie 5-0 to bs 180,ledge,,2,0,0,0,0,1,Boondoggle,2008
+32,40,sw kickflip,gap,,0,0,0,0,1,0,Boondoggle,2008
+33,41,fs blunt to fakie,ledge,bank to ledge,0,0,1,0,0,0,Boondoggle,2008
+1,1,sw pole jam,rail,pole,0,0,0,0,1,0,pat gallaher first video part,2005
+2,2,sw bs 180,gap,,0,0,0,0,1,0,pat gallaher first video part,2005
+3,3,fs 5-0 stall to fakie,ledge,bank to ledge,0,0,0,1,0,0,pat gallaher first video part,2005
+4,3,fs 5-0 stall to fakie,ledge,bank to ledge,0,0,0,1,0,0,pat gallaher first video part,2005
+5,4,manny,manny pad,off truck,0,0,0,0,0,0,pat gallaher first video part,2005
+6,5,kickflip to nose manny,manny pad,,0,0,0,0,0,0,pat gallaher first video part,2005
+7,6,halfcab,flat,into bank,0,0,0,1,0,1,pat gallaher first video part,2005
+7,7,kickflip,flat,,0,0,0,0,0,1,pat gallaher first video part,2005
+7,8,ollie ,gap,over rail,3,0,0,1,0,1,pat gallaher first video part,2005
+8,9,fs 5050,handrail,10,0,0,0,0,0,0,pat gallaher first video part,2005
+9,10,fs boardslide,handrail,10,0,0,0,0,0,0,pat gallaher first video part,2005
+10,11,fakie kickflip,flat,,0,0,0,0,0,1,pat gallaher first video part,2005
+10,12,sw bs crook to regular,ledge,,0,0,0,0,1,1,pat gallaher first video part,2005
+10,13,nose manny,manny pad,,0,0,0,0,0,1,pat gallaher first video part,2005
+11,14,manny to kickflip,manny pad,,0,0,0,0,0,1,pat gallaher first video part,2005
+11,15,nollie bs 180,stairs,9,4,0,0,0,1,1,pat gallaher first video part,2005
+12,15,nollie bs 180,stairs,9,0,0,1,0,1,1,pat gallaher first video part,2005
+13,16,ollie ,gap,,0,0,0,0,0,0,pat gallaher first video part,2005
+14,17,sw heelflip,gap,bump to flat,0,0,0,1,1,0,pat gallaher first video part,2005
+15,18,bs boardslide,handrail,3,0,0,0,0,0,0,pat gallaher first video part,2005
+16,19,ollie ,gap,over handrail,0,0,0,1,0,0,pat gallaher first video part,2005
+17,19,ollie ,gap,over handrail,0,0,0,1,0,0,pat gallaher first video part,2005
+18,20,sw kickflip,stairs,7,0,0,1,0,1,0,pat gallaher first video part,2005
+19,21,fakie ollie to fakie manny,manny pad,,0,0,0,0,0,1,pat gallaher first video part,2005
+19,22,sw heelflip to sw manny,manny pad,,1,0,0,0,1,1,pat gallaher first video part,2005
+20,23,bs feeble,handrail,12,0,0,0,0,0,0,pat gallaher first video part,2005
+21,24,fs lipslide,handrail,12,0,0,0,0,0,0,pat gallaher first video part,2005
+22,25,nollie to bs crook,ledge,,0,0,0,0,1,1,pat gallaher first video part,2005
+22,26,nollie kickflip,flat,,2,0,0,0,1,1,pat gallaher first video part,2005
+22,27,kickflip to bs 5-0,ledge,,4,0,0,0,0,1,pat gallaher first video part,2005
+23,28,nollie bs heelflip,stairs,5,0,0,0,0,1,0,pat gallaher first video part,2005
+24,29,fs tailslide to fakie,handrail,7,0,0,0,0,0,0,pat gallaher first video part,2005
+25,29,fs tailslide to fakie,handrail,7,0,0,0,0,0,0,pat gallaher first video part,2005
+26,30,fs kickflip,hip,,0,0,0,1,0,0,pat gallaher first video part,2005
+27,31,full cab,gap,bump to flat,0,0,0,1,0,0,pat gallaher first video part,2005
+28,32,bs kickflip,gap,cactus gap,0,0,0,0,0,0,pat gallaher first video part,2005
+29,33,sw kickflip,gap,cactus gap,0,0,0,0,1,0,pat gallaher first video part,2005
+30,33,sw kickflip,gap,cactus gap,0,0,0,0,1,0,pat gallaher first video part,2005
+31,34,bs smith,handrail,9,0,0,0,0,0,0,pat gallaher first video part,2005
+32,35,bs boardslide,handrail,20,0,0,0,0,0,0,pat gallaher first video part,2005
+1,1,sw bs lipslide,ledge,,0,0,0,0,1,1,MySkate,2006
+1,2,halfcab flip,flat,,0,0,0,0,0,1,MySkate,2006
+1,3,bs 180 nosegrind,ledge,,2,0,0,0,0,1,MySkate,2006
+2,4,nollie bs kickflip,flat,on bank,0,0,0,1,1,0,MySkate,2006
+3,5,bs 360,flat,into bank,0,0,0,1,0,0,MySkate,2006
+4,6,shuv,gap,bump to bump,0,0,0,1,0,0,MySkate,2006
+5,7,nollie fs kickflip,flat,,0,0,0,0,1,1,MySkate,2006
+5,8,full cab,gap,,3,0,0,0,0,1,MySkate,2006
+6,9,blunt to fakie,transition,,0,0,0,1,0,0,MySkate,2006
+7,10,bs smith,handrail,12,0,0,0,0,0,0,MySkate,2006
+8,11,sw bs tailslide,ledge,,0,0,0,0,1,1,MySkate,2006
+8,12,sw tre flip,flat,,0,0,0,0,1,1,MySkate,2006
+8,13,fakie nosegrind,ledge,,1,0,0,0,0,1,MySkate,2006
+9,14,kickflip to bs noseslide,ledge,bump to ledge,0,0,0,1,0,0,MySkate,2006
+10,15,bs lipslide to fakie,ledge,outledge,0,0,0,0,0,0,MySkate,2006
+11,16,sw fs boardslide,handrail,,0,0,1,0,1,0,MySkate,2006
+12,17,fs bigspin,stairs,8,0,0,0,0,0,0,MySkate,2006
+13,18,sw tre flip,flat,into bank,0,0,1,1,1,0,MySkate,2006
+14,19,halfcab to bs crook,ledge,,0,0,0,0,0,1,MySkate,2006
+14,20,nollie kickflip,flat,,0,0,0,0,1,1,MySkate,2006
+14,21,nollie to sw bs crook,ledge,,2,0,0,0,1,1,MySkate,2006
+15,22,sw bs 180,flat,into bank,0,0,0,1,1,1,MySkate,2006
+15,23,nollie heelflip,flat,,0,0,0,0,1,1,MySkate,2006
+15,24,fs 180 bonk,flat,barrier,3,0,0,0,0,1,MySkate,2006
+16,25,pivot to fakie,transition,,0,0,0,1,0,0,MySkate,2006
+17,26,nollie kickflip,flat,,0,0,0,0,1,1,MySkate,2006
+17,27,bs kickflip,gap,,4,0,0,0,0,1,MySkate,2006
+18,28,bs tailslide,ledge,bin,0,0,0,0,0,0,MySkate,2006
+19,29,boneless,4 block,macba,0,0,0,0,0,0,MySkate,2006
+20,30,sw bs crook,ledge,,0,0,0,0,1,1,MySkate,2006
+21,31,fakie kickflip,flat,,1,0,0,0,0,1,MySkate,2006
+22,32,fakie fs 5050,ledge,,2,0,0,0,0,1,MySkate,2006
+23,33,fs 5-0,rail,,0,0,0,0,0,0,MySkate,2006
+24,34,sw kickflip,gap,,0,0,0,0,1,0,MySkate,2006
+25,34,sw kickflip,gap,,0,0,0,0,1,0,MySkate,2006
+26,35,nollie pole jam,rail,pole,0,0,0,0,0,1,MySkate,2006
+26,36,varial heelflip,flat,,0,0,0,0,0,1,MySkate,2006
+26,37,sw bs 5-0,ledge,,3,0,0,0,1,1,MySkate,2006
+27,38,fs boardslide,handrail,4 flat 2 flat 2,0,0,0,0,0,0,MySkate,2006
+28,39,nollie bs bigspin,gap,,0,0,0,0,1,0,MySkate,2006
+29,40,sw bs 180,gap,,0,0,0,0,1,0,MySkate,2006
+30,41,fs feeble,handrail,10,0,0,0,0,0,0,MySkate,2006
+31,42,sw bs crook,handrail,6,0,0,0,0,1,0,MySkate,2006
+32,42,sw bs crook,handrail,6,0,0,1,0,1,0,MySkate,2006
+1,1,pinch ollie,flat,,0,0,0,0,0,1,Large,2018
+1,2,pinch bs 180,flat,,0,0,0,0,0,1,Large,2018
+1,3,pinch fakie ollie,flat,,0,0,0,0,0,1,Large,2018
+2,4,sw shuv,flat,flat gap,0,0,0,0,1,0,Large,2018
+3,5,sw bs boardslide,ledge,hubba,0,0,0,0,1,0,Large,2018
+4,6,kickflip to fs 5050 to fs 180,ledge,,0,0,0,0,0,1,Large,2018
+4,7,fakie kickflip to sw bs 5050,ledge,,1,0,0,0,1,1,Large,2018
+5,8,sw fs nosegrind,ledge,hubba,0,0,0,0,1,0,Large,2018
+6,9,fs kickflip,flat,,0,0,0,1,0,1,Large,2018
+6,10,fakie kickflip,flat,,0,0,0,0,0,1,Large,2018
+6,11,sw tre flip,gap,wedge gap,3,0,0,0,1,1,Large,2018
+7,12,sw shuv,gap,wedge gap,0,0,0,0,1,0,Large,2018
+8,13,sw bs feeble to fakie manny,rail,to manny pad,0,0,0,0,1,0,Large,2018
+9,14,fs tailslide to fakie,ledge,bank to ledge,0,0,0,1,0,0,Large,2018
+10,15,sw fs nosegrind,transition,,0,0,0,1,1,0,Large,2018
+11,16,bs 5-0 to fakie,transition,,2,0,0,1,0,0,Large,2018
+12,16,bs 5-0 to fakie,transition,,0,0,0,1,0,0,Large,2018
+13,17,halfcab flip,flat,,0,0,0,0,0,1,Large,2018
+13,18,kickflip to fs 5050 to nose manny,ledge,to manny pad,1,0,0,0,0,1,Large,2018
+14,19,sw bs boardslide to 5-0 to fakie,ledge,hubba,0,0,0,0,1,0,Large,2018
+15,20,boneless,gap,bump to bump,0,0,0,0,0,0,Large,2018
+16,21,sw shuv,stairs,4,0,0,0,0,1,1,Large,2018
+16,22,sw shuv,stairs,6,0,0,0,0,1,1,Large,2018
+17,23,ride-on bs nosegrind,ledge,,0,0,0,0,0,0,Large,2018
+18,24,kickflip to fs 5-0 to fs 180,ledge,outledge,0,0,0,0,0,1,Large,2018
+19,25,sw bs crook,ledge,,1,0,0,0,1,1,Large,2018
+20,26,kickflip to fs 5050 to manny,ledge,to manny pad,0,0,1,0,0,0,Large,2018
+21,27,sw bs lipslide,handrail,10,0,0,0,0,1,0,Large,2018
+22,27,sw bs lipslide,handrail,10,0,0,0,0,1,0,Large,2018
+23,28,pinch ollie,flat,into bank,0,0,0,1,0,1,Large,2018
+23,29,pinch ollie,flat,,0,0,0,1,0,1,Large,2018
