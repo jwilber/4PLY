@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skaters Network Graph</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="chart.js" defer></script>
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background-color: #121212; /* Dark mode background */
+      color: #ffffff; /* Light text for dark mode */
+    }
+    svg {
+      width: 100%;
+      height: 90vh;
+      background-color: #1e1e1e; /* Dark mode for SVG */
+    }
+    .node {
+      stroke: #fff;
+      stroke-width: 2px;
+    }
+    .link {
+      stroke-opacity: 0.6;
+    }
+    .label {
+      fill: #ffffff; /* White labels for better contrast */
+      font-family: Arial, sans-serif;
+      pointer-events: none;
+      text-shadow: 1px 1px 3px #000000; /* Improve label readability */
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 5px;
+    }
+    .search-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .search-button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+    #search {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    .tooltip {
+      position: absolute;
+      text-align: left;
+      padding: 10px;
+      font-size: 14px;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      pointer-events: none;
+      z-index: 10;
+    }
+    #zoom-buttons {
+      position: fixed;
+      left: 10px;
+      top: 10px;
+    }
+    .zoom-button {
+      display: block;
+      margin-bottom: 5px;
+      padding: 5px 10px;
+      background-color: #eee;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #info {
+      position: fixed;
+      top: 0;
+      right: -400px;
+      width: 25%;
+      height: 100%;
+      background-color: #000; /* Dark mode background for info */
+      color: #fff; /* Light text for dark mode */
+      box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      overflow-y: auto;
+      z-index: 900
+      transition: right 0.4s ease;
+    }
+    #info.open {
+      right: 0;
+    }
+    #buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .button {
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    #info-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25%; /* Takes up 25% of the page width */
+    height: 100%;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    overflow-y: auto;
+    z-index: 2;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 75%; /* Takes up the remaining 75% of the page width */
+    height: 100%;
+    background-color: #1e1e1e; /* Dark mode for SVG */
+}
+
+
+
+    /* Update button colors */
+    #favourite { background-color: #66c2a5; }
+    #style { background-color: #fc8d62; }
+    #influence { background-color: #8da0cb; }
+    #talent { background-color: #e78ac3; }
+    #guests-only { background-color: #ffab40; } /* New button for guests only filter */
+    /* Styling for Close button */
+    #close-btn {
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-container">
+    <input type="text" id="search" placeholder="Search by name">
+    <button class="search-button" id="search-button">Search</button>
+
+  </div>
+
+  <svg></svg>
+
+  <div id="buttons">
+    <button class="button" id="all">All</button>
+    <button class="button" id="favourite">Favourite</button>
+    <button class="button" id="style">Style</button>
+    <button class="button" id="influence">Influence</button>
+    <button class="button" id="talent">Talent</button>
+    <button class="button" id="guests-only">Guests Only</button> <!-- Added new button -->
+  </div>
+
+  <div id="tooltip" class="tooltip" style="opacity: 0;"></div>
+
+    <!-- Static Info Div for Skaters Network Graph -->
+  <div id="info-container" class="info-container">
+    <h2>Your Favourite Skater's Favourite Skater</h2>
+    <p>This network chart visualizes the relationships between skaters and their favorite skaters, styles, influences, and talents. Click on a node to see more information about a skater and their connections.</p>
+    <input type="text" id="guest-search" placeholder="Search for a skater...">
+    <button id="guest-search-button">Search</button>
+    <div id="fun-facts">
+      <p><strong>Fun Facts:</strong></p>
+      <p>Total Skaters: <span id="total-skaters"></span></p>
+      <p>Total Connections: <span id="total-connections"></span></p>
+    </div>
+    <div id="guest-search-result"></div>
+  </div>
+
+
+  <div id="info" class="info">
+    <!-- Info window content will be populated by JS -->
+  </div>
+
+  <div id="zoom-buttons">
+    <button class="zoom-button" id="zoom-in">Zoom In</button>
+    <button class="zoom-button" id="zoom-out">Zoom Out</button>
+    <button class="zoom-button" id="reset-zoom">Reset Zoom</button>
+  </div>
+</body>
+</html>
